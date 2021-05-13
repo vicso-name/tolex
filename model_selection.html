@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css">
+    <title>Model Selection</title>
+</head>
+<body>
+    <div class="wrapper-inner">
+
+        <aside class="aside">
+            <div class="aside-content">
+                <div class="aside-content__header">
+                    <figure>
+                        <img src="img/aside-logo.jpg" alt="aside-logo">
+                    </figure>
+                    <h1>Сервисный калькулятор TOLEX TUNING</h1>
+                </div>
+                <div class="aside-content__footer">
+                    <figure>
+                        <img src="img/logo-tolex-tuning.png" alt="logo-tolex-tuning">
+                    </figure>
+                    <a class="on-map" href="#">мы на карте</a>
+                </div>
+            </div>
+        </aside>
+
+        <!--BEGIN header-->
+        <div class="header-wrapper">
+
+            <header class="header">
+
+                <div class="container-fluid">
+                    <div class="top-menu">
+                        <nav class="main-menu">
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Спецпредложения и акции</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">3D-обзор по тех.центрам</a></li>
+                            </ul>
+                        </nav>
+                        <button id="write-director" class="write-director" type="button"><span>Написать директору</span></button>
+                    </div>
+                </div>
+    
+            </header>
+            <div class="header-info">
+
+                <div class="container-fluid">
+                    <div class="header-info__content">
+    
+                        <div class="header-info__item">
+                            <div class="header-info__item-content">
+                                <div class="phone-number">
+                                    <h5 class="phone-number__title">Toyota на Мосфильме</h5>
+                                    <a href="tel:84951533379" class="phone-number__content">8(495)153-33-79</a>
+                                </div>
+                                <div class="phone-number">
+                                    <h5 class="phone-number__title">Toyota на Cущевке</h5>
+                                    <a href="tel:84951531163" class="phone-number__content">8(495)153-11-63</a>
+                                </div>
+                                <div class="phone-number">
+                                    <h5 class="phone-number__title">Toyota на Таганке</h5>
+                                    <a href="tel:84951535998" class="phone-number__content">8(495)153-59-98</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="header-info__item">
+                            <a class="service-book" href="#"><span>Моя сервисная книга</span></a>
+                            <a class="cart" href="#">
+                                <img src="img/cart_active.svg" alt="cart">
+                            </a>
+                            <a class="notifications" href="#">
+                                <img src="img/notification_none.svg" alt="cart">
+                            </a>
+                            <button class="humburger" type="button"></button>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Breadscrumbs -->
+            <section class="breadcrumbs">
+                <div class="container-fluid">
+                    <div class="kama_breadcrumbs">
+                        <span>
+                            <a href="#">
+                                <span>Главная</span>
+                            </a>
+                            </span>
+                            <span class="kb_sep">/</span>
+                        <span class="kb_title">Проекты</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Breadscrumbs END-->
+
+            <!-- Step by Step -->
+            <section class="stepper">
+                <div class="container-fluid">
+                    <ul class="stepper-content">
+
+                        <li id="brand_selection" class="stepper-content__item">
+                            <div class="stepper-content__item-wrapper">
+                                <div class="step-count">Шаг 1</div>
+                                <div class="stepper-content__item-title">Выбор марки</div>
+                                <div id="stepper_brand" class="stepper-content__item-subtitle">Toyota</div> 
+                            </div>
+                        </li>
+
+                        <li id="model_selection" class="stepper-content__item active">
+                            <div class="stepper-content__item-wrapper">
+                                <div class="step-count">Шаг 2</div>
+                                <div class="stepper-content__item-title">Выбор модели</div>
+                                <div id="stepper_model" class="stepper-content__item-subtitle">-</div>
+                            </div>
+                        </li>
+
+                        <li id="choice_equipment" class="stepper-content__item inactive">
+                            <div class="stepper-content__item-wrapper">
+                                <div class="step-count">Шаг 3</div>
+                                <div class="stepper-content__item-title">Выбор комплектации</div>
+                                <div id="stepper_equipment" class="stepper-content__item-subtitle">-</div>
+                            </div>
+                        </li>
+
+                        <li id="repair_type" class="stepper-content__item inactive">
+                            <div class="stepper-content__item-wrapper">
+                                <div class="step-count">Шаг 4</div>
+                                <div class="stepper-content__item-title">Тип ремонта</div>
+                                <div id="stepper_type" class="stepper-content__item-subtitle">-</div>
+                            </div>
+                        </li>
+
+                        <li id="ordering" class="stepper-content__item inactive">
+                            <div class="stepper-content__item-wrapper">
+                                <div class="step-count">Шаг 5</div>
+                                <div class="ordering-title stepper-content__item-title">Оформление заказа</div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <!-- Step by Step END-->
+
+            <!-- Model Catalog -->
+            <section class="model-catalog">
+                <div class="container-fluid">
+                    <div class="model-catalog__content">
+                        <h2>Выбор модели</h2>
+                        <ul class="model-catalog__content-grid">
+                            <li>
+                                <a href="#">
+                                    <div class="model-catalog__content-img" style="background-image: url(img/toyota/2015-2021-land-cruiser.jpg);"></div>
+                                    <h3>2015-2021 Land Cruiser 200</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="model-catalog__content-img" style="background-image: url(img/toyota/2021-camry.jpg);"></div>
+                                    <h3>2021 Camry</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="model-catalog__content-img" style="background-image: url(img/toyota/2021-rav-4.jpg);"></div>
+                                    <h3>2021 RAV 4</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="model-catalog__content-img" style="background-image: url(img/toyota/2021-highlander.jpg);"></div>
+                                    <h3>2021 HIGHLANDER</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="model-catalog__content-img" style="background-image: url(img/toyota/2021-c-hr.jpg);"></div>
+                                    <h3>2021 C-HR</h3>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="model-catalog__content-img" style="background-image: url(img/toyota/2021-hilux.jpg);"></div>
+                                    <h3>2021 Hilux</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="model-catalog__content-img" style="background-image: url(img/toyota/2021-prado.jpg);"></div>
+                                    <h3>2021 Prado</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="model-catalog__content-img" style="background-image: url(img/toyota/2007-2015-land-cruiser.jpg);"></div>
+                                    <h3>2007-2015 Land Cruiser 200</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="model-catalog__content-img" style="background-image: url(img/toyota/2002-2007-land-cruiser.jpg);"></div>
+                                    <h3>2002-2007 Land Cruiser 200</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="model-catalog__content-img" style="background-image: url(img/toyota/2014-2017-land-cruiser.jpg);"></div>
+                                    <h3>2014-2017 Land Cruiser 200</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Model Catalog END -->
+        </div>
+       
+        <!--END header-->
+
+    </div>
+
+    <script src="js/app.min.js"></script>
+</body>
+</html>
