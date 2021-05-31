@@ -666,6 +666,75 @@ body
                     margin-top: 13px
                     margin-bottom: 0
 
+/*** Choose Fixing Type ***/
 
+.select__fixing-type
+    position: relative
+    margin-top: 37px
+    &_guts
+        display: flex
+
+.model-presentation
+    position: relative
+    margin-right: 106px
+    &::before
+        content: ""
+        position: absolute
+        right: -50px
+        height: 100%
+        width: 1px
+        background-color: #CDCDCD
+    h2
+        font-size: 18px
+        font-style: normal
+        font-weight: 700
+        line-height: 22px
+        letter-spacing: 0em
+        text-align: center
+        margin-bottom: 20px
+.model-photo__wrapp
+    width: 313.57px
+    height: 234.96px
+    position: relative
+    img
+        width: 100%
+    &::before
+        content: ""
+        position: absolute
+        left: 50%
+        transform: translate(-50%)
+        width: 230px
+        height: 230px 
+        border: 1px solid #BB261A
+        border-radius: 100%
+        z-index: -1
+
+.select__fixt-type
+    position: relative
+
+.select__fixt-type-title
+    font-size: 18px
+    font-style: normal
+    font-weight: 700
+    line-height: 22px
+    letter-spacing: 0em
+    text-align: center
+    background-image: url(../img/repair-tool.svg)
+    background-repeat: no-repeat
+    padding-left: 30px
+    background-position-y: 2px
+
+.mileage-value-title
+    font-size: 18px
+    font-style: normal
+    font-weight: 700
+    line-height: 22px
+    letter-spacing: 0em
+    text-align: center   
+    background-image: url(../img/road.svg)
+    background-repeat: no-repeat
+    padding-left: 30px
+
+/*** Choose Fixing Type END***/
      
 @import "media"
