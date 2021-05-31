@@ -22,6 +22,7 @@ function browsersync() {
 function scripts() {
 	return src([
 		'node_modules/jquery/dist/jquery.min.js',
+		'node_modules/owl.carousel/dist/owl.carousel.js',
 		'app/libs/fullpage/fullpage.js',
 		'app/js/app.js',
 		])

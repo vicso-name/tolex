@@ -732,6 +732,7 @@ body
     background-image: url(../img/road.svg)
     background-repeat: no-repeat
     padding-left: 30px
+    margin-bottom: 16px
 
 .type-selector
     display: flex
@@ -768,6 +769,18 @@ body
         &.active
             background-color: #BB261A
             border: 1px solid #BB261A
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                width: 30px 
+                height: 30px
+                background-color: #BB261A
+                border: 3px solid #ffffff
+                border-radius: 100%
+                top: -17px
+                left: 50%
+                transform: translate(-50%)
             a
                 color: #ffffff
                 .type-selector__item-guts
@@ -784,8 +797,86 @@ body
                         path
                             fill: #ffffff
 .type-selector__item-guts-title
-    margin-top: 3.56px         
+    margin-top: 3.56px  
 
+//Select Mileage Slider
+
+.mileage-slider
+    padding: 0
+    list-style-type: none  
+    max-width: 800px 
+    margin: 0 auto
+    .owl-stage-outer
+        padding-top: 10px
+        padding-bottom: 10px
+    .owl-item
+        &:hover
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15)
+    .owl-nav
+        position: absolute
+        top: 35%
+        left: 0
+        right: 0
+        width: 100%
+        .owl-prev
+            position: absolute
+            left: -87px
+            width: 25px!important
+            height: 25px!important
+            background: #F0F0F0!important
+            border-radius: 100%
+            background-image: url(../img/left.svg)!important
+            background-repeat: no-repeat!important
+            background-repeat: no-repeat!important
+            background-position-x: 8px!important
+            background-position-y: 6px!important
+            transition: all .5s ease
+            &:hover
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
+            span
+                display: none
+        .owl-next
+            position: absolute
+            right: -87px
+            width: 25px!important
+            height: 25px!important
+            background: #F0F0F0!important
+            border-radius: 100%
+            background-image: url(../img/right.svg)!important
+            background-repeat: no-repeat!important
+            background-position-x: 8px!important
+            background-position-y: 6px!important
+            transition: all .5s ease
+            &:hover
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
+            span
+                display: none
+    .mileage-slider__item
+        padding-top: 7px
+        padding-bottom: 7px
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        border: 1px solid #D2D2D2
+        border-radius: 4px
+        cursor: pointer
+    .mil-val
+        color: #BB261A
+        font-size: 15px
+        font-style: normal
+        font-weight: 600
+        line-height: 18px
+        letter-spacing: 0em
+        text-align: left
+    .rep-price
+        color: #000000
+        font-size: 15px
+        font-style: normal
+        font-weight: 600
+        line-height: 18px
+        letter-spacing: 0em
+        text-align: left
 /*** Choose Fixing Type END***/
      
 @import "media"
