@@ -1001,6 +1001,182 @@ body
 
 /*** TO Calculator END ***/
 
+/*** Price Compare ***/
+.price-compare
+    position: relative
+    border: 1px solid #D3D3D3
+    max-width: 641px
+    margin: 0 auto
+    padding-top: 27.08px
+    padding-bottom: 29px
+    margin-top: 26.99px
+    &__title
+        background: #ffffff
+        font-size: 14px
+        font-style: normal
+        font-weight: 700
+        line-height: 17px
+        letter-spacing: 0em
+        position: absolute
+        left: 50%
+        transform: translate(-50%)
+        margin-bottom: 0
+        top: -10px
+        padding-left: 19px
+        padding-right: 19px
+.price-compare__guts
+    padding: 0
+    margin: 0
+    list-style-type: none
+    display: grid
+    grid-template-columns: 213px 213px 213px
+    li
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        .price-compare-content-wrapp
+            margin-left: 11.3px
+        &::before
+            content: ""
+            position: absolute
+            right: 0
+            width: 1px
+            height: 100%
+            background-color: #d2d2d2
+        &:last-child
+            &::before
+                height: 0
+        h4
+            font-size: 13px
+            font-style: normal
+            font-weight: 500
+            line-height: 16px
+            letter-spacing: 0em
+            margin-bottom: 4px
+        .price-compare-average-img
+            width: 33px
+            height: 33px
+        .price-compare-official-img
+            width: 40.7px 
+            height: 33px
+        .price-compare-tolex-img
+            width: 88px
+            height: 26px
+        .price-compare-average
+            span
+                font-size: 15px
+                font-style: normal
+                font-weight: 600
+                line-height: 18px
+                letter-spacing: 0em
+                text-align: left
 
-     
+        .price-compare-official
+            span
+                font-size: 15px
+                font-style: normal
+                font-weight: 600
+                line-height: 18px
+                letter-spacing: 0em
+                text-align: left
+
+        .price-compare-tolex
+            span
+                color: #BB261A
+                font-size: 15px
+                font-style: normal
+                font-weight: 600
+                line-height: 18px
+                letter-spacing: 0em
+                text-align: left
+/*** Order Section ***/
+.order-section
+    background-color: #efefef
+    border-radius: 4px
+    max-width: 641px
+    margin: 0 auto
+    margin-top: 17px
+    padding-top: 33px
+    padding-bottom: 50px
+    padding-left: 29px
+    .order-section__content-header
+        border-bottom: 1px solid #C8C8C8
+        padding-bottom: 22px
+        margin-bottom: 15px
+        h2
+            font-size: 18px
+            font-style: normal
+            font-weight: 700
+            line-height: 22px
+            letter-spacing: 0em
+            margin-bottom: 10.49px
+            span
+                color: #BB261A
+        .dilers-varanty-save
+            font-size: 14px
+            font-style: normal
+            font-weight: 500
+            line-height: 21px
+            letter-spacing: 0em
+    .order-details
+        h3
+            font-size: 22px
+            font-style: normal
+            font-weight: 700
+            line-height: 27px
+            letter-spacing: 0em
+            span
+                color: #BB261A
+        h4
+            font-size: 14px
+            font-style: normal
+            font-weight: 700
+            line-height: 17px
+            letter-spacing: 0em
+            margin-bottom: 12px
+        h5
+            font-size: 14px
+            font-style: normal
+            font-weight: 500
+            line-height: 21px
+            letter-spacing: 0em
+.billing-btns
+    button
+        width: 118px
+        height: 40px
+        background-color: #BB261A
+        border: none
+        border-radius: 50px
+        color: #ffffff
+        font-size: 12px
+        text-transform: uppercase
+        font-style: normal
+        font-weight: 700
+        line-height: 40px
+        letter-spacing: 0em
+        text-align: center
+    a
+        display: inline-block
+        margin-left: 6px
+        text-decoration: none
+        width: 168px
+        height: 40px
+        font-size: 12px
+        color: #BB261A
+        border: 1px solid #E11100
+        border-radius: 50px
+        text-transform: uppercase
+        font-style: normal
+        font-weight: 700
+        line-height: 40px
+        letter-spacing: 0.05em
+        text-align: center
+    
+
+
+
+
+
+
 @import "media"
