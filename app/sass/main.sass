@@ -889,5 +889,118 @@ body
         letter-spacing: 0em
         text-align: left
 /*** Choose Fixing Type END***/
+
+/*** TO Calculator ***/
+
+.calcultor-form__wrapper
+    position: relative   
+    margin-top: 45px
+    .to-calcultor-form
+        display: grid
+        max-width: 1468px
+        grid-gap: 89px
+        grid-template-columns: 1fr 1fr
+        .calcultor-form__item
+            .calcultor-form__item-header
+                border-bottom: 1px solid #CDCDCD
+                h2
+                    font-size: 22px
+                    margin-bottom: 13px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 27px
+                    letter-spacing: 0em
+                    text-align: center
+                    span
+                        color: #BB261A
+
+.calcultor-form__item-mileage
+    margin-top: 24px
+    text-align: center
+    &_title
+        font-size: 18px
+        padding-left: 28px
+        font-style: normal
+        display: inline-block
+        font-weight: 700
+        line-height: 22px
+        letter-spacing: 0em
+        text-align: center
+        margin-bottom: 20px
+        background-image: url(../img/road.svg)
+        background-repeat: no-repeat
+
+.inner-mileage-slider
+    max-width: 570px
+    margin: 0 auto
+    padding: 0
+    list-style-type: none
+    li
+        padding-top: 7px
+        padding-bottom: 7px
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        border: 1px solid #d2d2d2
+        border-radius: 4px
+        cursor: pointer
+        .mileage-value
+            font-size: 15px
+            font-style: normal
+            font-weight: 600
+            line-height: 18px
+            letter-spacing: 0em
+        .price-value
+            font-size: 15px
+            font-style: normal
+            font-weight: 600
+            line-height: 18px
+            letter-spacing: 0em
+            color: #BB261A
+    .owl-nav
+        position: absolute
+        top: 35%
+        left: 0
+        right: 0
+        width: 100%
+        .owl-prev
+            position: absolute
+            left: -61px
+            width: 25px!important
+            height: 25px!important
+            background: #f0f0f0!important
+            border-radius: 100%
+            background-image: url(../img/left.svg)!important
+            background-repeat: no-repeat!important
+            background-repeat: no-repeat!important
+            background-position-x: 8px!important
+            background-position-y: 6px!important
+            transition: all .5s ease
+            span
+                display: none
+            &:hover
+                background-color: #d2d2d2!important 
+        .owl-next
+            position: absolute
+            right: -61px
+            width: 25px!important
+            height: 25px!important
+            background: #f0f0f0!important
+            border-radius: 100%
+            background-image: url(../img/right.svg)!important
+            background-repeat: no-repeat!important
+            background-position-x: 8px!important
+            background-position-y: 6px!important
+            transition: all .5s ease
+            span
+                display: none
+            &:hover
+                 background-color: #d2d2d2!important 
+
+
+/*** TO Calculator END ***/
+
+
      
 @import "media"
