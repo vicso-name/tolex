@@ -1,0 +1,122 @@
+.grid-table
+    display: grid
+.grid-table-row
+    display: grid
+    grid-template-columns: 390px 1fr 1fr 1fr
+    .grid-table-cell
+        .cell-price
+            font-size: 13px
+            font-style: normal
+            font-weight: 500
+            line-height: 16px
+            letter-spacing: 0em
+            &.service
+                margin-left: 11px
+    &.table-header
+        border-bottom: 1px solid #CDCDCD
+        margin-bottom: 15px
+        padding-right: 16px
+        padding-left: 16px
+        .grid-table-cell
+            font-size: 13px
+            padding-bottom: 15px
+            font-style: normal
+            font-weight: 500
+            line-height: 16px
+            letter-spacing: 0
+    &.service-wrapp
+        margin-bottom: 12px
+        padding-right: 16px
+        padding-left: 16px
+    &.category
+        grid-template-columns: 364px 1fr 1fr 1fr
+        margin-left: 38px
+        padding-bottom: 10px
+        margin-bottom: 9px
+        border-bottom: 1px dashed #CDCDCD
+        &:first-child
+            border-top: 1px dashed #CDCDCD
+            padding-top: 10px
+.grid-table-cell
+    img
+        width: 60px
+    &.service
+        label
+            width: 330px
+            position: relative
+            color: #000000
+            font-size: 13px
+            font-style: normal
+            font-weight: 500
+            line-height: 16px
+            letter-spacing: 0em
+            padding-left: 30px
+        input[type=checkbox]
+            display: none
+            & + label
+                &::before
+                    content: ""
+                    display: block
+                    position: absolute
+                    width: 20px
+                    height: 20px
+                    -webkit-border-radius: 3px
+                    border-radius: 100%
+                    left: 0
+                    top: 0
+                    border: 1px solid #C8C8C8
+            &:checked
+                & + label
+                    color: #BB261A 
+                    font-weight: 700
+                    &::after
+                        content: ""
+                        position: absolute
+                        width: 10px
+                        height: 10px
+                        border-radius: 100%
+                        top: 5px
+                        left: 5px
+                        background: #BB261A 
+                        background-repeat: no-repeat
+                        background-position: center
+    &.service-cathegory
+        label
+            width: 330px
+            position: relative
+            color: #000000
+            font-size: 13px
+            font-style: normal
+            font-weight: 500
+            line-height: 16px
+            letter-spacing: 0em
+            padding-left: 30px
+        input[type=radio]
+            display: none
+            & + label
+                &::before
+                    content: ""
+                    display: block
+                    position: absolute
+                    width: 20px
+                    height: 20px
+                    -webkit-border-radius: 3px
+                    border-radius: 100%
+                    left: 0
+                    top: 0
+                    border: 1px solid #C8C8C8
+            &:checked
+                & + label
+                    color: #BB261A 
+                    font-weight: 700
+                    &::after
+                        content: ""
+                        position: absolute
+                        width: 10px
+                        height: 10px
+                        border-radius: 100%
+                        top: 5px
+                        left: 5px
+                        background: #BB261A 
+                        background-repeat: no-repeat
+                        background-position: center

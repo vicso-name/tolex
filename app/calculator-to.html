@@ -444,106 +444,196 @@
 
                         <div class="tabs-content">
                             <div id="tab-1" class="tab-item">
-                                    <table class="to-table">
-                                        <thead class="table-head">
-                                            <tr>
-                                                <th>Наименование</th>
-                                                <th>Бренд</th>
-                                                <th>Кол-во</th>
-                                                <th>Цена</th>
-                                            </tr>
-                                        </thead>
 
-                                        <tbody class="to-table__body">
+                                <div class="grid-table">
 
-                                            <tr class="table-cathegory">
-                                                <td class="table-service">
-                                                    <div class="table-service__guts">
-                                                        <input type="checkbox" name="serice-1" id="serice-1" checked>
-                                                        <label for="serice-1">Фильтр салона - замена</label>
-                                                    </div>
-                                                </td>
-                                                <td class="table-brand"></td>
-                                                <td class="table-quantity">1</td>
-                                                <td class="table-price">368
+                                    <div class="grid-table-row table-header">
+                                        <div class="grid-table-cell">Наименование</div>
+                                        <div class="grid-table-cell">Бренд</div>
+                                        <div class="grid-table-cell">Кол-во</div>
+                                        <div class="grid-table-cell">Цена</div>
+                                    </div>
+
+                                    <div class="grid-table-row service-wrapp">
+                                        <div class="grid-table-cell service">
+                                            <input type="checkbox" name="serice-1" id="serice-1" checked>
+                                            <label for="serice-1">Фильтр салона - замена</label>
+                                        </div>
+                                        <div class="grid-table-cell">
+                                            <span class="cell-brand"></span>
+                                        </div>
+                                        <div class="grid-table-cell">
+                                            <span class="cell-quantity">1</span>
+                                        </div>
+                                        <div class="grid-table-cell">
+                                            <span class="cell-price service">380
+                                                <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-wrapp">
+
+                                        <div class="grid-table-row category">
+                                            <div class="grid-table-cell service-cathegory">
+                                                <input type="radio" name="servcat-1" checked id="servcat-1-1" >
+                                                <label for="servcat-1-1">Фильтр салонный - Cartech</label>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-brand">
+                                                    <img src="img/logo-toyota.png" alt="brand-logo">
+                                                </span>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-quantity">1</span>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-price">380
                                                     <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
                                                     </svg>
-                                                </td>
-                                            </tr>
-
-                                            <!--- Sub Cathegory Items--->
-
-                                            <tr class="table-sub__cath">
-                                                <td class="table-sub__cath-cell">
-                                                    <div class="table-sub__cath-cell_wrapp">
-                                                        <input type="radio" name="subcath-1" id="subcath-1-1" >
-                                                        <label for="subcath-1-1">Фильтр салона - замена</label>
-                                                    </div>
-                                                </td>
-
-                                                <td class="table-sub__cath-cell">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="grid-table-row category">
+                                            <div class="grid-table-cell service-cathegory">
+                                                <input type="radio" name="servcat-1" id="servcat-1-2" >
+                                                <label for="servcat-1-2">Фильтр салонный - AMD</label>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-brand">
                                                     <img src="img/logo-toyota.png" alt="brand-logo">
-                                                </td>
-                                                <td class="table-sub__cath-cell">
-                                                    <div class="table-sub__cath-quantity">1</div>
-                                                </td>
-                                                <td class="table-sub__cath-cell">
-                                                    <div class="table-sub__cath-price">500
-                                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
-                                                        </svg>
-                                                    </div>
-                                                </td>   
-                                            </tr>
-
-                                            <tr class="table-sub__cath">
-                                                <td class="table-sub__cath-cell">
-                                                    <div class="table-sub__cath-cell_wrapp">
-                                                        <input type="radio" name="subcath-1" id="subcath-1-2" >
-                                                        <label for="subcath-1-2">Фильтр салона - замена</label>
-                                                    </div>
-                                                </td>
-                                                <td class="table-sub__cath-cell">
+                                                </span>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-quantity">1</span>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-price">380
+                                                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="grid-table-row category">
+                                            <div class="grid-table-cell service-cathegory">
+                                                <input type="radio" name="servcat-1" id="servcat-1-3" >
+                                                <label for="servcat-1-3">Фильтр салона гипоалергенный - Cartech</label>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-brand">
                                                     <img src="img/logo-toyota.png" alt="brand-logo">
-                                                </td>
-                                                <td class="table-sub__cath-cell">
-                                                    <div class="table-sub__cath-quantity">1</div>
-                                                </td>
-                                                <td class="table-sub__cath-cell">
-                                                    <div class="table-sub__cath-price">500
-                                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
-                                                        </svg>
-                                                    </div>
-                                                </td>   
-                                            </tr>
+                                                </span>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-quantity">1</span>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-price">380
+                                                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
 
-                                            <tr class="table-sub__cath">
-                                                <td class="table-sub__cath-cell">
-                                                    <div class="table-sub__cath-cell_wrapp">
-                                                        <input type="radio" name="subcath-1" id="subcath-1-3" checked >
-                                                        <label for="subcath-1-3">Фильтр салона - замена</label>
-                                                    </div>
-                                                </td>
-                                                <td class="table-sub__cath-cell">
+                                    </div>
+
+                                    <div class="grid-table-row service-wrapp">
+                                        <div class="grid-table-cell service">
+                                            <input type="checkbox" name="serice-2" id="serice-2" checked>
+                                            <label for="serice-2">Масло переднего редуктора - замена</label>
+                                        </div>
+                                        <div class="grid-table-cell">
+                                            <span class="cell-brand"></span>
+                                        </div>
+                                        <div class="grid-table-cell">
+                                            <span class="cell-quantity">1</span>
+                                        </div>
+                                        <div class="grid-table-cell">
+                                            <span class="cell-price service">380
+                                                <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-wrapp">
+
+                                        <div class="grid-table-row category">
+                                            <div class="grid-table-cell service-cathegory">
+                                                <input type="radio" name="servcat-2" checked id="servcat-2-1" >
+                                                <label for="servcat-2-1">Масло gl4/gl5 75w90 toyota, 1л - Toyota</label>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-brand">
                                                     <img src="img/logo-toyota.png" alt="brand-logo">
-                                                </td>
-                                                <td class="table-sub__cath-cell">
-                                                    <div class="table-sub__cath-quantity">1</div>
-                                                </td>
-                                                <td class="table-sub__cath-cell">
-                                                    <div class="table-sub__cath-price">500
-                                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
-                                                        </svg>
-                                                    </div>
-                                                </td>   
-                                            </tr>
+                                                </span>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-quantity">1</span>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-price">380
+                                                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="grid-table-row category">
+                                            <div class="grid-table-cell service-cathegory">
+                                                <input type="radio" name="servcat-2" id="servcat-2-2" >
+                                                <label for="servcat-2-2">Масло 75w90 для мех. транс. синт. (toyota) 1l - Toyota</label>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-brand">
+                                                    <img src="img/logo-toyota.png" alt="brand-logo">
+                                                </span>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-quantity">1</span>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-price">380
+                                                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="grid-table-row category">
+                                            <div class="grid-table-cell service-cathegory">
+                                                <input type="radio" name="servcat-2" id="servcat-2-3" >
+                                                <label for="servcat-2-3">Масло трансмиссионное синтетическое gear oil super gl-5 75w-90 1l - Toyota</label>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-brand">
+                                                    <img src="img/logo-toyota.png" alt="brand-logo">
+                                                </span>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-quantity">1</span>
+                                            </div>
+                                            <div class="grid-table-cell">
+                                                <span class="cell-price">380
+                                                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
 
-                                        </tbody>   
+                                    </div>
 
-                                    </table>
+                                    
+                                </div>
+
+
 
                             </div>
                             <div id="tab-2">
