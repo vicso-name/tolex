@@ -895,11 +895,12 @@ body
 .calcultor-form__wrapper
     position: relative   
     margin-top: 45px
+    padding-bottom: 68px
     .to-calcultor-form
         display: grid
         max-width: 1468px
         grid-gap: 89px
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 655px 1fr
         .calcultor-form__item
             .calcultor-form__item-header
                 border-bottom: 1px solid #CDCDCD
@@ -958,6 +959,16 @@ body
             line-height: 18px
             letter-spacing: 0em
             color: #BB261A
+        &.active
+            border: 1px solid #BB261A
+            background-color: #BB261A
+            .mileage-value
+                color: #ffffff
+            .price-value
+                color: #ffffff
+            svg
+                path
+                    fill: #ffffff
     .owl-nav
         position: absolute
         top: 35%
@@ -966,7 +977,7 @@ body
         width: 100%
         .owl-prev
             position: absolute
-            left: -61px
+            left: -40px
             width: 25px!important
             height: 25px!important
             background: #f0f0f0!important
@@ -983,7 +994,7 @@ body
                 background-color: #d2d2d2!important 
         .owl-next
             position: absolute
-            right: -61px
+            right: -40px
             width: 25px!important
             height: 25px!important
             background: #f0f0f0!important
@@ -1005,7 +1016,8 @@ body
 .price-compare
     position: relative
     border: 1px solid #D3D3D3
-    max-width: 641px
+    border-radius: 4px
+    max-width: 655px
     margin: 0 auto
     padding-top: 27.08px
     padding-bottom: 29px
@@ -1029,7 +1041,7 @@ body
     margin: 0
     list-style-type: none
     display: grid
-    grid-template-columns: 213px 213px 213px
+    grid-template-columns: 1fr 1fr 1fr
     li
         position: relative
         display: flex
@@ -1090,8 +1102,12 @@ body
                 line-height: 18px
                 letter-spacing: 0em
                 text-align: left
+
 /*** Order Section ***/
+
 .order-section
+    display: grid
+    grid-template-columns: 294px 1fr
     background-color: #efefef
     border-radius: 4px
     max-width: 641px
@@ -1104,6 +1120,7 @@ body
         border-bottom: 1px solid #C8C8C8
         padding-bottom: 22px
         margin-bottom: 15px
+        margin-right: 9px
         h2
             font-size: 18px
             font-style: normal
@@ -1141,7 +1158,48 @@ body
             font-weight: 500
             line-height: 21px
             letter-spacing: 0em
+            margin-bottom: 21px
+    
+.first-time__label
+    position: relative
+    cursor: pointer
+    padding-left: 28px
+    font-size: 14px
+    font-style: normal
+    font-weight: 500
+    line-height: 19px
+    letter-spacing: 0em       
+
+
+.first-time[type=checkbox]
+    display: none
+    & + .first-time__label
+        &::before
+            content: ""
+            display: block
+            position: absolute
+            width: 20px
+            height: 20px
+            -webkit-border-radius: 3px
+            border-radius: 4px
+            left: 0
+            top: 0
+            border: 1px solid #C8C8C8
+    &:checked
+        & + .first-time__label
+            &::after
+                content: ""
+                position: absolute
+                width: 20px
+                height: 20px
+                top: 0
+                left: 0
+                background-image: url(../img/firstcheck.svg)
+                background-repeat: no-repeat
+                background-position: center
+
 .billing-btns
+    margin-top: 28px
     button
         width: 118px
         height: 40px
@@ -1158,7 +1216,7 @@ body
         text-align: center
     a
         display: inline-block
-        margin-left: 6px
+        margin-left: 2px
         text-decoration: none
         width: 168px
         height: 40px
@@ -1172,11 +1230,71 @@ body
         line-height: 40px
         letter-spacing: 0.05em
         text-align: center
+
+.order-section-imgs
+    position: relative
+    text-align: center
+    &_car
+        img
+            width: 247px
+            height: 185px
+
+/*** detailing repair tabs ***/
+
+.detailing-repair__tabs
+    display: flex
+    justify-content: space-between
+    margin-top: 15px
+    margin-bottom: 15px
+    padding-bottom: 15px
+    border-bottom: 1px solid #cdcdcd
+    .general-and-separate
+        display: flex
     
+#general
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 15px
+    width: 89px
+    height: 30px
+    color: #ffffff
+    font-size: 11px
+    font-style: normal
+    font-weight: 600
+    letter-spacing: 0em
+    border: none
+    border-radius: 4px
+    background-color: #BB261A
 
+#separate
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 211px
+    height: 30px
+    border: 1px solid #BB261A
+    border-radius: 4px
+    background-color: #ffffff
+    color: #BB261A
+    font-size: 11px
+    font-style: normal
+    font-weight: 600
+    letter-spacing: 0em
 
-
-
-
+#selected_services
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 266px
+    height: 30px
+    border: 1px solid #BB261A
+    border-radius: 4px
+    background-color: #ffffff
+    color: #BB261A
+    font-size: 11px
+    font-style: normal
+    font-weight: 600
+    letter-spacing: 0em
 
 @import "media"

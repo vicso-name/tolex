@@ -47,4 +47,28 @@ $('.inner-mileage-slider').owlCarousel({
             items:5
         }
     }
-})
+});
+
+function inner_mileage_slider(){
+
+    let innerMileageSlideItem = document.querySelectorAll('.inner-mileage__item');
+    
+    function selectItem(e) {
+        removeActiveClass();
+        this.classList.add('active');
+    }
+    
+    function removeActiveClass(){
+        innerMileageSlideItem.forEach(item=>{
+            item.classList.remove('active');
+        });
+    }
+
+    innerMileageSlideItem.forEach(item => {
+        item.addEventListener('click', selectItem);
+    });
+}
+
+inner_mileage_slider()
+    
+
