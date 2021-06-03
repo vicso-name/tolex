@@ -1239,6 +1239,120 @@ body
             width: 247px
             height: 185px
 
+/*** TO TABLE ***/
+
+.to-table
+    width: 100%
+    .table-head
+        border-bottom: 1px solid #cdcdcd
+        padding-bottom: 15px
+        tr
+            th
+                font-size: 13px
+                padding-bottom: 15px
+                font-style: normal
+                font-weight: 500
+                line-height: 16px
+                letter-spacing: 0
+.table-service
+    padding-top: 15px
+    padding-bottom: 15px
+    .table-service__guts  
+        label
+            position: relative
+            color: #000000
+            font-size: 13px
+            font-style: normal
+            font-weight: 700
+            line-height: 16px
+            letter-spacing: 0em
+            padding-left: 30px
+        input[type=checkbox]
+            display: none
+            & + label
+                &::before
+                    content: ""
+                    display: block
+                    position: absolute
+                    width: 20px
+                    height: 20px
+                    -webkit-border-radius: 3px
+                    border-radius: 100%
+                    left: 0
+                    top: 0
+                    border: 1px solid #C8C8C8
+            &:checked
+                & + label
+                    color: #BB261A 
+                    &::after
+                        content: ""
+                        position: absolute
+                        width: 10px
+                        height: 10px
+                        border-radius: 100%
+                        top: 5px
+                        left: 5px
+                        background: #BB261A 
+                        background-repeat: no-repeat
+                        background-position: center    
+.table-brand
+    padding-top: 15px
+    padding-bottom: 15px
+.table-quantity
+    padding-top: 15px
+    padding-bottom: 15px
+.table-price
+    padding-top: 15px 
+    padding-bottom: 15px 
+
+.table-sub__cath
+    position: relative
+    .table-sub__cath-cell
+        padding-top: 11px
+        padding-bottom: 11px
+        img
+            width: 60px
+        .table-sub__cath-cell_wrapp
+            margin-left: 30px
+            label
+                position: relative
+                color: #000000
+                font-size: 13px
+                font-style: normal
+                font-weight: 700
+                line-height: 16px
+                letter-spacing: 0em
+                padding-left: 30px
+            input[type=radio]
+                display: none
+                & + label
+                    &::before
+                        content: ""
+                        display: block
+                        position: absolute
+                        width: 20px
+                        height: 20px
+                        -webkit-border-radius: 3px
+                        border-radius: 100%
+                        left: 0
+                        top: 0
+                        border: 1px solid #C8C8C8
+                &:checked
+                    & + label
+                        color: #BB261A 
+                        &::after
+                            content: ""
+                            position: absolute
+                            width: 10px
+                            height: 10px
+                            border-radius: 100%
+                            top: 5px
+                            left: 5px
+                            background: #BB261A 
+                            background-repeat: no-repeat
+                            background-position: center
+
+
 /*** detailing repair tabs ***/
 
 .detailing-repair__tabs
@@ -1266,6 +1380,8 @@ body
     border: none
     border-radius: 4px
     background-color: #BB261A
+    svg
+        margin-right: 8px
 
 #separate
     display: flex
@@ -1281,6 +1397,8 @@ body
     font-style: normal
     font-weight: 600
     letter-spacing: 0em
+    svg
+        margin-right: 8px
 
 #selected_services
     display: flex
@@ -1296,5 +1414,111 @@ body
     font-style: normal
     font-weight: 600
     letter-spacing: 0em
+    svg
+        margin-right: 8px
+
+.common-header
+    display: grid
+    grid-template-columns: 382px 1fr 1fr 1fr
+    list-style: none
+    border-bottom: 1px solid #cdcdcd
+    padding: 0
+    margin: 0
+    padding-bottom: 15px
+    li
+        font-size: 13px
+        font-style: normal
+        font-weight: 500
+        line-height: 16px
+        letter-spacing: 0em
+
+.common-content
+    display: grid
+    grid-template-columns: 382px 1fr 1fr 1fr
+.common-services-list
+    list-style-type: none
+    padding: 0
+    .service-item
+        label
+            position: relative
+            color: #000000
+            font-size: 13px
+            font-style: normal
+            font-weight: 700
+            line-height: 16px
+            letter-spacing: 0em
+            padding-left: 30px
+        input[type=checkbox]
+            display: none
+            & + label
+                &::before
+                    content: ""
+                    display: block
+                    position: absolute
+                    width: 20px
+                    height: 20px
+                    -webkit-border-radius: 3px
+                    border-radius: 100%
+                    left: 0
+                    top: 0
+                    border: 1px solid #C8C8C8
+            &:checked
+                & + label
+                    color: #BB261A 
+                    &::after
+                        content: ""
+                        position: absolute
+                        width: 10px
+                        height: 10px
+                        border-radius: 100%
+                        top: 5px
+                        left: 5px
+                        background: #BB261A 
+                        background-repeat: no-repeat
+                        background-position: center
+
+.common-services-list-inner
+    padding: 0
+    margin: 0
+    list-style-type: none
+    margin-left: 25px
+    .replacement-part-item
+        label
+            position: relative
+            color: #000000
+            font-size: 13px
+            font-style: normal
+            font-weight: 700
+            line-height: 16px
+            letter-spacing: 0em
+        input[type=radio]
+            display: none
+            & + label
+                &::before
+                    content: ""
+                    display: block
+                    position: absolute
+                    width: 20px
+                    height: 20px
+                    -webkit-border-radius: 3px
+                    border-radius: 100%
+                    left: 0
+                    top: 0
+                    border: 1px solid #C8C8C8
+            &:checked
+                & + label
+                    color: #BB261A 
+                    &::after
+                        content: ""
+                        position: absolute
+                        width: 10px
+                        height: 10px
+                        border-radius: 100%
+                        top: 5px
+                        left: 5px
+                        background: #BB261A 
+                        background-repeat: no-repeat
+                        background-position: center
+
 
 @import "media"
