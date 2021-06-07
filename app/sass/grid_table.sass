@@ -4,6 +4,7 @@
     display: grid
     grid-template-columns: 390px 1fr 1fr 1fr
     .grid-table-cell
+        position: relative
         .cell-price
             font-size: 13px
             font-style: normal
@@ -25,6 +26,7 @@
             line-height: 16px
             letter-spacing: 0
     &.service-wrapp
+        position: relative
         margin-bottom: 12px
         padding-right: 16px
         padding-left: 16px
@@ -42,6 +44,7 @@
         width: 60px
     &.service
         label
+            display: inline-block
             width: 330px
             position: relative
             color: #000000
@@ -54,6 +57,7 @@
         input[type=checkbox]
             display: none
             & + label
+                width: auto
                 &::before
                     content: ""
                     display: block
@@ -67,6 +71,7 @@
                     border: 1px solid #C8C8C8
             &:checked
                 & + label
+                    width: auto
                     color: #BB261A 
                     font-weight: 700
                     &::after
@@ -120,3 +125,123 @@
                         background: #BB261A 
                         background-repeat: no-repeat
                         background-position: center
+.carret
+    position: absolute
+    width: 16px
+    height: 16px
+    right: 0
+    top: 3px
+    cursor: pointer
+    &::before
+        content: ""
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        position: absolute
+        background-image: url(../img/chevron-down.svg)
+    &.active
+        &::before
+          background-image: url(../img/chevron-down.svg) 
+          transform: rotate(180deg) 
+
+.category-wrapp
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        width: 1px
+        height: 80%
+        left: 26px
+        background-color: #BB261A
+
+    &.remove
+        display: none
+        opacity: 0
+
+.total-value
+    font-size: 18px
+    text-align: right
+    font-style: normal
+    font-weight: 700
+    line-height: 22px
+    letter-spacing: 0em
+    border-bottom: 1px solid #CDCDCD
+    padding-bottom: 16px
+    padding-right: 70px
+.total-price
+    color: #BB261A
+
+.info-section
+    display: inline
+    position: absolute
+    cursor: pointer
+    &__content
+        opacity: 0
+        display: none
+        transition: all .5s ease
+        position: absolute
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5)
+        border-radius: 4px
+        left: 0
+        width: 248px
+        z-index: 999999
+        background: #ffffff
+        &-img
+            img
+                width: 100%
+                border-radius: 4px
+        &-description
+            padding: 23px
+            p
+                font-size: 13px
+                font-style: normal
+                font-weight: 500
+                line-height: 16px
+                letter-spacing: 0em
+                text-align: left
+                margin: 0
+    &:hover
+        .info-section__content
+            display: block
+            opacity: 1
+
+/*** Tab Content ***/  
+
+.tab-content
+    display: none
+    opacity: 0
+    &.active
+        display: block
+        opacity: 1      
+
+/*** Sep Content ***/
+
+.sep-content__tabs
+    padding: 0
+    margin: 0
+    list-style-type: none
+    display: grid
+    grid-template-columns: 1fr 1fr
+    border-bottom: 1px solid #CDCDCD
+    .sep-content__tab
+        position: relative
+        text-align: center
+        font-size: 18px
+        font-style: normal
+        font-weight: 700
+        line-height: 22px
+        letter-spacing: 0em
+        cursor: pointer
+        padding-bottom: 16px
+        &.active
+            color: #BB261A
+            &::before
+                content: ""
+                position: absolute
+                width: 100%
+                left: 0
+                right: 0
+                border-bottom: 3px solid #bb261a
+                bottom: -2px
+    

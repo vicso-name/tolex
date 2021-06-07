@@ -31,6 +31,7 @@
                                 <a href="#"> 
                                     <span class="type-icon maintenance"></span> 
                                     <span class="type-icon__title">ТО</span>
+                                    <span id="to-sidebar-total">9 342</span>
                                 </a>
                             </li>
                             <li>
@@ -169,7 +170,7 @@
                                 <div class="stepper-content__item-wrapper">
                                     <div class="step-count">Шаг 4</div>
                                     <div class="stepper-content__item-title">Тип ремонта</div>
-                                    <div id="stepper_type" class="stepper-content__item-subtitle">-</div>
+                                    <div id="stepper_type" class="stepper-content__item-subtitle">ТО</div>
                                 </div>
                             </a>
                         </li>
@@ -223,6 +224,7 @@
            <section class="calcultor-form__wrapper">
                 
                 <form class="to-calcultor-form">
+                    
                     <div class="calcultor-form__item">
                         <div class="calcultor-form__item-header">
                             <h2><span>ТО 100 000 км</span> Toyota Land Cruiser 200</h2>
@@ -375,11 +377,12 @@
                                             <path d="M6.89914 0H0.999951V7.39841H0.199951V9.79841H0.999951V10.8669H0.199951V13.2669H0.999951V16H3.39995V13.2669H6.39995V10.8669H3.39995V9.8H6.8998C9.60189 9.8 11.8 7.60191 11.8 4.90016C11.8 2.19809 9.60186 0 6.89914 0ZM6.90011 7.4H3.39995V7.39841V2.39969H6.90011C8.27867 2.39969 9.40026 3.52128 9.40026 4.89984C9.40026 6.27841 8.27867 7.4 6.90011 7.4Z" fill="#BB261A"/>
                                         </svg>
                                     </h3>
+                                    <!--
                                     <h4>Ваша скидка: <span class="totla-sale">1 143</span>
                                         <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M5.56199 0H1.875V4.624H1.375V6.124H1.875V6.7918H1.375V8.2918H1.875V10H3.375V8.2918H5.25V6.7918H3.375V6.125H5.5624C7.25121 6.125 8.625 4.75119 8.625 3.0626C8.625 1.37381 7.25119 0 5.56199 0ZM5.5626 4.625H3.375V4.624V1.4998H5.5626C6.4242 1.4998 7.1252 2.2008 7.1252 3.0624C7.1252 3.924 6.4242 4.625 5.5626 4.625Z" fill="#BB261A"/>
                                         </svg>
-                                    </h4> 
+                                    </h4> -->
                                     <h5>Цена актуальная на 31.05.2021</h5> 
                                     <input class="first-time" type="checkbox" id="first-time" name="first-time">
                                     <label class="first-time__label" for="first-time">
@@ -420,12 +423,12 @@
 
                         <div class="detailing-repair__tabs">
                             <div class="general-and-separate">
-                                <button id="general" type="button">
-                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16.5 0.647095H1.49999C1.27898 0.647095 1.06701 0.724563 0.910734 0.862457C0.754454 1.00035 0.666656 1.18738 0.666656 1.38239V14.6177C0.666656 14.8127 0.754454 14.9997 0.910734 15.1376C1.06701 15.2755 1.27898 15.353 1.49999 15.353H16.5C16.721 15.353 16.933 15.2755 17.0892 15.1376C17.2455 14.9997 17.3333 14.8127 17.3333 14.6177V1.38239C17.3333 1.18738 17.2455 1.00035 17.0892 0.862457C16.933 0.724563 16.721 0.647095 16.5 0.647095ZM8.16666 13.8824H2.33332V10.9412H8.16666V13.8824ZM8.16666 9.47062H2.33332V6.52945H8.16666V9.47062ZM15.6667 13.8824H9.83332V10.9412H15.6667V13.8824ZM15.6667 9.47062H9.83332V6.52945H15.6667V9.47062ZM15.6667 5.05886H2.33332V2.11768H15.6667V5.05886Z" fill="white"/>
+                                <button class="detailing-repair-btn" id="tab-1" type="button">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66666 2.50004L1.66666 17.5C1.66666 17.7211 1.75445 17.933 1.91073 18.0893C2.06701 18.2456 2.27898 18.3334 2.49999 18.3334H17.5C17.721 18.3334 17.933 18.2456 18.0892 18.0893C18.2455 17.933 18.3333 17.7211 18.3333 17.5V2.50004C18.3333 2.27903 18.2455 2.06706 18.0892 1.91079C17.933 1.75451 17.721 1.66671 17.5 1.66671H2.49999C2.27898 1.66671 2.06701 1.75451 1.91073 1.91079C1.75445 2.06706 1.66666 2.27903 1.66666 2.50004ZM16.6667 13.3334V16.6667H3.33332V13.3334H16.6667ZM16.6667 8.33337V11.6667H3.33332L3.33332 8.33337L16.6667 8.33337ZM16.6667 3.33337V6.66671L3.33332 6.66671V3.33337L16.6667 3.33337Z" fill="#BB261A"/>
                                     </svg> Общий
                                 </button>
-                                <button id="separate" type="button">
+                                <button class="detailing-repair-btn" id="tab-2" type="button">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.66666 2.50004L1.66666 17.5C1.66666 17.7211 1.75445 17.933 1.91073 18.0893C2.06701 18.2456 2.27898 18.3334 2.49999 18.3334H17.5C17.721 18.3334 17.933 18.2456 18.0892 18.0893C18.2455 17.933 18.3333 17.7211 18.3333 17.5V2.50004C18.3333 2.27903 18.2455 2.06706 18.0892 1.91079C17.933 1.75451 17.721 1.66671 17.5 1.66671H2.49999C2.27898 1.66671 2.06701 1.75451 1.91073 1.91079C1.75445 2.06706 1.66666 2.27903 1.66666 2.50004ZM16.6667 13.3334V16.6667H3.33332V13.3334H16.6667ZM16.6667 8.33337V11.6667H3.33332L3.33332 8.33337L16.6667 8.33337ZM16.6667 3.33337V6.66671L3.33332 6.66671V3.33337L16.6667 3.33337Z" fill="#BB261A"/>
                                     </svg>
@@ -433,7 +436,7 @@
                                 </button>
                             </div>
                             <div class="selected-services">
-                                <button id="selected_services" type="button">
+                                <button class="detailing-repair-btn" id="tab-3" type="button">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.66666 2.50004L1.66666 17.5C1.66666 17.7211 1.75445 17.933 1.91073 18.0893C2.06701 18.2456 2.27898 18.3334 2.49999 18.3334H17.5C17.721 18.3334 17.933 18.2456 18.0892 18.0893C18.2455 17.933 18.3333 17.7211 18.3333 17.5V2.50004C18.3333 2.27903 18.2455 2.06706 18.0892 1.91079C17.933 1.75451 17.721 1.66671 17.5 1.66671H2.49999C2.27898 1.66671 2.06701 1.75451 1.91073 1.91079C1.75445 2.06706 1.66666 2.27903 1.66666 2.50004ZM16.6667 13.3334V16.6667H3.33332V13.3334H16.6667ZM16.6667 8.33337V11.6667H3.33332L3.33332 8.33337L16.6667 8.33337ZM16.6667 3.33337V6.66671L3.33332 6.66671V3.33337L16.6667 3.33337Z" fill="#BB261A"/>
                                     </svg>
@@ -443,203 +446,350 @@
                         </div>
 
                         <div class="tabs-content">
-                            <div id="tab-1" class="tab-item">
+                            <!-- Общая информация о заказе начало -->
+                                <div id="tab-1-content" class="tab-content active">
 
-                                <div class="grid-table">
+                                    <div class="grid-table">
 
-                                    <div class="grid-table-row table-header">
-                                        <div class="grid-table-cell">Наименование</div>
-                                        <div class="grid-table-cell">Бренд</div>
-                                        <div class="grid-table-cell">Кол-во</div>
-                                        <div class="grid-table-cell">Цена</div>
-                                    </div>
-
-                                    <div class="grid-table-row service-wrapp">
-                                        <div class="grid-table-cell service">
-                                            <input type="checkbox" name="serice-1" id="serice-1" checked>
-                                            <label for="serice-1">Фильтр салона - замена</label>
+                                        <div class="grid-table-row table-header">
+                                            <div class="grid-table-cell">Наименование</div>
+                                            <div class="grid-table-cell">Бренд</div>
+                                            <div class="grid-table-cell">Кол-во</div>
+                                            <div class="grid-table-cell">Цена</div>
                                         </div>
-                                        <div class="grid-table-cell">
-                                            <span class="cell-brand"></span>
-                                        </div>
-                                        <div class="grid-table-cell">
-                                            <span class="cell-quantity">1</span>
-                                        </div>
-                                        <div class="grid-table-cell">
-                                            <span class="cell-price service">380
-                                                <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
 
-                                    <div class="category-wrapp">
-
-                                        <div class="grid-table-row category">
-                                            <div class="grid-table-cell service-cathegory">
-                                                <input type="radio" name="servcat-1" checked id="servcat-1-1" >
-                                                <label for="servcat-1-1">Фильтр салонный - Cartech</label>
+                                        <div class="grid-table-row service-wrapp">
+                                            <div class="grid-table-cell service">
+                                                <input type="checkbox" name="serice-1" id="serice-1" checked>
+                                                <label for="serice-1">Фильтр салона - замена</label>
+                                                <!-- Item info -->
+                                                <div class="info-section">
+                                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.50065 13.0013C2.91207 12.9974 0.00394093 10.0892 0 6.50066V6.37065C0.0714626 2.79824 3.01278 -0.0468214 6.58559 0.0005839C10.1584 0.0479892 13.0232 2.97008 12.9999 6.54313C12.9765 10.1162 10.0738 13.0006 6.50065 13.0013ZM6.49025 11.7012H6.50065C9.3718 11.6983 11.6974 9.36922 11.696 6.49806C11.6945 3.62691 9.3666 1.30014 6.49545 1.30014C3.6243 1.30014 1.29637 3.62691 1.29493 6.49806C1.29349 9.36922 3.6191 11.6983 6.49025 11.7012ZM7.15071 10.401H5.85058V9.10092H7.15071V10.401ZM7.15071 8.45086H5.85058C5.83004 7.60425 6.27062 6.81321 7.0012 6.38495C7.43024 6.05602 7.80078 5.77259 7.80078 5.20053C7.80078 4.48249 7.21869 3.9004 6.50065 3.9004C5.78261 3.9004 5.20052 4.48249 5.20052 5.20053H3.90039V5.14202C3.91084 4.21304 4.4161 3.3602 5.22585 2.90476C6.0356 2.44932 7.02681 2.46047 7.82611 2.93401C8.62541 3.40756 9.11136 4.27155 9.10091 5.20053C9.05436 5.90196 8.67815 6.53983 8.08681 6.91995C7.55226 7.25551 7.2058 7.82212 7.15071 8.45086Z" fill="#BB261A"/>
+                                                    </svg>
+                                                    <div class="info-section__content">
+                                                        <div class="info-section__content-img">
+                                                            <img src="img/info-img.jpg" alt="img">
+                                                        </div>
+                                                        <div class="info-section__content-description">
+                                                            <p>Замена салонного фильтра, согласно регламента рекомендовано каждые 10000 км.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Item info END-->
                                             </div>
                                             <div class="grid-table-cell">
-                                                <span class="cell-brand">
-                                                    <img src="img/logo-toyota.png" alt="brand-logo">
-                                                </span>
+                                                <span class="cell-brand"></span>
                                             </div>
                                             <div class="grid-table-cell">
                                                 <span class="cell-quantity">1</span>
                                             </div>
                                             <div class="grid-table-cell">
-                                                <span class="cell-price">380
+                                                <span class="cell-price service">380
                                                     <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
                                                     </svg>
                                                 </span>
                                             </div>
+
+                                            <div id="category-1" class="carret"></div>
+
                                         </div>
-                                        <div class="grid-table-row category">
-                                            <div class="grid-table-cell service-cathegory">
-                                                <input type="radio" name="servcat-1" id="servcat-1-2" >
-                                                <label for="servcat-1-2">Фильтр салонный - AMD</label>
+
+                                        <div id="category-1-content" class="category-wrapp">
+
+                                            <div class="grid-table-row category">
+                                                <div class="grid-table-cell service-cathegory">
+                                                    <input type="radio" name="servcat-1" checked id="servcat-1-1" >
+                                                    <label for="servcat-1-1">Фильтр салонный - Cartech</label>
+                                                    <!-- Item info -->
+                                                    <div class="info-section">
+                                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.50065 13.0013C2.91207 12.9974 0.00394093 10.0892 0 6.50066V6.37065C0.0714626 2.79824 3.01278 -0.0468214 6.58559 0.0005839C10.1584 0.0479892 13.0232 2.97008 12.9999 6.54313C12.9765 10.1162 10.0738 13.0006 6.50065 13.0013ZM6.49025 11.7012H6.50065C9.3718 11.6983 11.6974 9.36922 11.696 6.49806C11.6945 3.62691 9.3666 1.30014 6.49545 1.30014C3.6243 1.30014 1.29637 3.62691 1.29493 6.49806C1.29349 9.36922 3.6191 11.6983 6.49025 11.7012ZM7.15071 10.401H5.85058V9.10092H7.15071V10.401ZM7.15071 8.45086H5.85058C5.83004 7.60425 6.27062 6.81321 7.0012 6.38495C7.43024 6.05602 7.80078 5.77259 7.80078 5.20053C7.80078 4.48249 7.21869 3.9004 6.50065 3.9004C5.78261 3.9004 5.20052 4.48249 5.20052 5.20053H3.90039V5.14202C3.91084 4.21304 4.4161 3.3602 5.22585 2.90476C6.0356 2.44932 7.02681 2.46047 7.82611 2.93401C8.62541 3.40756 9.11136 4.27155 9.10091 5.20053C9.05436 5.90196 8.67815 6.53983 8.08681 6.91995C7.55226 7.25551 7.2058 7.82212 7.15071 8.45086Z" fill="#BB261A"/>
+                                                        </svg>
+                                                        <div class="info-section__content">
+                                                            <div class="info-section__content-img">
+                                                                <img src="img/info-img.jpg" alt="img">
+                                                            </div>
+                                                            <div class="info-section__content-description">
+                                                                <p>Замена салонного фильтра, согласно регламента рекомендовано каждые 10000 км.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Item info END-->
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-brand">
+                                                        <img src="img/logo-toyota.png" alt="brand-logo">
+                                                    </span>
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-quantity">1</span>
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-price">380
+                                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="grid-table-row category">
+                                                <div class="grid-table-cell service-cathegory">
+                                                    <input type="radio" name="servcat-1" id="servcat-1-2" >
+                                                    <label for="servcat-1-2">Фильтр салонный - AMD</label>
+                                                    <!-- Item info -->
+                                                    <div class="info-section">
+                                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.50065 13.0013C2.91207 12.9974 0.00394093 10.0892 0 6.50066V6.37065C0.0714626 2.79824 3.01278 -0.0468214 6.58559 0.0005839C10.1584 0.0479892 13.0232 2.97008 12.9999 6.54313C12.9765 10.1162 10.0738 13.0006 6.50065 13.0013ZM6.49025 11.7012H6.50065C9.3718 11.6983 11.6974 9.36922 11.696 6.49806C11.6945 3.62691 9.3666 1.30014 6.49545 1.30014C3.6243 1.30014 1.29637 3.62691 1.29493 6.49806C1.29349 9.36922 3.6191 11.6983 6.49025 11.7012ZM7.15071 10.401H5.85058V9.10092H7.15071V10.401ZM7.15071 8.45086H5.85058C5.83004 7.60425 6.27062 6.81321 7.0012 6.38495C7.43024 6.05602 7.80078 5.77259 7.80078 5.20053C7.80078 4.48249 7.21869 3.9004 6.50065 3.9004C5.78261 3.9004 5.20052 4.48249 5.20052 5.20053H3.90039V5.14202C3.91084 4.21304 4.4161 3.3602 5.22585 2.90476C6.0356 2.44932 7.02681 2.46047 7.82611 2.93401C8.62541 3.40756 9.11136 4.27155 9.10091 5.20053C9.05436 5.90196 8.67815 6.53983 8.08681 6.91995C7.55226 7.25551 7.2058 7.82212 7.15071 8.45086Z" fill="#BB261A"/>
+                                                        </svg>
+                                                        <div class="info-section__content">
+                                                            <div class="info-section__content-img">
+                                                                <img src="img/info-img.jpg" alt="img">
+                                                            </div>
+                                                            <div class="info-section__content-description">
+                                                                <p>Замена салонного фильтра, согласно регламента рекомендовано каждые 10000 км.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Item info END-->
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-brand">
+                                                        <img src="img/logo-toyota.png" alt="brand-logo">
+                                                    </span>
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-quantity">1</span>
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-price">380
+                                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="grid-table-row category">
+                                                <div class="grid-table-cell service-cathegory">
+                                                    <input type="radio" name="servcat-1" id="servcat-1-3" >
+                                                    <label for="servcat-1-3">Фильтр салона гипоалергенный - Cartech</label>
+                                                    <!-- Item info -->
+                                                    <div class="info-section">
+                                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.50065 13.0013C2.91207 12.9974 0.00394093 10.0892 0 6.50066V6.37065C0.0714626 2.79824 3.01278 -0.0468214 6.58559 0.0005839C10.1584 0.0479892 13.0232 2.97008 12.9999 6.54313C12.9765 10.1162 10.0738 13.0006 6.50065 13.0013ZM6.49025 11.7012H6.50065C9.3718 11.6983 11.6974 9.36922 11.696 6.49806C11.6945 3.62691 9.3666 1.30014 6.49545 1.30014C3.6243 1.30014 1.29637 3.62691 1.29493 6.49806C1.29349 9.36922 3.6191 11.6983 6.49025 11.7012ZM7.15071 10.401H5.85058V9.10092H7.15071V10.401ZM7.15071 8.45086H5.85058C5.83004 7.60425 6.27062 6.81321 7.0012 6.38495C7.43024 6.05602 7.80078 5.77259 7.80078 5.20053C7.80078 4.48249 7.21869 3.9004 6.50065 3.9004C5.78261 3.9004 5.20052 4.48249 5.20052 5.20053H3.90039V5.14202C3.91084 4.21304 4.4161 3.3602 5.22585 2.90476C6.0356 2.44932 7.02681 2.46047 7.82611 2.93401C8.62541 3.40756 9.11136 4.27155 9.10091 5.20053C9.05436 5.90196 8.67815 6.53983 8.08681 6.91995C7.55226 7.25551 7.2058 7.82212 7.15071 8.45086Z" fill="#BB261A"/>
+                                                        </svg>
+                                                        <div class="info-section__content">
+                                                            <div class="info-section__content-img">
+                                                                <img src="img/info-img.jpg" alt="img">
+                                                            </div>
+                                                            <div class="info-section__content-description">
+                                                                <p>Замена салонного фильтра, согласно регламента рекомендовано каждые 10000 км.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Item info END-->
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-brand">
+                                                        <img src="img/logo-toyota.png" alt="brand-logo">
+                                                    </span>
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-quantity">1</span>
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-price">380
+                                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="grid-table-row service-wrapp">
+                                            <div class="grid-table-cell service">
+                                                <input type="checkbox" name="serice-2" id="serice-2" checked>
+                                                <label for="serice-2">Масло переднего редуктора - замена</label>
+                                                <!-- Item info -->
+                                                <div class="info-section">
+                                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.50065 13.0013C2.91207 12.9974 0.00394093 10.0892 0 6.50066V6.37065C0.0714626 2.79824 3.01278 -0.0468214 6.58559 0.0005839C10.1584 0.0479892 13.0232 2.97008 12.9999 6.54313C12.9765 10.1162 10.0738 13.0006 6.50065 13.0013ZM6.49025 11.7012H6.50065C9.3718 11.6983 11.6974 9.36922 11.696 6.49806C11.6945 3.62691 9.3666 1.30014 6.49545 1.30014C3.6243 1.30014 1.29637 3.62691 1.29493 6.49806C1.29349 9.36922 3.6191 11.6983 6.49025 11.7012ZM7.15071 10.401H5.85058V9.10092H7.15071V10.401ZM7.15071 8.45086H5.85058C5.83004 7.60425 6.27062 6.81321 7.0012 6.38495C7.43024 6.05602 7.80078 5.77259 7.80078 5.20053C7.80078 4.48249 7.21869 3.9004 6.50065 3.9004C5.78261 3.9004 5.20052 4.48249 5.20052 5.20053H3.90039V5.14202C3.91084 4.21304 4.4161 3.3602 5.22585 2.90476C6.0356 2.44932 7.02681 2.46047 7.82611 2.93401C8.62541 3.40756 9.11136 4.27155 9.10091 5.20053C9.05436 5.90196 8.67815 6.53983 8.08681 6.91995C7.55226 7.25551 7.2058 7.82212 7.15071 8.45086Z" fill="#BB261A"/>
+                                                    </svg>
+                                                    <div class="info-section__content">
+                                                        <div class="info-section__content-img">
+                                                            <img src="img/info-img.jpg" alt="img">
+                                                        </div>
+                                                        <div class="info-section__content-description">
+                                                            <p>Замена салонного фильтра, согласно регламента рекомендовано каждые 10000 км.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Item info END-->
                                             </div>
                                             <div class="grid-table-cell">
-                                                <span class="cell-brand">
-                                                    <img src="img/logo-toyota.png" alt="brand-logo">
-                                                </span>
+                                                <span class="cell-brand"></span>
                                             </div>
                                             <div class="grid-table-cell">
                                                 <span class="cell-quantity">1</span>
                                             </div>
                                             <div class="grid-table-cell">
-                                                <span class="cell-price">380
+                                                <span class="cell-price service">380
                                                     <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
                                                     </svg>
                                                 </span>
                                             </div>
-                                        </div>
-                                        <div class="grid-table-row category">
-                                            <div class="grid-table-cell service-cathegory">
-                                                <input type="radio" name="servcat-1" id="servcat-1-3" >
-                                                <label for="servcat-1-3">Фильтр салона гипоалергенный - Cartech</label>
-                                            </div>
-                                            <div class="grid-table-cell">
-                                                <span class="cell-brand">
-                                                    <img src="img/logo-toyota.png" alt="brand-logo">
-                                                </span>
-                                            </div>
-                                            <div class="grid-table-cell">
-                                                <span class="cell-quantity">1</span>
-                                            </div>
-                                            <div class="grid-table-cell">
-                                                <span class="cell-price">380
-                                                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
-                                                    </svg>
-                                                </span>
-                                            </div>
+                                            <div id="category-2" class="carret"></div>
                                         </div>
 
-                                    </div>
+                                        <div id="category-2-content" class="category-wrapp">
 
-                                    <div class="grid-table-row service-wrapp">
-                                        <div class="grid-table-cell service">
-                                            <input type="checkbox" name="serice-2" id="serice-2" checked>
-                                            <label for="serice-2">Масло переднего редуктора - замена</label>
-                                        </div>
-                                        <div class="grid-table-cell">
-                                            <span class="cell-brand"></span>
-                                        </div>
-                                        <div class="grid-table-cell">
-                                            <span class="cell-quantity">1</span>
-                                        </div>
-                                        <div class="grid-table-cell">
-                                            <span class="cell-price service">380
-                                                <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
+                                            <div class="grid-table-row category">
+                                                <div class="grid-table-cell service-cathegory">
+                                                    <input type="radio" name="servcat-2" checked id="servcat-2-1" >
+                                                    <label for="servcat-2-1">Масло gl4/gl5 75w90 toyota, 1л - Toyota</label>
+                                                    <!-- Item info -->
+                                                    <div class="info-section">
+                                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.50065 13.0013C2.91207 12.9974 0.00394093 10.0892 0 6.50066V6.37065C0.0714626 2.79824 3.01278 -0.0468214 6.58559 0.0005839C10.1584 0.0479892 13.0232 2.97008 12.9999 6.54313C12.9765 10.1162 10.0738 13.0006 6.50065 13.0013ZM6.49025 11.7012H6.50065C9.3718 11.6983 11.6974 9.36922 11.696 6.49806C11.6945 3.62691 9.3666 1.30014 6.49545 1.30014C3.6243 1.30014 1.29637 3.62691 1.29493 6.49806C1.29349 9.36922 3.6191 11.6983 6.49025 11.7012ZM7.15071 10.401H5.85058V9.10092H7.15071V10.401ZM7.15071 8.45086H5.85058C5.83004 7.60425 6.27062 6.81321 7.0012 6.38495C7.43024 6.05602 7.80078 5.77259 7.80078 5.20053C7.80078 4.48249 7.21869 3.9004 6.50065 3.9004C5.78261 3.9004 5.20052 4.48249 5.20052 5.20053H3.90039V5.14202C3.91084 4.21304 4.4161 3.3602 5.22585 2.90476C6.0356 2.44932 7.02681 2.46047 7.82611 2.93401C8.62541 3.40756 9.11136 4.27155 9.10091 5.20053C9.05436 5.90196 8.67815 6.53983 8.08681 6.91995C7.55226 7.25551 7.2058 7.82212 7.15071 8.45086Z" fill="#BB261A"/>
+                                                        </svg>
+                                                        <div class="info-section__content">
+                                                            <div class="info-section__content-img">
+                                                                <img src="img/info-img.jpg" alt="img">
+                                                            </div>
+                                                            <div class="info-section__content-description">
+                                                                <p>Замена салонного фильтра, согласно регламента рекомендовано каждые 10000 км.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Item info END-->
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-brand">
+                                                        <img src="img/logo-toyota.png" alt="brand-logo">
+                                                    </span>
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-quantity">1</span>
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-price">380
+                                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="grid-table-row category">
+                                                <div class="grid-table-cell service-cathegory">
+                                                    <input type="radio" name="servcat-2" id="servcat-2-2" >
+                                                    <label for="servcat-2-2">Масло 75w90 для мех. транс. синт. (toyota) 1l - Toyota</label>
+                                                    <!-- Item info -->
+                                                    <div class="info-section">
+                                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.50065 13.0013C2.91207 12.9974 0.00394093 10.0892 0 6.50066V6.37065C0.0714626 2.79824 3.01278 -0.0468214 6.58559 0.0005839C10.1584 0.0479892 13.0232 2.97008 12.9999 6.54313C12.9765 10.1162 10.0738 13.0006 6.50065 13.0013ZM6.49025 11.7012H6.50065C9.3718 11.6983 11.6974 9.36922 11.696 6.49806C11.6945 3.62691 9.3666 1.30014 6.49545 1.30014C3.6243 1.30014 1.29637 3.62691 1.29493 6.49806C1.29349 9.36922 3.6191 11.6983 6.49025 11.7012ZM7.15071 10.401H5.85058V9.10092H7.15071V10.401ZM7.15071 8.45086H5.85058C5.83004 7.60425 6.27062 6.81321 7.0012 6.38495C7.43024 6.05602 7.80078 5.77259 7.80078 5.20053C7.80078 4.48249 7.21869 3.9004 6.50065 3.9004C5.78261 3.9004 5.20052 4.48249 5.20052 5.20053H3.90039V5.14202C3.91084 4.21304 4.4161 3.3602 5.22585 2.90476C6.0356 2.44932 7.02681 2.46047 7.82611 2.93401C8.62541 3.40756 9.11136 4.27155 9.10091 5.20053C9.05436 5.90196 8.67815 6.53983 8.08681 6.91995C7.55226 7.25551 7.2058 7.82212 7.15071 8.45086Z" fill="#BB261A"/>
+                                                        </svg>
+                                                        <div class="info-section__content">
+                                                            <div class="info-section__content-img">
+                                                                <img src="img/info-img.jpg" alt="img">
+                                                            </div>
+                                                            <div class="info-section__content-description">
+                                                                <p>Замена салонного фильтра, согласно регламента рекомендовано каждые 10000 км.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Item info END-->
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-brand">
+                                                        <img src="img/logo-toyota.png" alt="brand-logo">
+                                                    </span>
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-quantity">1</span>
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-price">380
+                                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="grid-table-row category">
+                                                <div class="grid-table-cell service-cathegory">
+                                                    <input type="radio" name="servcat-2" id="servcat-2-3" >
+                                                    <label for="servcat-2-3">Масло трансмиссионное синтетическое gear oil super gl-5 75w-90 1l - Toyota</label>
+                                                    <!-- Item info -->
+                                                    <div class="info-section">
+                                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.50065 13.0013C2.91207 12.9974 0.00394093 10.0892 0 6.50066V6.37065C0.0714626 2.79824 3.01278 -0.0468214 6.58559 0.0005839C10.1584 0.0479892 13.0232 2.97008 12.9999 6.54313C12.9765 10.1162 10.0738 13.0006 6.50065 13.0013ZM6.49025 11.7012H6.50065C9.3718 11.6983 11.6974 9.36922 11.696 6.49806C11.6945 3.62691 9.3666 1.30014 6.49545 1.30014C3.6243 1.30014 1.29637 3.62691 1.29493 6.49806C1.29349 9.36922 3.6191 11.6983 6.49025 11.7012ZM7.15071 10.401H5.85058V9.10092H7.15071V10.401ZM7.15071 8.45086H5.85058C5.83004 7.60425 6.27062 6.81321 7.0012 6.38495C7.43024 6.05602 7.80078 5.77259 7.80078 5.20053C7.80078 4.48249 7.21869 3.9004 6.50065 3.9004C5.78261 3.9004 5.20052 4.48249 5.20052 5.20053H3.90039V5.14202C3.91084 4.21304 4.4161 3.3602 5.22585 2.90476C6.0356 2.44932 7.02681 2.46047 7.82611 2.93401C8.62541 3.40756 9.11136 4.27155 9.10091 5.20053C9.05436 5.90196 8.67815 6.53983 8.08681 6.91995C7.55226 7.25551 7.2058 7.82212 7.15071 8.45086Z" fill="#BB261A"/>
+                                                        </svg>
+                                                        <div class="info-section__content">
+                                                            <div class="info-section__content-img">
+                                                                <img src="img/info-img.jpg" alt="img">
+                                                            </div>
+                                                            <div class="info-section__content-description">
+                                                                <p>Замена салонного фильтра, согласно регламента рекомендовано каждые 10000 км.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Item info END-->
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-brand">
+                                                        <img src="img/logo-toyota.png" alt="brand-logo">
+                                                    </span>
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-quantity">1</span>
+                                                </div>
+                                                <div class="grid-table-cell">
+                                                    <span class="cell-price">380
+                                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
 
-                                    <div class="category-wrapp">
-
-                                        <div class="grid-table-row category">
-                                            <div class="grid-table-cell service-cathegory">
-                                                <input type="radio" name="servcat-2" checked id="servcat-2-1" >
-                                                <label for="servcat-2-1">Масло gl4/gl5 75w90 toyota, 1л - Toyota</label>
-                                            </div>
-                                            <div class="grid-table-cell">
-                                                <span class="cell-brand">
-                                                    <img src="img/logo-toyota.png" alt="brand-logo">
-                                                </span>
-                                            </div>
-                                            <div class="grid-table-cell">
-                                                <span class="cell-quantity">1</span>
-                                            </div>
-                                            <div class="grid-table-cell">
-                                                <span class="cell-price">380
-                                                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="grid-table-row category">
-                                            <div class="grid-table-cell service-cathegory">
-                                                <input type="radio" name="servcat-2" id="servcat-2-2" >
-                                                <label for="servcat-2-2">Масло 75w90 для мех. транс. синт. (toyota) 1l - Toyota</label>
-                                            </div>
-                                            <div class="grid-table-cell">
-                                                <span class="cell-brand">
-                                                    <img src="img/logo-toyota.png" alt="brand-logo">
-                                                </span>
-                                            </div>
-                                            <div class="grid-table-cell">
-                                                <span class="cell-quantity">1</span>
-                                            </div>
-                                            <div class="grid-table-cell">
-                                                <span class="cell-price">380
-                                                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="grid-table-row category">
-                                            <div class="grid-table-cell service-cathegory">
-                                                <input type="radio" name="servcat-2" id="servcat-2-3" >
-                                                <label for="servcat-2-3">Масло трансмиссионное синтетическое gear oil super gl-5 75w-90 1l - Toyota</label>
-                                            </div>
-                                            <div class="grid-table-cell">
-                                                <span class="cell-brand">
-                                                    <img src="img/logo-toyota.png" alt="brand-logo">
-                                                </span>
-                                            </div>
-                                            <div class="grid-table-cell">
-                                                <span class="cell-quantity">1</span>
-                                            </div>
-                                            <div class="grid-table-cell">
-                                                <span class="cell-price">380
-                                                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
-                                                    </svg>
-                                                </span>
-                                            </div>
                                         </div>
 
+                                        <div id="total-price" class="total-value">
+                                            Сумма: <span class="total-price">863</span>
+                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.78672 0H1.62493V6.47361H0.924927V8.57361H1.62493V9.50852H0.924927V11.6085H1.62493V14H3.72493V11.6085H6.34993V9.50852H3.72493V8.575H6.78729C9.15162 8.575 11.0749 6.65167 11.0749 4.28764C11.0749 1.92333 9.15159 0 6.78672 0ZM6.78756 6.475H3.72493V6.47361V2.09973H6.78756C7.99381 2.09973 8.9752 3.08112 8.9752 4.28736C8.9752 5.49361 7.99381 6.475 6.78756 6.475Z" fill="#BB261A"/>
+                                            </svg>
+                                        </div>
+                                        
                                     </div>
 
                                     
+
+                                
                                 </div>
+                            <!-- Общая информация о заказе конец -->
 
+                            <!-- Запчасти и услуги начало -->
+                                <div id="tab-2-content" class="tab-content">
+                                    <ul class="sep-content__tabs" >
+                                        <li id="sep-1" class="sep-content__tab active">Запчасти</li>
+                                        <li id="sep-2" class="sep-content__tab">Услуги</li>
+                                    </ul>
+                                </div>
+                            <!-- Запчасти и услуги начало конец-->
 
+                            <!-- Только выбраные -->
+                                <div id="tab-3-content" class="tab-content">
+                                    <h1>TESTSTST2</h1>
+                                </div>
+                            <!-- Только выбраные конец -->
 
-                            </div>
-                            <div id="tab-2">
-
-                            </div>
                         </div>
+
                     </div>
                 </form>
 

@@ -346,7 +346,7 @@ body
     width: calc(100% + 0px)
     transform: translateX(0px)
     padding-left: 30px
-
+    
 
 .aside
     grid-area: g-side
@@ -896,12 +896,33 @@ body
     position: relative   
     margin-top: 45px
     padding-bottom: 68px
+    &::before
+        content: ""
+        position: absolute
+        width: 1px
+        left: 47%
+        height: 100%
+        background-color: #c5c5cc
     .to-calcultor-form
         display: grid
         max-width: 1468px
         grid-gap: 89px
-        grid-template-columns: 655px 1fr
+        grid-template-columns: 680px 1fr
         .calcultor-form__item
+            max-height: 588px
+            overflow: auto
+            padding-right: 20px
+            &::-webkit-scrollbar-track
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+                border-radius: 10px
+                background-color: #F5F5F5
+            &::-webkit-scrollbar
+                width: 12px
+                background-color: #F5F5F5
+            &::-webkit-scrollbar-thumb
+                border-radius: 10px
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+                background-color: #BB261A
             .calcultor-form__item-header
                 border-bottom: 1px solid #CDCDCD
                 h2
@@ -1110,22 +1131,22 @@ body
     grid-template-columns: 294px 1fr
     background-color: #efefef
     border-radius: 4px
-    max-width: 641px
+    max-width: 653px
     margin: 0 auto
     margin-top: 17px
     padding-top: 33px
-    padding-bottom: 50px
+    padding-bottom: 39px
     padding-left: 29px
     .order-section__content-header
         border-bottom: 1px solid #C8C8C8
-        padding-bottom: 22px
+        padding-bottom: 19px
         margin-bottom: 15px
         margin-right: 9px
         h2
             font-size: 18px
             font-style: normal
             font-weight: 700
-            line-height: 22px
+            line-height: 1
             letter-spacing: 0em
             margin-bottom: 10.49px
             span
@@ -1156,7 +1177,7 @@ body
             font-size: 14px
             font-style: normal
             font-weight: 500
-            line-height: 21px
+            line-height: 1
             letter-spacing: 0em
             margin-bottom: 21px
     
@@ -1168,8 +1189,11 @@ body
     font-style: normal
     font-weight: 500
     line-height: 19px
-    letter-spacing: 0em       
-
+    letter-spacing: 0em 
+    display: flex      
+    p   
+        margin: 0
+        line-height: 1
 
 .first-time[type=checkbox]
     display: none
@@ -1183,7 +1207,7 @@ body
             -webkit-border-radius: 3px
             border-radius: 4px
             left: 0
-            top: 0
+            top: -3px
             border: 1px solid #C8C8C8
     &:checked
         & + .first-time__label
@@ -1192,7 +1216,7 @@ body
                 position: absolute
                 width: 20px
                 height: 20px
-                top: 0
+                top: -3px
                 left: 0
                 background-image: url(../img/firstcheck.svg)
                 background-repeat: no-repeat
@@ -1368,57 +1392,31 @@ body
     .general-and-separate
         display: flex
     
-#general
+
+.detailing-repair-btn
     display: flex
     justify-content: center
     align-items: center
     margin-right: 15px
-    width: 89px
-    height: 30px
-    color: #ffffff
-    font-size: 11px
-    font-style: normal
-    font-weight: 600
-    letter-spacing: 0em
-    border: none
-    border-radius: 4px
-    background-color: #BB261A
-    svg
-        margin-right: 8px
-
-#separate
-    display: flex
-    justify-content: center
-    align-items: center
-    width: 211px
     height: 30px
     border: 1px solid #BB261A
-    border-radius: 4px
-    background-color: #ffffff
     color: #BB261A
+    background-color: #ffffff
     font-size: 11px
     font-style: normal
     font-weight: 600
     letter-spacing: 0em
+    border-radius: 4px
     svg
         margin-right: 8px
+    &.active
+        background-color: #BB261A!important
+        color: #ffffff!important
+        svg
+            path
+                fill: #ffffff!important
 
-#selected_services
-    display: flex
-    justify-content: center
-    align-items: center
-    width: 266px
-    height: 30px
-    border: 1px solid #BB261A
-    border-radius: 4px
-    background-color: #ffffff
-    color: #BB261A
-    font-size: 11px
-    font-style: normal
-    font-weight: 600
-    letter-spacing: 0em
-    svg
-        margin-right: 8px
+
 
 .common-header
     display: grid

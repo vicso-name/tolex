@@ -70,5 +70,50 @@ function inner_mileage_slider(){
 }
 
 inner_mileage_slider()
-    
+
+//Product Category
+
+const carretDown = document.querySelectorAll('.carret');
+const cathContentItems = document.querySelectorAll('.category-wrapp');
+
+function rollCatItem(e){
+
+    const cathContent = document.querySelector(`#${this.id}-content`);
+    cathContent.classList.toggle('remove');
+    this.classList.toggle('active');
+}
+
+
+carretDown.forEach(item=>{
+    item.addEventListener('click', rollCatItem)
+})
+
+//Fixing Detalisation
+
+const detailingRepairBtn = document.querySelectorAll('.detailing-repair-btn');
+const tabContents = document.querySelectorAll('.tab-content');
+
+function detailingTabs(e){
+    const detailingTabItem = document.querySelector(`#${this.id}-content`);
+    removeTabActive();
+    removeContentShow();
+    detailingTabItem.classList.add('active');
+    this.classList.add('active');
+}
+
+function removeContentShow() {
+	tabContents.forEach(item => {
+		item.classList.remove('active');
+	});
+}
+
+function removeTabActive() {
+	detailingRepairBtn.forEach(item => {
+		item.classList.remove('active');
+	});
+}
+
+detailingRepairBtn.forEach(item=>{
+    item.addEventListener('click', detailingTabs)
+})
 
