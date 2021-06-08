@@ -117,3 +117,35 @@ detailingRepairBtn.forEach(item=>{
     item.addEventListener('click', detailingTabs)
 })
 
+//Parts and Services
+
+const sepContentTab = document.querySelectorAll('.sep-content__tab');
+const sepContentItems = document.querySelectorAll('.sep-content-item');
+
+function sepContentTabActivator(){
+    sepContentremoveTabActive();
+    sepContentItemActive();
+    const sepContentItem = document.querySelector(`#${this.id}-content`);
+    sepContentItem.classList.add('active');
+    this.classList.add('active');
+}
+
+function sepContentremoveTabActive() {
+	sepContentTab.forEach(item => {
+		item.classList.remove('active');
+	});
+}
+
+function sepContentItemActive() {
+    sepContentItems.forEach(item=>{
+        item.classList.remove('active');
+    })
+}
+
+sepContentTab.forEach(item=>{
+    item.addEventListener('click', sepContentTabActivator)
+})
+
+let itm = document.getElementById("category-1-content");
+let test = itm.cloneNode(true);
+document.getElementById("tete").appendChild(test);

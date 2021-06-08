@@ -154,6 +154,11 @@
         height: 80%
         left: 26px
         background-color: #BB261A
+    &.inner
+        &::before
+            height: 0
+            width: 0
+
 
     &.remove
         display: none
@@ -215,11 +220,12 @@
         display: block
         opacity: 1      
 
-/*** Sep Content ***/
+/*** Step Content ***/
 
 .sep-content__tabs
     padding: 0
     margin: 0
+    margin-bottom: 15px
     list-style-type: none
     display: grid
     grid-template-columns: 1fr 1fr
@@ -245,3 +251,9 @@
                 border-bottom: 3px solid #bb261a
                 bottom: -2px
     
+.sep-content-item
+    display: none
+    opacity: 0
+    &.active
+        display: block
+        opacity: 1
