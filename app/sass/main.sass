@@ -275,9 +275,13 @@ body
 /*** Step One ***/   
 
 .type-icon__title
-    padding-left: 31px
+    padding-left: 35px
     display: block
+    margin-bottom: 0
 
+.rem-price    
+    display: block
+    width: 100%
 
 
 .type-icon
@@ -404,8 +408,14 @@ body
                             text-align: left
                         &:hover
                             background-color: #BB261A
+                            svg
+                                path
+                                    fill: #ffffff
                         &.active
                             background: #ffffff
+                            svg
+                                path
+                                    fill: #BB261A
                             a
                                 color: #BB261A
                                 font-weight: 700
@@ -498,6 +508,21 @@ body
                 width: 123px
                 height: 35px
 
+.sidebar-total
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 10px
+    color: #ffffff
+    font-size: 13px
+    font-style: normal
+    font-weight: 700
+    line-height: 16px
+    letter-spacing: 0em
+    text-align: left
+#sidebar-total-price
+    margin-left: 5px
+    margin-right: 5px
 
 /*** Breadcrumbs ***/
 

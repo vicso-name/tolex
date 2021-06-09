@@ -119,33 +119,88 @@ detailingRepairBtn.forEach(item=>{
 
 //Parts and Services
 
-const sepContentTab = document.querySelectorAll('.sep-content__tab');
-const sepContentItems = document.querySelectorAll('.sep-content-item');
+const sepContentTabs = document.querySelectorAll('.sep-content__tab');
+const sepContents = document.querySelectorAll('.sep-content-item');
 
-function sepContentTabActivator(){
-    sepContentremoveTabActive();
-    sepContentItemActive();
+function sepContentTabActivator(e){
     const sepContentItem = document.querySelector(`#${this.id}-content`);
+    sepContentremoveTabActive();
+    sepContentHideContent();
     sepContentItem.classList.add('active');
     this.classList.add('active');
 }
 
 function sepContentremoveTabActive() {
-	sepContentTab.forEach(item => {
-		item.classList.remove('active');
-	});
+    sepContentTabs.forEach(item => {
+        item.classList.remove('active');	
+    }); 
 }
 
-function sepContentItemActive() {
-    sepContentItems.forEach(item=>{
+function sepContentHideContent(){
+    sepContents.forEach(item=>{
         item.classList.remove('active');
     })
 }
 
-sepContentTab.forEach(item=>{
+sepContentTabs.forEach(item=>{
     item.addEventListener('click', sepContentTabActivator)
 })
 
-let itm = document.getElementById("category-1-content");
-let test = itm.cloneNode(true);
-document.getElementById("tete").appendChild(test);
+/*** Dublicate Content ***/
+
+const categories = [];
+
+const forward = document.getElementById("tab-2");
+
+forward.addEventListener("click", function () {
+  
+  const catContent = document.querySelectorAll(".category-wrapp");
+
+  if (categories.length === 0) {
+    catContent.forEach((item) => {
+      const clonedContent = item.cloneNode(true);
+
+      categories.push({
+        element: item.parentElement,
+        content: clonedContent
+      });
+
+      item.parentNode.removeChild(item);
+      document.getElementById("separated-content-parts").appendChild(clonedContent);
+    });
+  }
+});
+
+const back = document.getElementById("tab-1");
+
+back.addEventListener("click", function () {
+    categories.forEach((category) => {
+      category.element.appendChild(category.content);
+    });
+    categories.length = 0;
+  });
+
+const services = [];
+const servicesForward = document.getElementById("sep-2");
+
+servicesForward.addEventListener("click", function () {
+
+    const servicesContent = document.querySelectorAll(".service-wrapp");
+
+    if (services.length === 0) {
+    
+        servicesContent.forEach((item) => {
+            const clonedContent = item.cloneNode(true);
+
+            services.push({
+                element: item.parentElement,
+                content: clonedContent
+            });
+
+            item.parentNode.removeChild(item);
+            document.getElementById("separated-service-parts").appendChild(clonedContent);
+        });
+    }
+
+
+})

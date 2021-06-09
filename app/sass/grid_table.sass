@@ -158,6 +158,10 @@
         &::before
             height: 0
             width: 0
+        .grid-table-row.category
+            &:last-child
+                border-bottom: none
+                margin-bottom: 0
 
 
     &.remove
@@ -257,3 +261,15 @@
     &.active
         display: block
         opacity: 1
+
+#separated-content-parts
+    margin-top: -16px
+    .category-wrapp
+        &::before
+            width: 0
+            height: 0
+        .grid-table-row
+            &:last-child
+                border-bottom: 0
+                margin-bottom: 0
+                
