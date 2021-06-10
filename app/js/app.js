@@ -149,6 +149,7 @@ sepContentTabs.forEach(item=>{
 /*** Dublicate Content ***/
 
 const categories = [];
+const services = [];
 
 const forward = document.getElementById("tab-2");
 
@@ -169,6 +170,24 @@ forward.addEventListener("click", function () {
       document.getElementById("separated-content-parts").appendChild(clonedContent);
     });
   }
+
+  const servicesContent = document.querySelectorAll(".service-wrapp");
+
+  if (services.length === 0) {
+    
+    servicesContent.forEach((item) => {
+        const clonedContent = item.cloneNode(true);
+
+        services.push({
+            element: item.parentElement,
+            content: clonedContent
+        });
+
+        item.parentNode.removeChild(item);
+        document.getElementById("separated-service-parts").appendChild(clonedContent);
+    });
+}
+
 });
 
 const back = document.getElementById("tab-1");
@@ -178,29 +197,59 @@ back.addEventListener("click", function () {
       category.element.appendChild(category.content);
     });
     categories.length = 0;
-  });
 
-const services = [];
-const servicesForward = document.getElementById("sep-2");
+    services.forEach((service) => {
+        service.element.prepend(service.content);
+      });
+    services.length = 0;
 
-servicesForward.addEventListener("click", function () {
+});
 
-    const servicesContent = document.querySelectorAll(".service-wrapp");
+/*** Показываем только выбраные сервисы/услуги ***/
 
-    if (services.length === 0) {
+const onlyChecked = document.getElementById('tab-3')
+
+const checkedInputs = [];
+
+onlyChecked.addEventListener('click', function(){
+
+   const servicesContent = document.querySelectorAll(".service-wrapp");
     
-        servicesContent.forEach((item) => {
-            const clonedContent = item.cloneNode(true);
+   if(checkedInputs.length === 0){
 
-            services.push({
-                element: item.parentElement,
-                content: clonedContent
-            });
+        servicesContent.forEach(item=>{
+            
+            const servElement = item.querySelector('.service-input-item'); 
+            
+                if(servElement.checked == true){
 
-            item.parentNode.removeChild(item);
-            document.getElementById("separated-service-parts").appendChild(clonedContent);
+                const checkedContent = item.cloneNode(true);
+
+                checkedInputs.push({
+                    element: item.parentElement,
+                    content: checkedContent
+                });
+
+                item.parentNode.removeChild(item);
+                    
+                    document.getElementById("onlychecked").appendChild(checkedContent);
+                }
         });
     }
+    
+});
 
+const tester = document.getElementById('tab-2')
 
-})
+tester.addEventListener("click", function () {
+
+    checkedInputs.forEach((item) => {
+      item.element.append(item.content);
+    });
+
+   // services.forEach((service) => {
+   //     service.element.prepend(service.content);
+    //  });
+   // services.length = 0;
+
+});
