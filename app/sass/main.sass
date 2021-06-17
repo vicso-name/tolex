@@ -30,6 +30,16 @@ body
     margin-right: auto
     margin-left: auto
 
+.page-title
+    font-size: 22px
+    font-style: normal
+    font-weight: 700
+    line-height: 27px
+    letter-spacing: 0em
+    text-align: left
+    margin-top: 24px
+    margin-bottom: 0
+
 .main-description  
     h2
         font-size: 21px
@@ -93,8 +103,8 @@ body
        .service-book
             display: inline-block
             margin-right: 30px
-            width: 230px
             height: 40px
+            padding-right: 13px
             line-height: 40px
             background-color: #bb261a
             font-size: 12px
@@ -107,11 +117,15 @@ body
             text-align: center
             span
                 display: block
-                padding-left: 34px
+                padding-left: 50px
                 background-image: url(../img/services_book.svg)
                 background-repeat: no-repeat
                 background-position-x: 16px
                 background-position-y: 12px
+            &.registration_repair
+                span
+                    background-image: url(../img/calendar.svg)
+
 .cart
     text-decoration: none
     margin-right: 25px
@@ -290,6 +304,9 @@ body
     width: 25px
     height: 25px 
     margin-right: 8px
+    &.profile-aside-icon
+        display: flex
+        align-items: center 
     &.maintenance
         &::before
             content: ""
@@ -339,6 +356,7 @@ body
 
 .wrapper-inner
     min-height: 100vh
+    overflow: hidden
     display: grid
     grid-template-columns: 141px 1fr
     grid-template-areas: "g-side g-main"
@@ -424,7 +442,10 @@ body
                                 height: 100%
                                 left: 98.5%
                                 background: #bb261a
-                            .type-icon    
+                            .type-icon
+                                &.profile-aside-icon
+                                    display: flex
+                                    align-items: center 
                                 &.maintenance
                                     &::before
                                         background-image: url(../img/types-icons/to-icon-red.svg)   
@@ -476,6 +497,8 @@ body
 
         &__header
             text-align: center
+            padding-right: 21px
+            padding-left: 21px
             figure
                 margin-bottom: 16px
                 img
@@ -1546,5 +1569,7 @@ body
                         background-repeat: no-repeat
                         background-position: center
 
-
+@import "slesrem"
+@import "profile"
+@import "service_book"
 @import "media"

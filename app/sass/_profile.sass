@@ -1,0 +1,149 @@
+.profile__content-guts
+    display: grid
+    grid-template-columns: 1fr 1fr
+    margin-top: 24px
+.item-profile-details 
+    h2
+        font-size: 15px
+        font-style: normal
+        font-weight: 700
+        line-height: 18px
+        letter-spacing: 0em
+        text-align: left
+        margin-bottom: 22px
+.item-profile-info
+    position: relative
+    &::before
+        content: ""
+        width: 1px
+        right: 6%
+        position: absolute
+        height: 100vh
+        background-color: #cdcdcd
+    h2
+        font-size: 15px
+        font-style: normal
+        font-weight: 700
+        line-height: 18px
+        letter-spacing: 0em
+        text-align: left
+        margin-bottom: 22px
+
+.car-details__wrapper
+    max-width: 653px
+    background-color: #EFEFEF
+    border-radius: 4px
+    padding-left: 25px
+    padding-right: 18px
+    padding-bottom: 29px
+    padding-top: 15px
+.car-details
+    display: flex
+    align-items: flex-end
+    padding-bottom: 13px
+    border-bottom: 1px solid #C8C8C8
+    margin-bottom: 18px
+    figure
+        margin: 0
+        margin-right: 22px
+        img
+            width: 132px 
+            height: 57px
+    .model-and-equipment
+        h3
+            font-size: 14px
+            font-style: normal
+            font-weight: 700
+            line-height: 1
+            letter-spacing: 0em
+            text-align: left
+            margin-bottom: 6px
+        p
+            font-size: 13px
+            font-style: normal
+            font-weight: 600
+            line-height: 16px
+            letter-spacing: 0em
+            text-align: left
+            margin: 0
+ 
+.profile-info-form-guts
+     display: flex
+.profile-info-form-wrapper
+    margin-right: 16px
+    &:last-child
+        margin-right: 0
+
+.car-details-form__inputs
+    display: flex  
+
+.car-details-form__input
+    display: flex
+    flex-direction: column
+    margin-right: 14px
+    &:last-child
+        margin-right: 0
+    label
+        font-size: 12px
+        color: #989898
+        margin-bottom: 10px
+        font-style: normal
+        font-weight: 600
+        line-height: 15px
+        letter-spacing: 0em
+        text-align: left
+    input
+        border: 1px solid #CDCDCD
+        border-radius: 4px
+        width: 190px
+        height: 40px
+        padding-left: 15px
+        &::placeholder
+            font-size: 14px
+            color: #000000
+            font-style: normal
+            font-weight: 500
+            line-height: 17px
+            letter-spacing: 0em
+            text-align: left
+        &:focus
+            outline: none
+
+.form-btn
+    margin-top: 20px
+    text-transform: uppercase
+    background-color: #fff
+    border: 1px solid #BB261A
+    width: 166px
+    height: 35px
+    border-radius: 50px
+    font-size: 11px
+    font-style: normal
+    font-weight: 700
+    line-height: 13px
+    letter-spacing: 0em
+    text-align: center
+
+.profile-info-form
+    .profile-info-form__item
+        display: flex
+        flex-direction: column
+        &:last-child
+            margin-top: 12px
+        label
+            font-size: 12px
+            color: #989898
+            margin-bottom: 10px
+            font-style: normal
+            font-weight: 600
+            line-height: 15px
+            letter-spacing: 0em
+            text-align: left
+        input
+            width: 318px
+            height: 40px
+            border: 1px solid #cdcdcd
+            border-radius: 4px
+            padding-left: 15px
+            &:focus
+                outline: none

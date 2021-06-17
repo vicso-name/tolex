@@ -1,0 +1,356 @@
+.server-book__content
+    &-guts
+        display: grid
+        grid-template-columns: 1fr 1fr
+        margin-top: 24px
+        .item-server-book
+            position: relative
+            &:first-child
+                &::before
+                    content: ''
+                    position: absolute
+                    right: 42px
+                    width: 1px
+                    height: 100% 
+                    background-color: #CDCDCD
+            h2
+                font-size: 22px
+                font-style: normal
+                font-weight: 700
+                line-height: 27px
+                letter-spacing: 0em
+                text-align: left
+                margin-bottom: 25px
+            &__guts
+                max-width: 652px
+.server-book__cars
+    display: flex
+
+.server-book__cars-item
+    cursor: pointer
+    border-radius: 4px
+    width: 153px
+    height: 88px
+    line-height: 88px
+    text-align: center
+    border: 1px solid #CDCDCD
+    margin-right: 17px
+    &:last-child
+        margin-right: 0
+    figure
+        margin: 0
+        img
+            width: 101px
+            height: 67px
+    &.active
+        position: relative
+        border: none
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+        &::before
+            content: ""
+            position: absolute
+            left: 50%
+            top: -16px
+            transform: translate(-50%)
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            background-color: #BB261A
+            background-image: url(../img/white-checker.svg)
+            background-position: center
+            background-size: 56%
+            background-repeat: no-repeat
+
+.detail-records
+    margin-top: 28px
+    h3
+        color: #000000
+        font-size: 15px
+        font-style: normal
+        font-weight: 700
+        line-height: 18px
+        letter-spacing: 0em
+        text-align: left
+        margin-bottom: 16px
+.staff
+    display: flex
+    justify-content: space-between
+    max-width: 721px
+    padding-bottom: 21px
+    border-bottom: 1px solid #CDCDCD
+.staff-item
+    display: flex
+    align-items: center
+    figure
+        margin: 0
+        margin-right: 9px
+        img
+            width: 40px
+            height: 40px
+            border-radius: 100%
+
+.staff-item__details
+    .staff-item__details-name
+        font-size: 13px
+        font-style: normal
+        font-weight: 700
+        line-height: 16px
+        letter-spacing: 0em
+        text-align: left
+    .staff-item__details-position 
+        font-size: 11px
+        font-style: normal
+        font-weight: 500
+        line-height: 13px
+        letter-spacing: 0em
+        text-align: left   
+
+
+.feedback-btn
+    background-color: transparent
+    text-transform: uppercase
+    color: #BB261A
+    border: 1px solid #BB261A
+    width: 167px
+    height: 40px
+    font-size: 12px
+    font-style: normal
+    font-weight: 700
+    line-height: 36px
+    letter-spacing: 0em
+    text-align: center
+    border-radius: 50px
+    transition: all ease .5s
+    &:hover
+        background-color: #BB261A
+        color: #ffffff
+
+
+.testimonials-window
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: #fff
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+    border-radius: 4px
+    width: 583px
+    max-width: 100%
+    height: 328px
+    max-height: 100%
+    z-index: 1010
+    &.closed
+        display: none
+        opacity: 0
+
+.testimonials-window-guts
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    padding-right: 30px
+    padding-left: 30px
+    padding-bottom: 40px
+    padding-top: 30px
+    h3
+        font-size: 16px
+        font-style: normal
+        font-weight: 700
+        line-height: 20px
+        letter-spacing: 0em
+        text-align: left
+        margin-bottom: 13px
+
+.testimonial-form
+    label
+        color: #989898
+        font-size: 12px
+        font-style: normal
+        font-weight: 600
+        line-height: 15px
+        letter-spacing: 0em
+        text-align: left
+        margin-bottom: 10px
+    textarea
+        width: 524px
+        height: 143px
+        border-radius: 4px
+        max-width: 100%
+        max-height: 100%
+        border: 1px solid #CDCDCD
+        padding-top: 12px
+        padding-left: 16px
+        resize: none
+        &::placeholder
+            color: #000000
+            font-size: 14px
+            font-style: normal
+            font-weight: 500
+            line-height: 17px
+            letter-spacing: 0em
+            text-align: left
+        &:focus
+            outline: none
+.testimonial-btn
+    width: 100%
+    height: 40px
+    margin-top: 10px
+    border: 1px solid #BB261A
+    color: #BB261A
+    text-transform: uppercase
+    font-size: 12px
+    font-style: normal
+    font-weight: 700
+    line-height: 15px
+    letter-spacing: 0em
+    text-align: center
+    border-radius: 50px
+    background-color: transparent
+    transition: all .5s ease
+    &:hover
+        color: #ffffff
+        background-color: #BB261A
+
+.modal-overlay
+    background: rgba(0, 0, 0, 0.6)
+    z-index: 1000
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    &.closed
+        display: none
+        opacity: 0
+
+.close-testimonials
+    position: absolute
+    z-index: 1011
+    cursor: pointer
+    right: 15px
+    top: 7px
+
+
+.rating
+    display: flex
+    align-items: center
+    padding-top: 18px
+    padding-bottom: 21px
+    max-width: 721px
+    border-bottom: 1px solid #CDCDCD
+    h3
+        font-size: 13px
+        font-style: normal
+        font-weight: 700
+        line-height: 16px
+        letter-spacing: 0em
+        text-align: left
+        margin: 0
+        margin-right: 13px
+    .rating-form
+        label
+            cursor: pointer
+            color: #000000
+            text-align: center
+            border-radius: 100%
+            display: inline-block
+            width: 23px
+            height: 23px
+            border: 1px solid #BB261A
+            font-size: 9px
+            font-style: normal
+            font-weight: 600
+            line-height: 20px
+            letter-spacing: 0em
+            transition: all .5s ease
+            &:hover
+                color: #ffffff
+                background-color: #BB261A
+        input
+            display: none
+            opacity: 0
+            &:checked + label
+                color: #ffffff
+                background-color: #BB261A
+
+.server-book__table
+    margin-top: 16px
+    max-width: 721px
+
+.serve-book-cat-label
+    font-weight: 700!important
+
+.serve-book-cat-item
+    padding-left: 10px!important
+
+.serv-cat
+    &.book-page
+        .service-wrapp
+            &::before
+                content: ""
+                position: absolute
+                width: 1px
+                height: 125%
+                left: 26px
+                top: 7px
+                background-color: #bb261a
+        .category-wrapp
+            &::before
+                height: 100%
+
+.grid-record-row
+    display: grid
+    grid-template-columns: 144px 84px 161px 1fr
+    .record__table-cell
+        font-size: 13px
+        font-style: normal
+        font-weight: 500
+        line-height: 16px
+        letter-spacing: 0em
+        &:last-child
+            text-align: right
+            padding-right: 28px
+        &:first-child
+            padding-left: 28px
+.record__table-header
+    border-top: 1px solid #CDCDCD
+    padding-top: 13.42px
+    padding-bottom: 13.58px
+    margin-right: 25px
+    margin-bottom: 15px
+.record__table-item
+    border-top: 1px solid #CDCDCD
+    padding-top: 13.42px
+    padding-bottom: 13.58px
+    margin-right: 14px
+.grid-record__items
+    max-height: 488px
+    overflow: auto
+    &::-webkit-scrollbar-track
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+        border-radius: 10px
+        background-color: #F5F5F5
+    &::-webkit-scrollbar
+        width: 12px
+        background-color: #F5F5F5
+    &::-webkit-scrollbar-thumb
+        border-radius: 10px
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+        background-color: #BB261A  
+    .grid-record-row
+        &.active
+            border-bottom: 3px solid #BB261A
+            background-color: #EFEFEF
+.record-price
+    font-weight: 700
+
+.sort-btn
+    cursor: pointer
+    margin-left: 3px
+    display: none
+    opacity: 0
+    &.active
+        display: inline-block
+        opacity: 1
+

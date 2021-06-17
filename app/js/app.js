@@ -1,3 +1,91 @@
+/** Testimon windows **/
+
+const openTestimModal = document.querySelector('.feedback-btn');
+const closeTestimModal = document.querySelector('.close-testimonials');
+const overModal = document.querySelector('#modal-overlay');
+const testimonModal = document.querySelector('.testimonials-window');
+
+if(openTestimModal !== null && closeTestimModal !== null && testimonModal !== null){
+    
+    closeTestimModal.addEventListener('click', function(){
+        testimonModal.classList.toggle("closed");
+        overModal.classList.toggle("closed");
+    })
+
+    openTestimModal.addEventListener('click', function(){
+        testimonModal.classList.toggle("closed");
+        overModal.classList.toggle("closed");
+    })
+}
+
+/** Testimon windows END **/
+
+/*** Sort Order ***/
+
+let recordWrapp = document.querySelector('#record__items');
+let recordItems = document.querySelectorAll('#record__items .grid-record-row');
+let ascBtn = document.querySelector('.sort-asc');
+let decsBtn = document.querySelector('.sort-dec');
+
+function ascending(){
+
+    let recordItemsArr = [...recordItems].sort(function(a, b){
+        
+        let cDate = a.dataset.date;
+        let c = new Date(cDate);
+
+        let dDate = b.dataset.date;
+        let d = new Date(dDate)
+        
+        return c - d;
+    })
+
+    recordWrapp.innerHTML = '';
+
+    for(let item of recordItemsArr ){
+      recordWrapp.appendChild(item)
+    } 
+}
+
+function descending(){
+
+    let recordItemsArr = [...recordItems].sort(function(a, b){
+        let cDate = a.dataset.date;
+        let c = new Date(cDate);
+        let dDate = b.dataset.date;
+        let d = new Date(dDate)
+        return d - c;
+    })
+
+    recordWrapp.innerHTML = '';
+
+    for(let item of recordItemsArr ){
+      recordWrapp.appendChild(item)
+    }   
+}
+
+if(ascBtn !== null && decsBtn !== null){
+
+    ascBtn.addEventListener('click', function(){
+        ascending();
+        this.classList.remove('active')
+        decsBtn.classList.add('active')
+    });
+
+    decsBtn.addEventListener('click', function(){
+        descending();
+        this.classList.remove('active')
+        ascBtn.classList.add('active')
+    });
+}
+
+
+
+
+
+
+/*** Sort Order END***/
+
 new fullpage('#fullPage', {
     autoScrolling: true,
     navigation: false
@@ -210,11 +298,13 @@ back.addEventListener("click", function () {
 const onlyChecked = document.getElementById('tab-3')
 
 const checkedInputs = [];
+const checkedParts = [];
 
 onlyChecked.addEventListener('click', function(){
 
    const servicesContent = document.querySelectorAll(".service-wrapp");
-    
+   const  partscheckedContent = document.querySelectorAll(".category-wrapp");
+   
    if(checkedInputs.length === 0){
 
         servicesContent.forEach(item=>{
@@ -230,12 +320,39 @@ onlyChecked.addEventListener('click', function(){
                     content: checkedContent
                 });
 
-                item.parentNode.removeChild(item);
-                    
+                    item.parentNode.removeChild(item);
                     document.getElementById("onlychecked").appendChild(checkedContent);
                 }
         });
     }
+
+    if(checkedParts.length === 0){
+        
+        partscheckedContent.forEach(item=>{
+
+            const partElement = item.querySelectorAll('.parts-input'); 
+            
+            
+            
+            partElement.forEach(item=>{
+
+                if(item.checked == true){
+
+                    const checkedPartContent = item.cloneNode(true);
+
+                    checkedParts.push({
+                        element: item.parentElement,
+                        content: checkedPartContent
+                    });
+                    item.parentNode.removeChild(item);
+                    document.getElementById("onlychecked").appendChild(checkedPartContent);
+                }
+            })
+            
+        });
+    }
+
+
     
 });
 
@@ -246,10 +363,5 @@ tester.addEventListener("click", function () {
     checkedInputs.forEach((item) => {
       item.element.append(item.content);
     });
-
-   // services.forEach((service) => {
-   //     service.element.prepend(service.content);
-    //  });
-   // services.length = 0;
 
 });
