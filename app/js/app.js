@@ -183,6 +183,25 @@ return datepicker.regional.ru;
 
 /*** Datepicker END ***/
 
+/*** Master Status ***/
+
+let freeStatus = document.querySelectorAll('.free-status');
+
+if( freeStatus !== null){
+    freeStatus.forEach(item=>{
+        item.addEventListener('mouseover', function(){
+           let test = item.getElementsByClassName('order-on')[0]
+           test.classList.add('active')
+        })
+        item.addEventListener('mouseleave', function(){
+            let test = item.getElementsByClassName('order-on')[0]
+            test.classList.remove('active')
+         })
+    })
+}
+
+/*** Master Status END ***/
+
 
 function inner_mileage_slider(){
 
