@@ -1,3 +1,183 @@
+/*** fullpage page function ***/
+
+new fullpage('#fullPage', {
+    autoScrolling: true,
+    navigation: false
+});
+
+/*** fullpage page function END***/
+
+/*** sidebar ***/
+
+let sideBar = document.querySelector('.aside');
+let contentWrapper = document.querySelector('.header-wrapper');
+
+if(sideBar && contentWrapper !== null){
+    window.addEventListener('load', function(){
+        sideBar.classList.add('active');
+        contentWrapper.classList.add('active');
+    });
+}
+
+/*** sidebar END ***/
+
+/*** Datepicker **/
+
+$( function() {
+    $("#datepicker").datepicker({
+        dateFormat: "dd.mm.yy"
+    });
+});
+
+( function( factory ) {
+	"use strict";
+
+	if ( typeof define === "function" && define.amd ) {
+		define( [ "../widgets/datepicker" ], factory );
+	} else {
+		factory( jQuery.datepicker );
+	}
+} )( function( datepicker ) {
+"use strict";
+datepicker.regional.ru = {
+	closeText: "Закрыть",
+	prevText: "&#x3C;Пред",
+	nextText: "След&#x3E;",
+	currentText: "Сегодня",
+	monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+	"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+	monthNamesShort: [ "Янв", "Фев", "Мар", "Апр", "Май", "Июн",
+	"Июл", "Авг", "Сен", "Окт", "Ноя", "Дек" ],
+	dayNames: [ "воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота" ],
+	dayNamesShort: [ "вск", "пнд", "втр", "срд", "чтв", "птн", "сбт" ],
+	dayNamesMin: [ "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб" ],
+	weekHeader: "Нед",
+	dateFormat: "dd.mm.yy",
+	firstDay: 1,
+	isRTL: false,
+	showMonthAfterYear: false,
+	yearSuffix: "" };
+datepicker.setDefaults( datepicker.regional.ru );
+
+return datepicker.regional.ru;
+
+} );
+
+/*** Datepicker END ***/
+
+/*** Master Status ***/
+
+let freeStatus = document.querySelectorAll('.master-status');
+
+if( freeStatus !== null){
+
+    freeStatus.forEach(item=>{
+
+        item.addEventListener('mouseover', function(){
+            let masterStatus = item.getAttribute('data-master-status');
+           
+            if(masterStatus == 'free'){
+                let orderOn = item.getElementsByClassName('order-on')[0]
+               orderOn.classList.add('active')
+            }
+        })
+        item.addEventListener('mouseleave', function(){
+            let orderOn = item.getElementsByClassName('order-on')[0]
+            orderOn.classList.remove('active')
+         })
+    })
+}
+
+/*** Master Status END ***/
+
+/*** mileage sliders ***/
+
+$('.mileage-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:7
+        }
+    }
+});
+
+$('.inner-mileage-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+
+function inner_mileage_slider(){
+
+    let innerMileageSlideItem = document.querySelectorAll('.inner-mileage__item');
+    
+    function selectItem(e) {
+        removeActiveClass();
+        this.classList.add('active');
+    }
+    
+    function removeActiveClass(){
+        innerMileageSlideItem.forEach(item=>{
+            item.classList.remove('active');
+        });
+    }
+
+    innerMileageSlideItem.forEach(item => {
+        item.addEventListener('click', selectItem);
+    });
+}
+
+inner_mileage_slider()
+
+/*** mileage sliders END ***/
+
+/*** mileage-input ***/
+
+let mileageInput = document.getElementById('mileage-input');
+let mileageDrop = document.querySelector('.mileage-drop');
+let mileageDropListItem = document.querySelectorAll('.mileage-drop__list-item');
+
+if(mileageInput !== null){
+    mileageInput.addEventListener('click', function(){
+        mileageDrop.classList.toggle('active')
+        this.classList.toggle('active')
+    });
+}
+
+if(mileageDropListItem !== null){
+    mileageDropListItem.forEach(item => {
+        item.addEventListener('click', function(){
+           let inputValue = item.getAttribute('data-mileage');
+           mileageInput.innerHTML = inputValue;
+           mileageInput.classList.remove('active');
+           mileageDrop.classList.remove('active')
+        })
+    })
+}
+
+/*** mileage-input END***/
+
 /** Testimon windows **/
 
 const openTestimModal = document.querySelector('.feedback-btn');
@@ -81,150 +261,6 @@ if(ascBtn !== null && decsBtn !== null){
 
 /*** Sort Order END***/
 
-new fullpage('#fullPage', {
-    autoScrolling: true,
-    navigation: false
-});
-
-let sideBar = document.querySelector('.aside');
-let contentWrapper = document.querySelector('.header-wrapper');
-
-if(sideBar && contentWrapper !== null){
-    window.addEventListener('load', function(){
-        sideBar.classList.add('active');
-        contentWrapper.classList.add('active');
-    });
-}
-
-$('.mileage-slider').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    dots:false,
-    responsive:{
-        0:{
-            items:2
-        },
-        600:{
-            items:4
-        },
-        1000:{
-            items:7
-        }
-    }
-});
-
-$('.inner-mileage-slider').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    dots:false,
-    responsive:{
-        0:{
-            items:2
-        },
-        600:{
-            items:4
-        },
-        1000:{
-            items:5
-        }
-    }
-});
-
-/*** Datepicker **/
-
-$( function() {
-    $("#datepicker").datepicker({
-        dateFormat: "dd.mm.yy"
-    });
-});
-
-/* Russian (UTF-8) initialisation for the jQuery UI date picker plugin. */
-/* Written by Andrew Stromnov (stromnov@gmail.com). */
-( function( factory ) {
-	"use strict";
-
-	if ( typeof define === "function" && define.amd ) {
-
-		// AMD. Register as an anonymous module.
-		define( [ "../widgets/datepicker" ], factory );
-	} else {
-
-		// Browser globals
-		factory( jQuery.datepicker );
-	}
-} )( function( datepicker ) {
-"use strict";
-
-datepicker.regional.ru = {
-	closeText: "Закрыть",
-	prevText: "&#x3C;Пред",
-	nextText: "След&#x3E;",
-	currentText: "Сегодня",
-	monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-	"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
-	monthNamesShort: [ "Янв", "Фев", "Мар", "Апр", "Май", "Июн",
-	"Июл", "Авг", "Сен", "Окт", "Ноя", "Дек" ],
-	dayNames: [ "воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота" ],
-	dayNamesShort: [ "вск", "пнд", "втр", "срд", "чтв", "птн", "сбт" ],
-	dayNamesMin: [ "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб" ],
-	weekHeader: "Нед",
-	dateFormat: "dd.mm.yy",
-	firstDay: 1,
-	isRTL: false,
-	showMonthAfterYear: false,
-	yearSuffix: "" };
-datepicker.setDefaults( datepicker.regional.ru );
-
-return datepicker.regional.ru;
-
-} );
-
-/*** Datepicker END ***/
-
-/*** Master Status ***/
-
-let freeStatus = document.querySelectorAll('.free-status');
-
-if( freeStatus !== null){
-    freeStatus.forEach(item=>{
-        item.addEventListener('mouseover', function(){
-           let test = item.getElementsByClassName('order-on')[0]
-           test.classList.add('active')
-        })
-        item.addEventListener('mouseleave', function(){
-            let test = item.getElementsByClassName('order-on')[0]
-            test.classList.remove('active')
-         })
-    })
-}
-
-/*** Master Status END ***/
-
-
-function inner_mileage_slider(){
-
-    let innerMileageSlideItem = document.querySelectorAll('.inner-mileage__item');
-    
-    function selectItem(e) {
-        removeActiveClass();
-        this.classList.add('active');
-    }
-    
-    function removeActiveClass(){
-        innerMileageSlideItem.forEach(item=>{
-            item.classList.remove('active');
-        });
-    }
-
-    innerMileageSlideItem.forEach(item => {
-        item.addEventListener('click', selectItem);
-    });
-}
-
-inner_mileage_slider()
-
 //Product Category
 
 const carretDown = document.querySelectorAll('.carret');
@@ -236,7 +272,6 @@ function rollCatItem(e){
     cathContent.classList.toggle('remove');
     this.classList.toggle('active');
 }
-
 
 carretDown.forEach(item=>{
     item.addEventListener('click', rollCatItem)
@@ -307,44 +342,49 @@ const services = [];
 
 const forward = document.getElementById("tab-2");
 
-forward.addEventListener("click", function () {
+if(forward !== null ){
+
+    forward.addEventListener("click", function () {
   
-  const catContent = document.querySelectorAll(".category-wrapp");
+        const catContent = document.querySelectorAll(".category-wrapp");
+      
+        if (categories.length === 0) {
 
-  if (categories.length === 0) {
-    catContent.forEach((item) => {
-      const clonedContent = item.cloneNode(true);
+          catContent.forEach((item) => {
+            const clonedContent = item.cloneNode(true);
+      
+            categories.push({
+              element: item.parentElement,
+              content: clonedContent
+            });
+      
+            item.parentNode.removeChild(item);
+            document.getElementById("separated-content-parts").appendChild(clonedContent);
+          });
 
-      categories.push({
-        element: item.parentElement,
-        content: clonedContent
-      });
-
-      item.parentNode.removeChild(item);
-      document.getElementById("separated-content-parts").appendChild(clonedContent);
-    });
-  }
-
-  const servicesContent = document.querySelectorAll(".service-wrapp");
-
-  if (services.length === 0) {
-    
-    servicesContent.forEach((item) => {
-        const clonedContent = item.cloneNode(true);
-
-        services.push({
-            element: item.parentElement,
-            content: clonedContent
-        });
-
-        item.parentNode.removeChild(item);
-        document.getElementById("separated-service-parts").appendChild(clonedContent);
-    });
+        }
+      
+        const servicesContent = document.querySelectorAll(".service-wrapp");
+        console.log(servicesContent)
+        if (services.length === 0) {
+          
+          servicesContent.forEach((item) => {
+              const clonedContent = item.cloneNode(true);
+      
+              services.push({
+                  element: item.parentElement,
+                  content: clonedContent
+              });
+      
+              item.parentNode.removeChild(item);
+              document.getElementById("separated-service-parts").appendChild(clonedContent);
+          });
+        }
+      
+    });  
 }
 
-});
-
-const back = document.getElementById("tab-1");
+let back = document.getElementById("tab-1");
 
 back.addEventListener("click", function () {
     categories.forEach((category) => {
@@ -359,6 +399,7 @@ back.addEventListener("click", function () {
 
 });
 
+
 /*** Показываем только выбраные сервисы/услуги ***/
 
 const onlyChecked = document.getElementById('tab-3')
@@ -366,68 +407,95 @@ const onlyChecked = document.getElementById('tab-3')
 const checkedInputs = [];
 const checkedParts = [];
 
-onlyChecked.addEventListener('click', function(){
+if(onlyChecked !== null){
 
-   const servicesContent = document.querySelectorAll(".service-wrapp");
-   const  partscheckedContent = document.querySelectorAll(".category-wrapp");
-   
-   if(checkedInputs.length === 0){
+    onlyChecked.addEventListener('click', function(){
 
-        servicesContent.forEach(item=>{
-            
-            const servElement = item.querySelector('.service-input-item'); 
-            
-                if(servElement.checked == true){
-
-                const checkedContent = item.cloneNode(true);
-
-                checkedInputs.push({
-                    element: item.parentElement,
-                    content: checkedContent
-                });
-
-                    item.parentNode.removeChild(item);
-                    document.getElementById("onlychecked").appendChild(checkedContent);
-                }
-        });
-    }
-
-    if(checkedParts.length === 0){
+        const servicesContent = document.querySelectorAll(".service-wrapp");
+        const  partscheckedContent = document.querySelectorAll(".category-wrapp");
         
-        partscheckedContent.forEach(item=>{
+        if(checkedInputs.length === 0){
+     
+             servicesContent.forEach(item=>{
+                 
+                 const servElement = item.querySelector('.service-input-item'); 
+                 
+                     if(servElement.checked == true){
+     
+                     const checkedContent = item.cloneNode(true);
+     
+                     checkedInputs.push({
+                         element: item.parentElement,
+                         content: checkedContent
+                     });
+     
+                         item.parentNode.removeChild(item);
+                         document.getElementById("onlychecked").appendChild(checkedContent);
+                     }
+             });
+         }
+     
+         //if(checkedParts.length === 0){
+             
+             //partscheckedContent.forEach(item=>{
+     
+             //    const partElement = item.querySelectorAll('.parts-input'); 
+             
+             //    partElement.forEach(item=>{
+     
+             ///        if(item.checked == true){
+     
+             //            const checkedPartContent = item.cloneNode(true);
+     
+             //            checkedParts.push({
+             //                element: item.parentElement,
+             //                content: checkedPartContent
+             ///            });
+             //            item.parentNode.removeChild(item);
+            //            document.getElementById("onlychecked").appendChild(checkedPartContent);
+             //        }
+             //    })
+                 
+            /// });
+         //}
+         
+     });
+}
 
-            const partElement = item.querySelectorAll('.parts-input'); 
-            
-            
-            
-            partElement.forEach(item=>{
 
-                if(item.checked == true){
-
-                    const checkedPartContent = item.cloneNode(true);
-
-                    checkedParts.push({
-                        element: item.parentElement,
-                        content: checkedPartContent
-                    });
-                    item.parentNode.removeChild(item);
-                    document.getElementById("onlychecked").appendChild(checkedPartContent);
-                }
-            })
-            
-        });
-    }
-
-
-    
-});
 
 const tester = document.getElementById('tab-2')
+if(tester !== null){
+    tester.addEventListener("click", function () {
 
-tester.addEventListener("click", function () {
-
-    checkedInputs.forEach((item) => {
-      item.element.append(item.content);
+        checkedInputs.forEach((item) => {
+          item.element.append(item.content);
+        });
+    
     });
+}
 
-});
+/*** Add new remont Item ***/
+
+let addRemont = document.querySelector('.add-remont');
+let newRem = document.getElementById('new-rem');
+
+if(addRemont !== null){
+    addRemont.addEventListener('click', function(){
+        newRem.classList.toggle('active')
+    })
+}
+
+let addTypeItem = document.querySelectorAll('.add-type__item');
+
+if(addTypeItem !== null){
+    addTypeItem.forEach(item=>{
+        item.addEventListener('click', function(){
+           let itemData = item.getAttribute('data-item-value') 
+           newRem.classList.remove('active')
+                     
+        })
+    })
+}
+
+

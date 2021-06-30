@@ -1,0 +1,108 @@
+.body-repaire
+    position: relative
+    margin-top: 37px
+
+.body-repaire__header
+    display: flex
+    flex-direction: column
+    align-items: center
+    .body-repaire__header-title
+        font-size: 18px
+        font-style: normal
+        font-weight: 700
+        line-height: 22px
+        letter-spacing: 0em
+        text-align: center
+    .body-repaire__header-list
+        position: relative
+        padding: 0
+        margin: 0
+        list-style-type: none
+        display: flex
+        margin-top: 20px
+        li
+            font-size: 15px
+            font-style: normal
+            font-weight: 700
+            line-height: 18px
+            letter-spacing: 0em
+            text-align: left
+            margin-right: 27px
+            &:last-child
+                margin-right: 0
+            svg
+                margin-right: 11px
+        &::after
+            content: ""
+            position: absolute
+            background-image: url('../img/rectangle .svg')
+            width: 18px
+            height: 3px
+            bottom: -18px
+            left: 50%
+            transform: translate(-50%)
+    .body-repaire__header-info
+        font-size: 15px
+        font-style: normal
+        font-weight: 500
+        line-height: 18px
+        letter-spacing: 0em
+        text-align: left
+        margin-top: 43px
+.body-repair__forms
+    display: flex
+    width: 911px
+    margin: 0 auto
+
+
+.body-repair__item
+    margin-right: 39px
+    cursor: pointer
+    &.front-car
+        width: 430px
+        height: 276px
+    &.back-car
+        width: 443px 
+        height: 266.47px
+    &:last-child
+        margin-right: 0
+
+.body-repair__img
+    width: 100%
+
+.popular-body__repaire
+    display: flex
+    justify-content: center
+    .popular-body__repaire-header
+        h3
+            font-size: 14px
+            font-style: normal
+            font-weight: 700
+            line-height: 17px
+            letter-spacing: 0em
+            text-align: center
+            margin-bottom: 20px
+
+.popular-body__repaire-content
+    display: flex
+       
+.popular-body__repaire-content_item
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 212px
+    height: 60px
+    background-color: #ffffff
+    border: 1px solid #D2D2D2
+    border-radius: 4px
+    margin-right: 14px
+    &:last-child
+        margin-right: 0
+    span
+        font-size: 14px
+        font-style: normal
+        font-weight: 700
+        line-height: 18px
+        letter-spacing: 0em
+        text-align: center
+

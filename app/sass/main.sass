@@ -30,6 +30,12 @@ body
     margin-right: auto
     margin-left: auto
 
+.label-item__wrapper
+    max-width: 330px    
+.label-item
+    display: inline
+    position: relative
+
 .page-title
     font-size: 22px
     font-style: normal
@@ -66,12 +72,17 @@ body
 
 .header
     border-bottom: 1px solid $border
+    z-index: 9
+    background-color: #ffffff
 
 .top-menu
     display: flex
     justify-content: space-between
     padding-top: 10px
     padding-bottom: 10px
+
+.top-menu__mobile
+    display: none
 
 .main-menu
     ul
@@ -93,6 +104,8 @@ body
 .header-info
     position: relative
     border-bottom: 1px solid $border
+    background-color: #ffffff
+    z-index: 9
     &__content
         display: flex
         justify-content: space-between
@@ -100,6 +113,9 @@ body
         padding-bottom: 18px
         padding-left: 25px
     &__item
+       .service-book__mobile
+           text-decoration: none
+           display: none
        .service-book
             display: inline-block
             margin-right: 30px
@@ -132,23 +148,10 @@ body
 .notifications
     position: relative
     text-decoration: none
-    margin-right: 30px
-    &::before
-        content: ""
-        position: absolute
-        right: -12px
-        height: 40px
-        width: 1px
-        background-color: $border
 
 .humburger
-    background-image: url(../img/humburger.svg)
-    background-size: cover
-    background-repeat: no-repeat
     border: none
     background-color: transparent
-    width: 26.25px
-    height: 17.5px
 
 /** contact styles **/
     
@@ -358,9 +361,12 @@ body
     min-height: 100vh
     overflow: hidden
     display: grid
-    grid-template-columns: 141px 1fr
+    grid-template-columns: 90px 1fr
     grid-template-areas: "g-side g-main"
     transition: all .8s ease
+    &.inner-pages
+        grid-template-columns: 148px 1fr
+
 
 .header-wrapper
     grid-area: g-main
@@ -376,7 +382,7 @@ body
     transform: translateX(-141px)
     transition: all 0.8s
     background-color:#131313
-    width: 141px
+    width: 90px
     padding-top: 21px
     padding-bottom: 43px
     &.active
@@ -497,8 +503,8 @@ body
 
         &__header
             text-align: center
-            padding-right: 15px
-            padding-left: 15px
+            padding-right: 9px
+            padding-left: 9px
             figure
                 margin-bottom: 16px
                 img
@@ -506,7 +512,7 @@ body
             h1
                 color: #ffffff
                 text-transform: uppercase
-                font-size: 13px
+                font-size: 9px
                 font-style: normal
                 font-weight: 700
                 line-height: 16px
@@ -530,7 +536,9 @@ body
                 text-decoration: none
                 width: 123px
                 height: 35px
-
+.aside
+    &.grid-item
+        width: 148px
 .sidebar-total
     display: flex
     justify-content: center
@@ -575,6 +583,9 @@ body
             text-align: left
 
 /*** Stepper ***/       
+.stepper-mobile__wrapper
+    display: none
+    opacity: 0
 
 .stepper
     position: relative 
@@ -648,6 +659,139 @@ body
             &:hover
                 background-color: #DEDEDE
                 
+.stepper-mobile
+    position: relative
+    background-color: #131313
+    width: 96%
+    margin: 0 auto
+    border-radius: 4px
+    z-index: 9
+    margin-top: 15px
+    .stepper-mobile__logo
+        position: absolute
+        width: 34px
+        height: 34px
+        left: 50%
+        top: -17px
+        transform: translate(-50%)
+    .stepper-mobile__title
+        width: 250px
+        margin: 0 auto
+        padding-top: 35px
+        padding-bottom: 41px
+        color: #ffffff
+        text-transform: uppercase
+        font-size: 13px
+        font-style: normal
+        font-weight: 700
+        line-height: 16px
+        letter-spacing: 0em
+        text-align: center
+
+.stepper-mobile__menu
+    position: relative
+    z-index: 99
+    width: 96%
+    margin: 0 auto
+    ul
+        padding: 0
+        margin: 0
+        list-style-type: none
+        display: flex
+        li
+            margin-top: 6px
+            position: relative
+            width: 30px
+            background-color: #ffffff
+            text-align: center
+            a
+                margin-top: 14px
+                font-size: 9px
+                font-style: normal
+                font-weight: 600
+                line-height: 11px
+                letter-spacing: 0em
+                text-align: left
+                color:#9E9E9E
+                text-decoration: none
+                writing-mode: tb-rl
+                transform: rotate(180deg)
+            .model-type
+                line-height: 0
+                font-size: 9px
+                color: #BB261A
+                font-style: normal
+                font-weight: 700
+                line-height: 5px
+                letter-spacing: 0em
+                text-align: left
+            &.inactive
+                &::before
+                    content: ""
+                    position: absolute
+                    top: -17px
+                    left: 0
+                    border: 7px solid #ffffff
+                    background-color: #DEDEDE
+                    background-repeat: no-repeat
+                    background-position: center
+                    width: 30px
+                    height: 30px
+                    border-radius: 100%
+                .model-type
+                    display: none
+
+            &.active
+                margin-left: 9px
+                text-align: left
+                padding-left: 11px
+                padding-top: 14px
+                width: 240px
+                height: 55px
+                border-radius: 4px
+                background-color: #EFEFEF
+                &::before
+                    content: ""
+                    position: absolute
+                    top: -17px
+                    border: 3px solid #ffffff
+                    background-color: #000000
+                    background-image: url(../img/fi_check.svg)
+                    background-repeat: no-repeat
+                    background-position: center
+                    width: 30px
+                    height: 30px
+                    border-radius: 100%
+                a
+                    writing-mode: unset
+                    font-size: 11px
+                    text-decoration: none
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 13px
+                    letter-spacing: 0em
+                    text-align: left
+                    color: #000000
+            &.choosed
+                width: 20px
+                margin-right: 4px
+                &::before
+                    content: ""
+                    position: absolute
+                    top: -12px
+                    left: 50%
+                    transform: translate(-50%)
+                    border: 3px solid #fff
+                    background-image: url(../img/choosed_check.svg)
+                    background-color: #bb261a
+                    background-repeat: no-repeat
+                    background-position: center
+                    width: 20px
+                    height: 20px
+                    border-radius: 100%
+                .model-type
+                    display: none
+
 
 .ordering-title
     margin-top: -15px                    
@@ -663,7 +807,12 @@ body
     letter-spacing: 0.03em
 
 /*** Model Catalog ***/
-
+.choose-modele-title
+    font-size: 22px
+    font-style: normal
+    font-weight: 700
+    line-height: 27px
+    text-align: left
 .model-catalog
     margin-top: 27px
     &__content
@@ -681,13 +830,7 @@ body
             height: 103px
             background-position: left
             background-repeat: no-repeat
-            background-size: 75%
-        h2
-            font-size: 22px
-            font-style: normal
-            font-weight: 700
-            line-height: 27px
-            text-align: left
+            background-size: contain            
         &-grid
             display: grid
             grid-template-columns: repeat(5, 1fr)
@@ -784,7 +927,9 @@ body
     margin-bottom: 16px
 
 .type-selector
-    display: flex
+    display: grid
+    grid-gap: 16px
+    grid-template-columns: repeat(4, 1fr)
     padding: 0
     list-style-type: none
     margin-top: 30px
@@ -797,7 +942,6 @@ body
         border-radius: 4px
         text-align: center
         border: 1px solid #D2D2D2
-        margin-right: 16px
         transition: all .5s ease
         &:last-child
             margin-right: 0
@@ -1569,6 +1713,95 @@ body
                         background-repeat: no-repeat
                         background-position: center
 
+.mileage-drop
+    display: none
+    opacity: 0
+    &.active
+        opacity: 1
+        display: block
+.mileage-input__wrapper
+    border-bottom: 1px solid #CDCDCD
+.mileage-value 
+    #mileage-input
+        position: relative
+        cursor: pointer
+        width: 230px
+        border: none
+        border-bottom: 2px solid #BB261A
+        text-align: center
+        color: #A1A1A1
+        &::after
+            content: "KM"
+            position: absolute
+            margin-left: 4px
+        &::before
+            content: ""
+            background-image: url(../img/milage_down.svg)
+            background-repeat: no-repeat
+            position: absolute
+            right: 5px
+            top: 8px
+            width: 8px
+            height: 8px
+        &.active
+            &::before
+                top: 5px
+                transform: rotate(180deg)
+
+        &::placeholder
+            font-size: 15px
+            font-style: normal
+            font-weight: 600
+            line-height: 18px
+            letter-spacing: 0em
+            text-align: center
+            color: #A1A1A1
+        &:focus
+            outline: none
+        
+
+.mileage-drop__list
+    height: 280px
+    overflow: auto
+    padding: 0
+    margin: 0
+    margin-top: 15px
+    background-color: #fff
+    list-style-type: none
+    width: 230px
+    text-align: center
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
+    border-radius: 4px
+    padding-top: 15px
+    padding-bottom: 15px
+    &::-webkit-scrollbar-track
+        background-color: transparent
+    &::-webkit-scrollbar
+        width: 8px
+        background-color: #F5F5F5
+    &::-webkit-scrollbar-thumb
+        border-radius: 50px
+        background-color: #cccccc
+    li
+        font-size: 15px
+        font-style: normal
+        font-weight: 600
+        line-height: 18px
+        letter-spacing: 0em
+        text-align: center
+        padding-top: 13px
+        padding-bottom: 13px
+        width: 196px
+        margin: 0 auto
+        border-radius: 4px
+        cursor: pointer
+        transition: all .5s ease
+        &:hover
+            background-color:#BB261A
+            color: #ffffff
+
+            
+
 @import "slesrem"
 @import "profile"
 @import "service_book"
@@ -1576,4 +1809,7 @@ body
 @import "registration"
 @import "ordering"
 @import "recordtable"
+@import "slesarnuj"
+@import "body"
+@import "mobile"
 @import "media"

@@ -3,7 +3,206 @@
         background-color: #fff
     .model-catalog__content-grid
         grid-template-columns: repeat(4,1fr)
-
+    .type-selector li
+        width: 189px
+    .model-photo__wrapp::before
+        width: 186px
+        height: 186px
+    .model-photo__wrapp
+        width: 245px
+        height: auto
+    .popular-repairs__grid
+        grid-template-columns: repeat(5,1fr)
 @media (max-width: 1200px)
     .model-catalog__content-grid
         grid-template-columns: repeat(3,1fr)
+    .stepper-content__item-title
+        font-size: 13px
+    .type-selector
+        grid-template-columns: repeat(2,1fr)
+    .popular-repairs__grid
+        grid-template-columns: repeat(5,1fr)
+@media (max-width: 1024px)
+    .stepper-content__item-title
+        font-size: 13px!important
+    .stepper-content
+        padding-left: 0!important
+        padding-right: 0!important
+    .header-wrapper
+        padding-left: 20px!important
+    .service-book
+        display: none!important
+    .service-book__mobile
+        display: inline-block!important
+        margin-right: 15px
+    .model-catalog__content-grid li
+        margin-bottom: 0!important
+    .stepper
+        margin-right: 0!important
+        padding-left: 15px
+        padding-right: 15px
+    .popular-repairs__grid
+        grid-template-columns: repeat(3,1fr)
+
+@media (max-width: 768px)
+    body
+        background-image: none!important
+
+    .wrapper-inner
+        overflow: inherit
+    .mobile-logo
+        width: 175px
+    .header-info
+        border-bottom: none
+    .top-menu
+        display: none
+    .header-info__item
+        display: none
+        &.mobile-version
+            display: block
+        &.phone-contact
+            display: block
+    .service-book
+        display: none!important
+    .top-menu__mobile
+        display: flex!important
+        align-items: center
+        justify-content: space-between
+        padding-top: 10px
+        padding-bottom: 12px
+    .cart
+        margin-right: 19px
+    .header-info__item-content
+        display: -webkit-box!important
+        padding-left: 95px
+    .selection-block__item-content .toyota
+        width: 178px
+        height: 114.55px
+    .selection-block__item-content .lexsus
+        width: 186px
+        height: 116px
+    .stepper-content__item-title
+        font-size: 11px!important
+
+    .header-info__content
+        justify-content: center!important    
+    .wrapper-inner
+        grid-template-columns: 0
+    .aside
+        display: none!important 
+    .stepper
+        display: none
+    .stepper-mobile__wrapper
+        display: block!important
+        opacity: 1!important
+
+    .breadcrumbs
+        display: none!important
+    .header-wrapper
+        padding-left: 0!important 
+    .model-catalog__content-grid
+        grid-template-columns: repeat(3, 1fr )    
+
+    .header-info__item-content .phone-number
+        margin-right: 38px!important
+    .container-fluid.mobile-slider
+        overflow: auto
+        max-width: 320px
+
+    .choose-modele-title
+        display: none
+
+    .mileage-value
+        margin-bottom: 6px
+
+    .model-presentation::before
+        width: 0
+    .select__fixing-type_guts
+        flex-direction: column
+    .model-presentation
+        margin: 0 auto
+    .select__fixt-type
+        max-width: 420px
+        margin: 0 auto
+    .select__fixt-type-title
+        margin-top: 22px
+    .mileage-value #mileage-input
+        width: 100%
+    .mileage-drop__list
+        width: 100%
+
+    .wrapper-inner.inner-pages
+        grid-template-columns: max-content
+
+@media (max-width: 570px)
+    
+    .mobile-logo
+        width: 100px
+
+    .container-fluid
+        padding-right: 5px
+        padding-left: 5px
+
+    .main-title h1
+        font-size: 18px
+        margin-bottom: 50px
+
+    .main-title h1 span
+        font-size: 18px
+
+    .selection-block__item.toyota::before
+        content: ""
+        position: absolute
+        height: 0
+        top: 27px
+        width: 0
+
+    .selection-block__item-content .toyota
+        width: 118px
+        height: 76px 
+
+    .selection-block__item-content .lexsus
+        width: 149px
+        height: 92px
+        margin-top: -200px
+
+    .selection-block
+        grid-template-columns: 1fr
+
+    .model-catalog__content-grid li
+        margin-bottom: 30px!important
+
+    .model-catalog__content-grid li h3
+        text-align: center
+
+    .model-catalog__content-img
+        background-position: center!important
+
+    .model-catalog__content-grid
+        grid-template-columns: repeat(1, 1fr ) 
+
+    .stepper-mobile__menu ul li.active
+        width: 185px
+    .type-selector li
+        width: 149px
+        height: 72px
+    .type-selector__item-guts-title
+        font-size: 11px
+    .type-selector li.active::before
+        left: 19%
+    .model-photo__wrapp
+        width: 118px
+        margin: 0 auto
+    .model-photo__wrapp::before
+        width: 85px
+        height: 85px
+    .select__fixing-type
+        margin-top: 23px
+    .model-presentation h2
+        font-size: 16px
+    .select__fixt-type-title
+        font-size: 16px
+    .mileage-value-title
+        font-size: 16px
+
+    
