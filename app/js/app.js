@@ -1,3 +1,49 @@
+/*** Body Repair Part Chooser ***/
+
+$("body").on('click', '#car area', function(event) {
+
+    event.preventDefault();
+    closeDetailPopup();
+
+    let $this = $(this),
+		id = $this.data('id'),
+        name = $this.attr('title')
+		parent = $this.closest('.body-repair__item'),
+		popup = $('.calc-detail-popup'),  
+		showPopup = false;
+	let addwork = true;
+
+
+    if(parent.find('.calc__car-works--' +  id ).length ) {
+        addwork = false;
+        popup.append(parent.find('.calc__car-works--' +  id ));
+        showPopup = true;
+    }
+
+    if(showPopup){
+        popup.css({left: event.pageX,
+        top: event.pageY}).slideDown(100);
+    }
+
+    $(window).on('scroll', function(event) {
+        closeDetailPopup();   
+    });
+
+    $("body").on('click', '.calc-detail-popup', function(event) {
+        closeDetailPopup();
+    });
+
+
+ })
+
+ function closeDetailPopup() {
+    let popup = $('.calc-detail-popup');
+    popup.slideUp(100);
+ }
+    
+    
+/*** Body Repair Part Chooser END ***/
+
 /*** fullpage page function ***/
 
 new fullpage('#fullPage', {
@@ -6,6 +52,17 @@ new fullpage('#fullPage', {
 });
 
 /*** fullpage page function END***/
+
+
+/**** Maphilight ****/
+
+$(function($) {
+
+    $('.image-map').maphilight();
+    
+});
+
+/**** Maphilight END ****/
 
 /*** sidebar ***/
 
@@ -497,5 +554,9 @@ if(addTypeItem !== null){
         })
     })
 }
+
+
+
+
 
 

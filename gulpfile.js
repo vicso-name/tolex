@@ -25,6 +25,7 @@ function scripts() {
 		'node_modules/owl.carousel/dist/owl.carousel.js',
 		'app/libs/jquery-ui/jquery-ui.js',
 		'app/libs/fullpage/fullpage.js',
+		'app/libs/maphilight/jquery.maphilight.min.js',
 		'app/js/app.js',
 		])
 	.pipe(concat('app.min.js'))

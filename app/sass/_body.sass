@@ -1,5 +1,4 @@
 .body-repaire
-    position: relative
     margin-top: 37px
 
 .body-repaire__header
@@ -51,7 +50,7 @@
         margin-top: 43px
 .body-repair__forms
     display: flex
-    width: 911px
+    width: 644.6px
     margin: 0 auto
 
 
@@ -59,11 +58,11 @@
     margin-right: 39px
     cursor: pointer
     &.front-car
-        width: 430px
-        height: 276px
+        width: 308.19px
+        height: 198.28px
     &.back-car
-        width: 443px 
-        height: 266.47px
+        width: 308.19px
+        height: 198.28px
     &:last-child
         margin-right: 0
 
@@ -105,4 +104,68 @@
         line-height: 18px
         letter-spacing: 0em
         text-align: center
+        
+//calc detail popup
+.calc__car-works
+    display: none
 
+.calc-detail-popup
+    //display: none
+    padding-top: 16px
+    padding-bottom: 14px
+    padding-left: 14px
+    padding-right: 24px
+    border-radius: 4px
+    min-width: 170px
+    max-width: 250px
+    position: absolute
+    z-index: 999
+    height: auto
+    background-color: #fff
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
+    .calc__car-works
+        display: block
+.calc__car-works-item
+    margin-bottom: 11px
+    label
+        position: relative
+        color: #000000
+        font-size: 11px
+        font-style: normal
+        font-weight: 600
+        line-height: 13px
+        letter-spacing: 0em
+        text-align: left
+        padding-left: 25px
+        cursor: pointer
+    input
+        display: none
+        & + label
+            &::before
+                content: ""
+                display: block
+                position: absolute
+                width: 20px
+                height: 20px
+                -webkit-border-radius: 3px
+                border-radius: 100%
+                left: 0
+                top: -3px
+                border: 1px solid #C8C8C8
+        &:checked
+            & + label
+                color: #BB261A 
+                &::after
+                    content: ""
+                    position: absolute
+                    width: 10px
+                    height: 10px
+                    border-radius: 100%
+                    top: 2px
+                    left: 5px
+                    background: #BB261A 
+                    background-repeat: no-repeat
+                    background-position: center
+.calc__car-works-item
+    &:last-child
+        margin-bottom: 0       
