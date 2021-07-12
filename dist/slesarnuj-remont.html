@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css">
+    <title>Выбор типа ремонта</title>
+</head>
+<body>
+    <div class="wrapper-inner inner-pages">
+
+        <aside class="aside grid-item">
+            <div class="aside-content">
+                <div class="aside-content__header">
+                    <figure>
+                        <img src="img/aside-logo.jpg" alt="aside-logo">
+                    </figure>
+                    <h1>Сервисный калькулятор TOLEX TUNING</h1>
+                </div>
+                <div class="aside-content__tabs">
+                    <div class="aside-content__tabs-title">
+                        <h2>Тип ремонта</h2>
+                    </div>
+                    <div class="aside-content__tabs-main">
+                        <ul>
+                            <li >
+                                <a href="#"> 
+                                    <span class="type-icon maintenance"></span> 
+                                    <span class="type-icon__title">
+                                        ТО
+                                        <span class="rem-price">
+                                            <span id="to-sidebar-total" >0</span>
+                                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.00584 0H1.68755V4.1616H1.23755V5.5116H1.68755V6.11262H1.23755V7.46262H1.68755V9H3.03755V7.46262H4.72505V6.11262H3.03755V5.5125H5.00621C6.52614 5.5125 7.76255 4.27607 7.76255 2.75634C7.76255 1.23643 6.52612 0 5.00584 0ZM5.00639 4.1625H3.03755V4.1616V1.34982H5.00639C5.78183 1.34982 6.41272 1.98072 6.41272 2.75616C6.41272 3.5316 5.78183 4.1625 5.00639 4.1625Z" fill="#BB261A"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                   
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#"> 
+                                    <span class="type-icon metalwork"></span> 
+                                    <span class="type-icon__title">Слесарный
+                                        <span class="rem-price">
+                                            <span id="smith-sidebar-total">8500</span>
+                                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.00584 0H1.68755V4.1616H1.23755V5.5116H1.68755V6.11262H1.23755V7.46262H1.68755V9H3.03755V7.46262H4.72505V6.11262H3.03755V5.5125H5.00621C6.52614 5.5125 7.76255 4.27607 7.76255 2.75634C7.76255 1.23643 6.52612 0 5.00584 0ZM5.00639 4.1625H3.03755V4.1616V1.34982H5.00639C5.78183 1.34982 6.41272 1.98072 6.41272 2.75616C6.41272 3.5316 5.78183 4.1625 5.00639 4.1625Z" fill="#BB261A"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                   
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <span class="type-icon body-repair"></span> 
+                                    <span class="type-icon__title">Кузовной
+                                        <span class="rem-price">
+                                            <span id="body-sidebar-total">0</span>
+                                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.00584 0H1.68755V4.1616H1.23755V5.5116H1.68755V6.11262H1.23755V7.46262H1.68755V9H3.03755V7.46262H4.72505V6.11262H3.03755V5.5125H5.00621C6.52614 5.5125 7.76255 4.27607 7.76255 2.75634C7.76255 1.23643 6.52612 0 5.00584 0ZM5.00639 4.1625H3.03755V4.1616V1.34982H5.00639C5.78183 1.34982 6.41272 1.98072 6.41272 2.75616C6.41272 3.5316 5.78183 4.1625 5.00639 4.1625Z" fill="#BB261A"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <span class="type-icon transmission-repair"></span>
+                                    <span class="type-icon__title">АКПП
+                                        <span class="rem-price">
+                                            <span id="trans-sidebar-total">0</span>
+                                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.00584 0H1.68755V4.1616H1.23755V5.5116H1.68755V6.11262H1.23755V7.46262H1.68755V9H3.03755V7.46262H4.72505V6.11262H3.03755V5.5125H5.00621C6.52614 5.5125 7.76255 4.27607 7.76255 2.75634C7.76255 1.23643 6.52612 0 5.00584 0ZM5.00639 4.1625H3.03755V4.1616V1.34982H5.00639C5.78183 1.34982 6.41272 1.98072 6.41272 2.75616C6.41272 3.5316 5.78183 4.1625 5.00639 4.1625Z" fill="#BB261A"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                    
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        <div class="sidebar-total">
+                           <span>Итого: </span> 
+                            <span id="sidebar-total-price">9 342</span>
+                            <svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.00584 0H0.687549V4.1616H0.237549V5.5116H0.687549V6.11262H0.237549V7.46262H0.687549V9H2.03755V7.46262H3.72505V6.11262H2.03755V5.5125H4.00621C5.52614 5.5125 6.76255 4.27607 6.76255 2.75634C6.76255 1.23643 5.52612 0 4.00584 0ZM4.00639 4.1625H2.03755V4.1616V1.34982H4.00639C4.78183 1.34982 5.41272 1.98072 5.41272 2.75616C5.41272 3.5316 4.78183 4.1625 4.00639 4.1625Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="aside-content__footer">
+                    <figure>
+                        <img src="img/logo-tolex-tuning.png" alt="logo-tolex-tuning">
+                    </figure>
+                    <a class="on-map" href="#">мы на карте</a>
+                </div>
+            </div>
+        </aside>
+
+        <!--BEGIN header-->
+        <div class="header-wrapper">
+
+            <!--BEGIN header-->
+        <header class="header">
+
+            <div class="container-fluid">
+                <div class="top-menu">
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Спецпредложения и акции</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button id="write-director" class="write-director" type="button"><span>Написать директору</span></button>
+                </div>
+
+                
+                <div class="top-menu__mobile">
+                    <button class="humburger" type="button">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.25 6.5L16.25 6.5L16.25 8.66667L3.25 8.66666L3.25 6.5ZM3.25 11.9167L22.75 11.9167L22.75 14.0833L3.25 14.0833L3.25 11.9167ZM3.25 17.3333L16.25 17.3333L16.25 19.5L3.25 19.5L3.25 17.3333Z" fill="black"/>
+                        </svg>
+                    </button>
+                    <img class="mobile-logo" src="img/logo-tolex.png" alt="logo-tolex">
+                    
+                    <div class="header-info__item mobile-version">
+                        <a class="service-book__mobile" href="#">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 19.9999H4C2.93052 20.0319 2.03642 19.1933 2 18.1239V5.87494C2.03641 4.80575 2.93068 3.96737 4 3.99994H20C21.0693 3.96737 21.9636 4.80575 22 5.87494V18.1249C21.963 19.1939 21.0691 20.032 20 19.9999ZM4 5.99994V17.9889L20 17.9999V6.01094L4 5.99994ZM13.43 15.9999H6C6.07353 15.172 6.46534 14.4049 7.093 13.8599C7.79183 13.1667 8.73081 12.7691 9.715 12.7499C10.6992 12.7691 11.6382 13.1667 12.337 13.8599C12.9645 14.405 13.3563 15.1721 13.43 15.9999ZM18 14.9999H15V12.9999H18V14.9999ZM9.715 11.9999C9.17907 12.0186 8.65947 11.8138 8.28029 11.4347C7.9011 11.0555 7.69638 10.5359 7.715 9.99994C7.69668 9.4641 7.9015 8.94468 8.28062 8.56556C8.65974 8.18644 9.17916 7.98162 9.715 7.99994C10.2508 7.98162 10.7703 8.18644 11.1494 8.56556C11.5285 8.94468 11.7333 9.4641 11.715 9.99994C11.7336 10.5359 11.5289 11.0555 11.1497 11.4347C10.7705 11.8138 10.2509 12.0186 9.715 11.9999ZM18 10.9999H14V8.99994H18V10.9999Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                        <a class="cart" href="#">
+                            <img src="img/cart_active.svg" alt="cart">
+                        </a>
+                        <a class="notifications" href="#">
+                            <img src="img/notification_none.svg" alt="cart">
+                        </a>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+        
+        <div class="header-info">
+
+            <div class="container-fluid mobile-slider">
+                <div class="header-info__content">
+
+                    <div class="header-info__item phone-contact">
+                        <div class="header-info__item-content">
+                            <div class="phone-number">
+                                <h5 class="phone-number__title">Toyota на Мосфильме</h5>
+                                <a href="tel:84951533379" class="phone-number__content">8(495)153-33-79</a>
+                            </div>
+                            <div class="phone-number">
+                                <h5 class="phone-number__title">Toyota на Cущевке</h5>
+                                <a href="tel:84951531163" class="phone-number__content">8(495)153-11-63</a>
+                            </div>
+                            <div class="phone-number">
+                                <h5 class="phone-number__title">Toyota на Таганке</h5>
+                                <a href="tel:84951535998" class="phone-number__content">8(495)153-59-98</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-info__item">
+                        <a class="service-book" href="#"><span>Моя сервисная книга</span></a>
+                        <a class="service-book__mobile" href="#">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 19.9999H4C2.93052 20.0319 2.03642 19.1933 2 18.1239V5.87494C2.03641 4.80575 2.93068 3.96737 4 3.99994H20C21.0693 3.96737 21.9636 4.80575 22 5.87494V18.1249C21.963 19.1939 21.0691 20.032 20 19.9999ZM4 5.99994V17.9889L20 17.9999V6.01094L4 5.99994ZM13.43 15.9999H6C6.07353 15.172 6.46534 14.4049 7.093 13.8599C7.79183 13.1667 8.73081 12.7691 9.715 12.7499C10.6992 12.7691 11.6382 13.1667 12.337 13.8599C12.9645 14.405 13.3563 15.1721 13.43 15.9999ZM18 14.9999H15V12.9999H18V14.9999ZM9.715 11.9999C9.17907 12.0186 8.65947 11.8138 8.28029 11.4347C7.9011 11.0555 7.69638 10.5359 7.715 9.99994C7.69668 9.4641 7.9015 8.94468 8.28062 8.56556C8.65974 8.18644 9.17916 7.98162 9.715 7.99994C10.2508 7.98162 10.7703 8.18644 11.1494 8.56556C11.5285 8.94468 11.7333 9.4641 11.715 9.99994C11.7336 10.5359 11.5289 11.0555 11.1497 11.4347C10.7705 11.8138 10.2509 12.0186 9.715 11.9999ZM18 10.9999H14V8.99994H18V10.9999Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                        <div id="cart-btn" class="cart">
+                            <img src="img/cart_active.svg" alt="cart">
+                        </div>
+                        <a class="notifications" href="#">
+                            <img src="img/notification_none.svg" alt="cart">
+                        </a>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--END header-->
+
+            <!-- Step by Step -->
+            <section class="stepper">
+                    <ul class="stepper-content">
+
+                        <li id="brand_selection" class="stepper-content__item">
+                            <a href="#" class="step-link">
+                                <div class="stepper-content__item-wrapper">
+                                    <div class="step-count">Шаг 1</div>
+                                    <div class="stepper-content__item-title">Выбор марки</div>
+                                    <div id="stepper_brand" class="stepper-content__item-subtitle">Toyota</div> 
+                                </div>
+                            </a>
+                        </li>
+
+                        <li id="model_selection" class="stepper-content__item">
+                            <a href="#" class="step-link">
+                                <div class="stepper-content__item-wrapper">
+                                    <div class="step-count">Шаг 2</div>
+                                    <div class="stepper-content__item-title">Выбор модели</div>
+                                    <div id="stepper_model" class="stepper-content__item-subtitle">Land Cruiser 200</div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li id="choice_equipment" class="stepper-content__item">
+                            <a href="#" class="step-link">
+                                <div class="stepper-content__item-wrapper">
+                                    <div class="step-count">Шаг 3</div>
+                                    <div class="stepper-content__item-title">Выбор комплектации</div>
+                                    <div id="stepper_equipment" class="stepper-content__item-subtitle">с 2015 по н.в. LС 200 4.5d А</div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li id="repair_type" class="stepper-content__item active">
+                            <a href="#" class="step-link">
+                                <div class="stepper-content__item-wrapper">
+                                    <div class="step-count">Шаг 4</div>
+                                    <div class="stepper-content__item-title">Тип ремонта</div>
+                                    <div id="stepper_type" class="stepper-content__item-subtitle">Слесарынй ремонт</div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li id="ordering" class="stepper-content__item inactive">
+                            <a href="#" class="step-link">
+                                <div class="stepper-content__item-wrapper">
+                                    <div class="step-count">Шаг 5</div>
+                                    <div class="ordering-title stepper-content__item-title">Оформление заказа</div>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+            </section>
+            <!-- Step by Step END-->
+
+            <!-- Breadscrumbs -->
+            <section class="breadcrumbs">
+                <div class="kama_breadcrumbs">
+                    <span>
+                        <a href="#">
+                            <span>Калькулятор</span>
+                        </a>
+                    </span>
+                    <span class="kb_sep">/</span>
+                    <span>
+                        <a href="#">
+                            <span>Land Cruiser 200</span>
+                        </a>
+                    </span>
+                    <span class="kb_sep">/</span>
+                    <span>
+                        <a href="#">
+                            <span>с 2015 по н.в. LС 200 4.5d АКПП</span>
+                        </a>
+                    </span>
+                    <span class="kb_sep">/</span>
+                    <span class="kb_title">Слесарный ремонт</span>
+                </div>
+            </section>
+            <!-- Breadscrumbs END-->
+
+            <!-- Content -->
+            <section class="locksmith-repair__form-wrapper">
+
+                <form class="locksmith-repair__form">
+                    <div class="locksmith-repair__form-item">
+
+                        <div class="locksmith-repair__form-item__header">
+                            <h2>Слесарный ремонт <span>Toyota Land Cruiser 200</span></h2>
+                        </div>
+
+
+                        <div class="add-type__wrapper">
+
+                            <div class="add-type" data-type="">
+                                <div class="add-type__inner">
+                                    <div class="sles-rem-icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.6875 18.75C13.4813 18.75 12.5 17.7687 12.5 16.5625V8.35438C11.3344 7.61125 10.625 6.33313 10.625 4.93375C10.625 3.4025 11.4738 2.0175 12.84 1.31813C13.0344 1.21938 13.2656 1.2275 13.4512 1.34125C13.6369 1.45563 13.75 1.65688 13.75 1.875V4.57688L14.6875 4.95188L15.625 4.57688V1.875C15.625 1.65688 15.7381 1.45563 15.9238 1.34125C16.1094 1.2275 16.3406 1.21938 16.535 1.31813C17.9012 2.01813 18.75 3.4025 18.75 4.93438C18.75 6.33313 18.0406 7.61125 16.875 8.355V16.5625C16.875 17.7687 15.8938 18.75 14.6875 18.75ZM12.5 3.16625C12.1019 3.65688 11.875 4.27563 11.875 4.93375C11.875 5.9925 12.4631 6.95188 13.41 7.43688C13.6187 7.54375 13.75 7.75875 13.75 7.99313V16.5625C13.75 17.0794 14.1706 17.5 14.6875 17.5C15.2044 17.5 15.625 17.0794 15.625 16.5625V7.99313C15.625 7.75875 15.7563 7.54375 15.965 7.43688C16.9119 6.95188 17.5 5.99313 17.5 4.93438C17.5 4.27625 17.2731 3.6575 16.875 3.16688V5C16.875 5.25563 16.7194 5.485 16.4825 5.58063L14.92 6.20563C14.7706 6.26563 14.605 6.26563 14.4556 6.20563L12.8931 5.58063C12.6556 5.485 12.5 5.25563 12.5 5V3.16625Z" fill="black"></path>
+                                            <path d="M10.6712 18.75H9.32938C8.68 18.75 8.1325 18.2431 8.08312 17.5962L8.00437 16.5744C7.57562 16.4444 7.16062 16.2719 6.76375 16.0594L5.985 16.7262C5.49188 17.1494 4.74688 17.12 4.28813 16.6619L3.33812 15.7113C2.87937 15.2525 2.85063 14.5069 3.27312 14.0138L3.94 13.2356C3.7275 12.8387 3.555 12.4237 3.425 11.995L2.40375 11.9169C1.75687 11.8681 1.25 11.3206 1.25 10.6712V9.32875C1.25 8.67937 1.75687 8.13188 2.40437 8.0825L3.42562 8.00437C3.55562 7.575 3.72812 7.16 3.94062 6.76375L3.27312 5.98438C2.85063 5.49187 2.87937 4.74688 3.33875 4.28688L4.2875 3.3375C4.74688 2.87813 5.4925 2.85 5.985 3.2725L6.76375 3.93937C7.16062 3.72688 7.57562 3.55438 8.00437 3.42438L8.08312 2.4025C8.1325 1.75688 8.68 1.25 9.32875 1.25H10C10.345 1.25 10.625 1.52938 10.625 1.875C10.625 2.22062 10.345 2.5 10 2.5H9.32875L9.21625 3.96312C9.195 4.23563 8.99937 4.4625 8.73375 4.52375C8.12937 4.66313 7.55437 4.90125 7.025 5.23313C6.79437 5.37875 6.495 5.35688 6.28687 5.1775L5.17125 4.22188L4.2225 5.17187L5.17812 6.28687C5.35625 6.49438 5.37813 6.79375 5.23313 7.025C4.90188 7.555 4.66313 8.13 4.52375 8.73375C4.4625 9 4.235 9.19563 3.9625 9.21625L2.5 9.32875V10.6712L3.9625 10.7837C4.235 10.8044 4.4625 11.0006 4.52375 11.2662C4.66313 11.8706 4.90125 12.4456 5.23313 12.975C5.37813 13.2063 5.35562 13.5056 5.17812 13.7131L4.2225 14.8281L5.17187 15.7781L6.28687 14.8225C6.495 14.6438 6.79437 14.6219 7.025 14.7669C7.555 15.0981 8.13 15.3369 8.73375 15.4762C9 15.5381 9.19563 15.765 9.21625 16.0369L9.32875 17.5H10.6706C10.6969 17.1562 10.9962 16.8994 11.3419 16.925C11.6862 16.9513 11.9437 17.2519 11.9169 17.5962C11.8675 18.2431 11.32 18.75 10.6712 18.75Z" fill="black"></path>
+                                            <path d="M5.625 10C5.625 7.85375 7.15875 6.03937 9.27187 5.68562C9.61125 5.625 9.935 5.85812 9.99125 6.19875C10.0481 6.53938 9.81875 6.86125 9.47812 6.91813C7.97 7.17125 6.875 8.4675 6.875 10C6.875 12.1581 9.01875 13.6631 11.0419 12.9475C11.3656 12.8319 11.7244 13.0019 11.84 13.3275C11.955 13.6531 11.785 14.01 11.4594 14.125C8.61375 15.1319 5.625 13.01 5.625 10Z" fill="black"></path>
+                                        </svg>   
+                                    </div>
+                                    <span class="add-type__inner-text">Добавьте тип ремонта...</span>
+                                </div> 
+                                <div class="add-remont">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#BB261A"></circle>
+                                        <path d="M19.9999 29.1667C14.9373 29.1667 10.8333 25.0627 10.8333 20C10.8333 14.9374 14.9373 10.8334 19.9999 10.8334C25.0625 10.8334 29.1666 14.9374 29.1666 20C29.161 25.0603 25.0602 29.1611 19.9999 29.1667ZM12.6666 20.1577C12.71 24.1922 16.0043 27.4338 20.0389 27.4122C24.0736 27.3904 27.3328 24.1136 27.3328 20.0789C27.3328 16.0442 24.0736 12.7673 20.0389 12.7455C16.0043 12.724 12.71 15.9656 12.6666 20V20.1577ZM20.9166 24.5834H19.0833V20.9167H15.4166V19.0834H19.0833V15.4167H20.9166V19.0834H24.5833V20.9167H20.9166V24.5834Z" fill="white"></path>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                            <div id="new-rem" class="add-type__content-wrapper">
+
+                                <ul class="add-type__content">
+                                    <li class="add-type__item" data-item-value="Редуктор заднего моста">Редуктор заднего моста</li>
+                                    <li class="add-type__item" data-item-value="Ременной привод">Ременной привод</li>
+                                    <li class="add-type__item" data-item-value="Задний амортизатор">Задний амортизатор</li>
+                                    <li class="add-type__item" data-item-value="Тормозные диски перед">Тормозные диски перед</li>
+                                    <li class="add-type__item" data-item-value="Задний амортизатор">Задний амортизатор</li>
+                                    <li class="add-type__item" data-item-value="Редуктор заднего моста"></li>
+                                    <li class="add-type__item" data-item-value="Ременной привод">Ременной привод</li>
+                                    <li class="add-type__item" data-item-value="Задний амортизатор"></li>
+                                    <li class="add-type__item" data-item-value="Тормозные диски перед">Тормозные диски перед</li>
+                                    <li class="add-type__item" data-item-value="Редуктор заднего моста">Редуктор заднего моста</li>
+                                </ul>
+
+                            </div>
+                            
+                        </div>
+
+                        <div class="remont-choosed">
+                            <div class="remont-choosed__guts">
+
+                                <div id="" class="remont-choosed__item">
+                                    <div class="deleted-choosed__item">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.99159 0.833252L4.99992 3.82492L2.00825 0.833252L0.833252 2.00825L3.82492 4.99992L0.833252 7.99159L2.00825 9.16659L4.99992 6.17492L7.99159 9.16659L9.16659 7.99159L6.17492 4.99992L9.16659 2.00825L7.99159 0.833252Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <h3>Задний амортизатор</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="order-section">
+                            <div class="order-section__content">
+                                <div class="order-section__content-header">
+                                    <h2>Гарантия <span>24 месяца</span></h2>
+                                    <span class="dilers-varanty-save">Дилерская гарантия сохраняется!</span>
+                                </div>
+                                <div class="order-details">
+                                    <h3>Стоимость: <span class="totla-price">9 342</span>
+                                        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.89914 0H0.999951V7.39841H0.199951V9.79841H0.999951V10.8669H0.199951V13.2669H0.999951V16H3.39995V13.2669H6.39995V10.8669H3.39995V9.8H6.8998C9.60189 9.8 11.8 7.60191 11.8 4.90016C11.8 2.19809 9.60186 0 6.89914 0ZM6.90011 7.4H3.39995V7.39841V2.39969H6.90011C8.27867 2.39969 9.40026 3.52128 9.40026 4.89984C9.40026 6.27841 8.27867 7.4 6.90011 7.4Z" fill="#BB261A"></path>
+                                        </svg>
+                                    </h3>
+                                    <!--
+                                    <h4>Ваша скидка: <span class="totla-sale">1 143</span>
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.56199 0H1.875V4.624H1.375V6.124H1.875V6.7918H1.375V8.2918H1.875V10H3.375V8.2918H5.25V6.7918H3.375V6.125H5.5624C7.25121 6.125 8.625 4.75119 8.625 3.0626C8.625 1.37381 7.25119 0 5.56199 0ZM5.5626 4.625H3.375V4.624V1.4998H5.5626C6.4242 1.4998 7.1252 2.2008 7.1252 3.0624C7.1252 3.924 6.4242 4.625 5.5626 4.625Z" fill="#BB261A"/>
+                                        </svg>
+                                    </h4> -->
+                                    <h5>Цена актуальная на 31.05.2021</h5> 
+                                    <input class="first-time" type="checkbox" id="first-time" name="first-time">
+                                    <label class="first-time__label" for="first-time">
+                                        <p>Первый раз у нас?</p>
+                                    </label>
+
+                                    <div class="billing-btns">
+                                        <button type="button">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 20.1667C5.93743 20.1667 1.83337 16.0627 1.83337 11C1.83337 5.93743 5.93743 1.83337 11 1.83337C16.0627 1.83337 20.1667 5.93743 20.1667 11C20.1611 16.0603 16.0603 20.1611 11 20.1667ZM3.66671 11.1577C3.71008 15.1922 7.00439 18.4338 11.039 18.4122C15.0737 18.3904 18.333 15.1136 18.333 11.0789C18.333 7.04417 15.0737 3.76733 11.039 3.74554C7.00439 3.72396 3.71008 6.96557 3.66671 11V11.1577ZM11.9167 15.5834H10.0834V11.9167H6.41671V10.0834H10.0834V6.41671H11.9167V10.0834H15.5834V11.9167H11.9167V15.5834Z" fill="white"></path>
+                                            </svg>
+                                            В заказ
+                                        </button>
+                                        <a href="#">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.8334 18.3333H4.16669V16.6666H15.8334V18.3333ZM10 15L5.00002 9.99996L6.17502 8.82496L9.16669 11.8083V1.66663H10.8334V11.8083L13.825 8.82496L15 9.99996L10 15Z" fill="#BB261A"></path>
+                                            </svg>
+                                            Скачать счет
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-section-imgs">
+                                <div class="order-section-imgs_logo">
+                                    <img src="img/tolx.png" alt="tolex-logo">
+                                </div>
+                                <div class="order-section-imgs_car">
+                                    <img src="img/model-photo.png" alt="car-img">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="locksmith-repair__form-item">
+                        <div class="calcultor-form__item">
+                            <div class="locksmith-repair__form-item__header">
+                                <h2>Детализация Вашего ремонта</h2>
+                            </div>
+    
+                            <div class="detailing-repair__tabs">
+                                <div class="general-and-separate">
+                                    <button class="detailing-repair-btn active" id="tab-1" type="button">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.66666 2.50004L1.66666 17.5C1.66666 17.7211 1.75445 17.933 1.91073 18.0893C2.06701 18.2456 2.27898 18.3334 2.49999 18.3334H17.5C17.721 18.3334 17.933 18.2456 18.0892 18.0893C18.2455 17.933 18.3333 17.7211 18.3333 17.5V2.50004C18.3333 2.27903 18.2455 2.06706 18.0892 1.91079C17.933 1.75451 17.721 1.66671 17.5 1.66671H2.49999C2.27898 1.66671 2.06701 1.75451 1.91073 1.91079C1.75445 2.06706 1.66666 2.27903 1.66666 2.50004ZM16.6667 13.3334V16.6667H3.33332V13.3334H16.6667ZM16.6667 8.33337V11.6667H3.33332L3.33332 8.33337L16.6667 8.33337ZM16.6667 3.33337V6.66671L3.33332 6.66671V3.33337L16.6667 3.33337Z" fill="#BB261A"></path>
+                                        </svg> Общий
+                                    </button>
+                                    <button class="detailing-repair-btn" id="tab-2" type="button">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.66666 2.50004L1.66666 17.5C1.66666 17.7211 1.75445 17.933 1.91073 18.0893C2.06701 18.2456 2.27898 18.3334 2.49999 18.3334H17.5C17.721 18.3334 17.933 18.2456 18.0892 18.0893C18.2455 17.933 18.3333 17.7211 18.3333 17.5V2.50004C18.3333 2.27903 18.2455 2.06706 18.0892 1.91079C17.933 1.75451 17.721 1.66671 17.5 1.66671H2.49999C2.27898 1.66671 2.06701 1.75451 1.91073 1.91079C1.75445 2.06706 1.66666 2.27903 1.66666 2.50004ZM16.6667 13.3334V16.6667H3.33332V13.3334H16.6667ZM16.6667 8.33337V11.6667H3.33332L3.33332 8.33337L16.6667 8.33337ZM16.6667 3.33337V6.66671L3.33332 6.66671V3.33337L16.6667 3.33337Z" fill="#BB261A"></path>
+                                        </svg>
+                                        Запчасти и услуги отдельно
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="tabs-content">
+                                <!-- Общая информация о заказе начало -->
+                                    <div id="tab-1-content" class="tab-content active">
+    
+                                        <div id="grid-table" class="grid-table">
+                                           
+                                            <!-- Шапка таблицы -->
+                                            <div class="grid-table-row table-header">
+                                                <div class="grid-table-cell">Наименование</div>
+                                                <div class="grid-table-cell">Бренд</div>
+                                                <div class="grid-table-cell">Кол-во</div>
+                                                <div class="grid-table-cell">Цена</div>
+                                            </div>
+                                            <!-- Шапка таблицы конец -->
+    
+                                            <div class="serv-cat">
+    
+                                                <div class="grid-table-row service-wrapp">
+                                                    
+                                                    <div id="service-1-content" class="grid-table-cell service">
+                                                        <div class="label-item__wrapper">
+                                                            <div class="label-item">
+                                                                <input class="service-input-item" type="checkbox" name="serice-1" id="serice-1" checked="">
+                                                                <label for="serice-1">Амортизатор задний левый - замена</label>
+                                                                <!-- Item info -->
+                                                                <div class="info-section">
+                                                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M6.50065 13.0013C2.91207 12.9974 0.00394093 10.0892 0 6.50066V6.37065C0.0714626 2.79824 3.01278 -0.0468214 6.58559 0.0005839C10.1584 0.0479892 13.0232 2.97008 12.9999 6.54313C12.9765 10.1162 10.0738 13.0006 6.50065 13.0013ZM6.49025 11.7012H6.50065C9.3718 11.6983 11.6974 9.36922 11.696 6.49806C11.6945 3.62691 9.3666 1.30014 6.49545 1.30014C3.6243 1.30014 1.29637 3.62691 1.29493 6.49806C1.29349 9.36922 3.6191 11.6983 6.49025 11.7012ZM7.15071 10.401H5.85058V9.10092H7.15071V10.401ZM7.15071 8.45086H5.85058C5.83004 7.60425 6.27062 6.81321 7.0012 6.38495C7.43024 6.05602 7.80078 5.77259 7.80078 5.20053C7.80078 4.48249 7.21869 3.9004 6.50065 3.9004C5.78261 3.9004 5.20052 4.48249 5.20052 5.20053H3.90039V5.14202C3.91084 4.21304 4.4161 3.3602 5.22585 2.90476C6.0356 2.44932 7.02681 2.46047 7.82611 2.93401C8.62541 3.40756 9.11136 4.27155 9.10091 5.20053C9.05436 5.90196 8.67815 6.53983 8.08681 6.91995C7.55226 7.25551 7.2058 7.82212 7.15071 8.45086Z" fill="#BB261A"></path>
+                                                                    </svg>
+                                                                    <div class="info-section__content">
+                                                                        <div class="info-section__content-img">
+                                                                            <img src="img/info-img.jpg" alt="img">
+                                                                        </div>
+                                                                        <div class="info-section__content-description">
+                                                                            <p>Замен амортизатора, согласно регламента рекомендовано каждые 10000 км.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Item info END-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="grid-table-cell">
+                                                        <span class="cell-brand"></span>
+                                                    </div>
+                                                    <div class="grid-table-cell">
+                                                        <span class="cell-quantity">1</span>
+                                                    </div>
+                                                    <div class="grid-table-cell">
+                                                        <span class="cell-price service-price">380
+                                                            <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+    
+                                                    <div id="category-1" class="carret"></div>
+    
+                                                </div>
+    
+                                                <div id="category-1-content" class="category-wrapp">
+    
+                                                    <div class="grid-table-row category">
+                                                        <div class="grid-table-cell service-cathegory">
+                                                            <div class="label-item__wrapper">
+                                                                <div class="label-item">
+                                                                    <input class="parts-input" type="radio" name="servcat-1" checked="" id="servcat-1-1">
+                                                                    <label for="servcat-1-1">Амортизатор задний - Cartech</label>
+                                                                    <!-- Item info -->
+                                                                    <div class="info-section">
+                                                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M6.50065 13.0013C2.91207 12.9974 0.00394093 10.0892 0 6.50066V6.37065C0.0714626 2.79824 3.01278 -0.0468214 6.58559 0.0005839C10.1584 0.0479892 13.0232 2.97008 12.9999 6.54313C12.9765 10.1162 10.0738 13.0006 6.50065 13.0013ZM6.49025 11.7012H6.50065C9.3718 11.6983 11.6974 9.36922 11.696 6.49806C11.6945 3.62691 9.3666 1.30014 6.49545 1.30014C3.6243 1.30014 1.29637 3.62691 1.29493 6.49806C1.29349 9.36922 3.6191 11.6983 6.49025 11.7012ZM7.15071 10.401H5.85058V9.10092H7.15071V10.401ZM7.15071 8.45086H5.85058C5.83004 7.60425 6.27062 6.81321 7.0012 6.38495C7.43024 6.05602 7.80078 5.77259 7.80078 5.20053C7.80078 4.48249 7.21869 3.9004 6.50065 3.9004C5.78261 3.9004 5.20052 4.48249 5.20052 5.20053H3.90039V5.14202C3.91084 4.21304 4.4161 3.3602 5.22585 2.90476C6.0356 2.44932 7.02681 2.46047 7.82611 2.93401C8.62541 3.40756 9.11136 4.27155 9.10091 5.20053C9.05436 5.90196 8.67815 6.53983 8.08681 6.91995C7.55226 7.25551 7.2058 7.82212 7.15071 8.45086Z" fill="#BB261A"></path>
+                                                                        </svg>
+                                                                        <div class="info-section__content">
+                                                                            <div class="info-section__content-img">
+                                                                                <img src="img/info-img.jpg" alt="img">
+                                                                            </div>
+                                                                            <div class="info-section__content-description">
+                                                                                <p>Замена салонного фильтра, согласно регламента рекомендовано каждые 10000 км.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Item info END-->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="grid-table-cell">
+                                                            <span class="cell-brand">
+                                                                <img src="img/logo-toyota.png" alt="brand-logo">
+                                                            </span>
+                                                        </div>
+                                                        <div class="grid-table-cell">
+                                                            <span class="cell-quantity">1</span>
+                                                        </div>
+                                                        <div class="grid-table-cell">
+                                                            <span class="cell-price">380
+                                                                <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid-table-row category">
+                                                        <div class="grid-table-cell service-cathegory">
+                                                            
+                                                            <div class="label-item__wrapper">
+                                                                <div class="label-item">
+                                                                    <input class="parts-input" type="radio" name="servcat-1" id="servcat-1-2">
+                                                                    <label for="servcat-1-2">Амортизатор задний - AMD</label>
+                                                                    <!-- Item info -->
+                                                                    <div class="info-section">
+                                                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M6.50065 13.0013C2.91207 12.9974 0.00394093 10.0892 0 6.50066V6.37065C0.0714626 2.79824 3.01278 -0.0468214 6.58559 0.0005839C10.1584 0.0479892 13.0232 2.97008 12.9999 6.54313C12.9765 10.1162 10.0738 13.0006 6.50065 13.0013ZM6.49025 11.7012H6.50065C9.3718 11.6983 11.6974 9.36922 11.696 6.49806C11.6945 3.62691 9.3666 1.30014 6.49545 1.30014C3.6243 1.30014 1.29637 3.62691 1.29493 6.49806C1.29349 9.36922 3.6191 11.6983 6.49025 11.7012ZM7.15071 10.401H5.85058V9.10092H7.15071V10.401ZM7.15071 8.45086H5.85058C5.83004 7.60425 6.27062 6.81321 7.0012 6.38495C7.43024 6.05602 7.80078 5.77259 7.80078 5.20053C7.80078 4.48249 7.21869 3.9004 6.50065 3.9004C5.78261 3.9004 5.20052 4.48249 5.20052 5.20053H3.90039V5.14202C3.91084 4.21304 4.4161 3.3602 5.22585 2.90476C6.0356 2.44932 7.02681 2.46047 7.82611 2.93401C8.62541 3.40756 9.11136 4.27155 9.10091 5.20053C9.05436 5.90196 8.67815 6.53983 8.08681 6.91995C7.55226 7.25551 7.2058 7.82212 7.15071 8.45086Z" fill="#BB261A"></path>
+                                                                        </svg>
+                                                                        <div class="info-section__content">
+                                                                            <div class="info-section__content-img">
+                                                                                <img src="img/info-img.jpg" alt="img">
+                                                                            </div>
+                                                                            <div class="info-section__content-description">
+                                                                                <p>Замена салонного фильтра, согласно регламента рекомендовано каждые 10000 км.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Item info END-->
+                                                                </div>
+                                                            </div>
+    
+                                                        </div>
+                                                        <div class="grid-table-cell">
+                                                            <span class="cell-brand">
+                                                                <img src="img/logo-toyota.png" alt="brand-logo">
+                                                            </span>
+                                                        </div>
+                                                        <div class="grid-table-cell">
+                                                            <span class="cell-quantity">1</span>
+                                                        </div>
+                                                        <div class="grid-table-cell">
+                                                            <span class="cell-price">380
+                                                                <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid-table-row category">
+                                                        <div class="grid-table-cell service-cathegory">
+                                                            
+                                                            <div class="label-item__wrapper">
+                                                                <div class="label-item">
+                                                                    <input class="parts-input" type="radio" name="servcat-1" id="servcat-1-3">
+                                                                    <label for="servcat-1-3">Фильтр салона гипоалергенный - Cartech</label>
+                                                                    <!-- Item info -->
+                                                                    <div class="info-section">
+                                                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M6.50065 13.0013C2.91207 12.9974 0.00394093 10.0892 0 6.50066V6.37065C0.0714626 2.79824 3.01278 -0.0468214 6.58559 0.0005839C10.1584 0.0479892 13.0232 2.97008 12.9999 6.54313C12.9765 10.1162 10.0738 13.0006 6.50065 13.0013ZM6.49025 11.7012H6.50065C9.3718 11.6983 11.6974 9.36922 11.696 6.49806C11.6945 3.62691 9.3666 1.30014 6.49545 1.30014C3.6243 1.30014 1.29637 3.62691 1.29493 6.49806C1.29349 9.36922 3.6191 11.6983 6.49025 11.7012ZM7.15071 10.401H5.85058V9.10092H7.15071V10.401ZM7.15071 8.45086H5.85058C5.83004 7.60425 6.27062 6.81321 7.0012 6.38495C7.43024 6.05602 7.80078 5.77259 7.80078 5.20053C7.80078 4.48249 7.21869 3.9004 6.50065 3.9004C5.78261 3.9004 5.20052 4.48249 5.20052 5.20053H3.90039V5.14202C3.91084 4.21304 4.4161 3.3602 5.22585 2.90476C6.0356 2.44932 7.02681 2.46047 7.82611 2.93401C8.62541 3.40756 9.11136 4.27155 9.10091 5.20053C9.05436 5.90196 8.67815 6.53983 8.08681 6.91995C7.55226 7.25551 7.2058 7.82212 7.15071 8.45086Z" fill="#BB261A"></path>
+                                                                        </svg>
+                                                                        <div class="info-section__content">
+                                                                            <div class="info-section__content-img">
+                                                                                <img src="img/info-img.jpg" alt="img">
+                                                                            </div>
+                                                                            <div class="info-section__content-description">
+                                                                                <p>Замена салонного фильтра, согласно регламента рекомендовано каждые 10000 км.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Item info END-->
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+    
+                                                        <div class="grid-table-cell">
+                                                            <span class="cell-brand">
+                                                                <img src="img/logo-toyota.png" alt="brand-logo">
+                                                            </span>
+                                                        </div>
+                                                        <div class="grid-table-cell">
+                                                            <span class="cell-quantity">1</span>
+                                                        </div>
+                                                        <div class="grid-table-cell">
+                                                            <span class="cell-price">380
+                                                                <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.06199 0H1.375V4.624H0.875V6.124H1.375V6.7918H0.875V8.2918H1.375V10H2.875V8.2918H4.75V6.7918H2.875V6.125H5.0624C6.75121 6.125 8.125 4.75119 8.125 3.0626C8.125 1.37381 6.75119 0 5.06199 0ZM5.0626 4.625H2.875V4.624V1.4998H5.0626C5.9242 1.4998 6.6252 2.2008 6.6252 3.0624C6.6252 3.924 5.9242 4.625 5.0626 4.625Z" fill="#BB261A"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div id="total-price" class="total-value">
+                                                Сумма: <span class="total-price">863</span>
+                                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6.78672 0H1.62493V6.47361H0.924927V8.57361H1.62493V9.50852H0.924927V11.6085H1.62493V14H3.72493V11.6085H6.34993V9.50852H3.72493V8.575H6.78729C9.15162 8.575 11.0749 6.65167 11.0749 4.28764C11.0749 1.92333 9.15159 0 6.78672 0ZM6.78756 6.475H3.72493V6.47361V2.09973H6.78756C7.99381 2.09973 8.9752 3.08112 8.9752 4.28736C8.9752 5.49361 7.99381 6.475 6.78756 6.475Z" fill="#BB261A"></path>
+                                                </svg>
+                                            </div>
+                                            
+                                        </div>
+    
+                                        
+    
+                                    
+                                    </div>
+                                <!-- Общая информация о заказе конец -->
+    
+                                <!-- Запчасти и услуги начало -->
+                                    <div id="tab-2-content" class="tab-content">
+                                        
+                                        <ul class="sep-content__tabs">
+                                            <li id="sep-1" class="sep-content__tab active">Запчасти</li>
+                                            <li id="sep-2" class="sep-content__tab">Услуги</li>
+                                        </ul>
+    
+                                        <div class="sep-contents">
+    
+                                            <div id="sep-1-content" class="sep-content-item active">
+                                                
+                                                <div class="grid-table">
+    
+                                                    <div class="tabs-content">
+                                                        <div class="grid-table-row table-header">
+                                                            <div class="grid-table-cell">Наименование</div>
+                                                            <div class="grid-table-cell">Бренд</div>
+                                                            <div class="grid-table-cell">Кол-во</div>
+                                                            <div class="grid-table-cell">Цена</div>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div id="separated-content-parts"></div>
+    
+                                                </div>
+                                                
+                                            </div>
+    
+                                            <div id="sep-2-content" class="sep-content-item">
+                                                
+                                                <div class="tabs-content">
+                                                    <div class="grid-table-row table-header">
+                                                        <div class="grid-table-cell">Наименование</div>
+                                                        <div class="grid-table-cell">Бренд</div>
+                                                        <div class="grid-table-cell">Кол-во</div>
+                                                        <div class="grid-table-cell">Цена</div>
+                                                    </div>
+                                                </div>
+    
+                                                <div id="separated-service-parts"></div>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- Запчасти и услуги начало конец-->
+    
+                                <!-- Только выбраные -->
+                                    <div id="tab-3-content" class="tab-content">
+                                        
+                                        <div class="grid-table">
+                                            <div class="grid-table-row table-header">
+                                                <div class="grid-table-cell">Наименование</div>
+                                                <div class="grid-table-cell">Бренд</div>
+                                                <div class="grid-table-cell">Кол-во</div>
+                                                <div class="grid-table-cell">Цена</div>
+                                            </div>
+                                            <div id="onlychecked"></div>
+                                        </div>
+    
+                                    </div>
+                                <!-- Только выбраные конец -->
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                </form>
+
+           </section>
+           
+            <!-- Content END -->
+
+        </div>
+        
+        <!--END header-->
+    </div>
+
+    <!-- Mini Cart -->
+    <div id="cart-modal" class="cart-body">
+        <div class="cart-body__guts">
+            <figure>
+                <img src="img/cart-img.jpg" alt="model-img">
+            </figure>
+            <div class="cart-model">
+                <span class="cart-model__name">Toyota Land Cruiser 200</span>
+                <span class="cart-model__equipment">с 2015 по н.в. LС 200 4.5d А</span>
+            </div>
+            <h3 class="cart-title">Ваш заказ</h3>
+            
+            <div class="cart-order__details">
+                <ul class="cart-order__details-list">
+                    <li class="cart-order__details-list_item">
+                        <span class="cart-service-name">ТО</span>
+                        <span class="cart-service-price">
+                            14 356
+                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.00584 0H1.68755V4.1616H1.23755V5.5116H1.68755V6.11262H1.23755V7.46262H1.68755V9H3.03755V7.46262H4.72505V6.11262H3.03755V5.5125H5.00621C6.52614 5.5125 7.76255 4.27607 7.76255 2.75634C7.76255 1.23643 6.52612 0 5.00584 0ZM5.00639 4.1625H3.03755V4.1616V1.34982H5.00639C5.78183 1.34982 6.41272 1.98072 6.41272 2.75616C6.41272 3.5316 5.78183 4.1625 5.00639 4.1625Z" fill="#BB261A"/>
+                            </svg>
+                        </span>
+                        <span class="remove-this-item">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.59 0L5 3.59L1.41 0L0 1.41L3.59 5L0 8.59L1.41 10L5 6.41L8.59 10L10 8.59L6.41 5L10 1.41L8.59 0Z" fill="#BBBBBB"/>
+                            </svg>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cart-total__price">
+                Итого:
+                <span>14 356</span>
+                <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.34299 0H0.8125V6.93601H0.0625V9.18601H0.8125V10.1877H0.0625V12.4377H0.8125V15H3.0625V12.4377H5.875V10.1877H3.0625V9.1875H6.3436C8.87682 9.1875 10.9375 7.12679 10.9375 4.5939C10.9375 2.06071 8.87679 0 6.34299 0ZM6.3439 6.9375H3.0625V6.93601V2.24971H6.3439C7.6363 2.24971 8.68779 3.3012 8.68779 4.5936C8.68779 5.88601 7.6363 6.9375 6.3439 6.9375Z" fill="#BB261A"/>
+                </svg>  
+            </div>
+
+            <div class="cart-actual__price">Цена за актуальна на 30.10.2020г.</div>
+
+            <div class="cart-button">
+                <a class="cart-order__btn" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+                <a class="cart-invoice__btn" href="#">СКАЧАТЬ СЧЕТ</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Mini Cart END-->
+
+    <script src="js/app.min.js"></script>
+</body>
+</html>

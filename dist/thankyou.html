@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css">
+    <title>Выбор типа ремонта</title>
+</head>
+<body>
+    <div class="wrapper-inner">
+
+        <aside class="aside">
+            <div class="aside-content">
+                <div class="aside-content__header">
+                    <figure>
+                        <img src="img/aside-logo.jpg" alt="aside-logo">
+                    </figure>
+                    <h1>Сервисный калькулятор TOLEX TUNING</h1>
+                </div>
+
+                <div class="aside-content__footer">
+                    <figure>
+                        <img src="img/logo-tolex-tuning.png" alt="logo-tolex-tuning">
+                    </figure>
+                </div>
+
+            </div>
+        </aside>
+
+        <!--BEGIN header-->
+        <div class="header-wrapper">
+
+        <!--BEGIN header-->
+        <header class="header">
+
+            <div class="container-fluid">
+                <div class="top-menu">
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Спецпредложения и акции</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button id="write-director" class="write-director" type="button"><span>Написать директору</span></button>
+                </div>
+
+                
+                <div class="top-menu__mobile">
+                    <button class="humburger" type="button">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.25 6.5L16.25 6.5L16.25 8.66667L3.25 8.66666L3.25 6.5ZM3.25 11.9167L22.75 11.9167L22.75 14.0833L3.25 14.0833L3.25 11.9167ZM3.25 17.3333L16.25 17.3333L16.25 19.5L3.25 19.5L3.25 17.3333Z" fill="black"/>
+                        </svg>
+                    </button>
+                    <img class="mobile-logo" src="img/logo-tolex.png" alt="logo-tolex">
+                    
+                    <div class="header-info__item mobile-version">
+                        <a class="service-book__mobile" href="#">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 19.9999H4C2.93052 20.0319 2.03642 19.1933 2 18.1239V5.87494C2.03641 4.80575 2.93068 3.96737 4 3.99994H20C21.0693 3.96737 21.9636 4.80575 22 5.87494V18.1249C21.963 19.1939 21.0691 20.032 20 19.9999ZM4 5.99994V17.9889L20 17.9999V6.01094L4 5.99994ZM13.43 15.9999H6C6.07353 15.172 6.46534 14.4049 7.093 13.8599C7.79183 13.1667 8.73081 12.7691 9.715 12.7499C10.6992 12.7691 11.6382 13.1667 12.337 13.8599C12.9645 14.405 13.3563 15.1721 13.43 15.9999ZM18 14.9999H15V12.9999H18V14.9999ZM9.715 11.9999C9.17907 12.0186 8.65947 11.8138 8.28029 11.4347C7.9011 11.0555 7.69638 10.5359 7.715 9.99994C7.69668 9.4641 7.9015 8.94468 8.28062 8.56556C8.65974 8.18644 9.17916 7.98162 9.715 7.99994C10.2508 7.98162 10.7703 8.18644 11.1494 8.56556C11.5285 8.94468 11.7333 9.4641 11.715 9.99994C11.7336 10.5359 11.5289 11.0555 11.1497 11.4347C10.7705 11.8138 10.2509 12.0186 9.715 11.9999ZM18 10.9999H14V8.99994H18V10.9999Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                        <a class="cart" href="#">
+                            <img src="img/cart_active.svg" alt="cart">
+                        </a>
+                        <a class="notifications" href="#">
+                            <img src="img/notification_none.svg" alt="cart">
+                        </a>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+        
+        <div class="header-info">
+
+            <div class="container-fluid">
+                <div class="header-info__content">
+
+                    <div class="header-info__item phone-contact">
+                        <div class="header-info__item-content">
+                            <div class="phone-number">
+                                <h5 class="phone-number__title">Toyota на Мосфильме</h5>
+                                <a href="tel:84951533379" class="phone-number__content">8(495)153-33-79</a>
+                            </div>
+                            <div class="phone-number">
+                                <h5 class="phone-number__title">Toyota на Cущевке</h5>
+                                <a href="tel:84951531163" class="phone-number__content">8(495)153-11-63</a>
+                            </div>
+                            <div class="phone-number">
+                                <h5 class="phone-number__title">Toyota на Таганке</h5>
+                                <a href="tel:84951535998" class="phone-number__content">8(495)153-59-98</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-info__item">
+                        <a class="service-book" href="#"><span>Моя сервисная книга</span></a>
+                        <a class="service-book__mobile" href="#">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 19.9999H4C2.93052 20.0319 2.03642 19.1933 2 18.1239V5.87494C2.03641 4.80575 2.93068 3.96737 4 3.99994H20C21.0693 3.96737 21.9636 4.80575 22 5.87494V18.1249C21.963 19.1939 21.0691 20.032 20 19.9999ZM4 5.99994V17.9889L20 17.9999V6.01094L4 5.99994ZM13.43 15.9999H6C6.07353 15.172 6.46534 14.4049 7.093 13.8599C7.79183 13.1667 8.73081 12.7691 9.715 12.7499C10.6992 12.7691 11.6382 13.1667 12.337 13.8599C12.9645 14.405 13.3563 15.1721 13.43 15.9999ZM18 14.9999H15V12.9999H18V14.9999ZM9.715 11.9999C9.17907 12.0186 8.65947 11.8138 8.28029 11.4347C7.9011 11.0555 7.69638 10.5359 7.715 9.99994C7.69668 9.4641 7.9015 8.94468 8.28062 8.56556C8.65974 8.18644 9.17916 7.98162 9.715 7.99994C10.2508 7.98162 10.7703 8.18644 11.1494 8.56556C11.5285 8.94468 11.7333 9.4641 11.715 9.99994C11.7336 10.5359 11.5289 11.0555 11.1497 11.4347C10.7705 11.8138 10.2509 12.0186 9.715 11.9999ZM18 10.9999H14V8.99994H18V10.9999Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                        <div id="cart-btn" class="cart">
+                            <img src="img/cart_active.svg" alt="cart">
+                        </div>
+                        <a class="notifications" href="#">
+                            <img src="img/notification_none.svg" alt="cart">
+                        </a>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--END header-->
+
+            <section class="thankyou-content">
+
+                <div class="thankyou-content__guts">
+                    <div class="order-details">
+                        <figure>
+                            <img src="img/logo-tolex.png" alt="logo">
+                        </figure>
+                        <h2 class="order-details__alert">Ваш заказ №<span>324</span> успешно оформлен</h2>
+                        <p>Для просмотра статуса заказа, перейдите в раздел “Моя сервисная книга”</p>
+                        <a class="track-order" href="#">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.1783 4.1722H3.54072L3.30827 1.58267C3.27025 1.1592 2.91534 0.834717 2.49019 0.834717H0.821366C0.367738 0.834717 0 1.20245 0 1.65608C0 2.10971 0.367738 2.47745 0.821366 2.47745H1.73926C2.24088 8.06595 0.944454 -6.37825 2.68395 13.0022C2.75099 13.7608 3.16085 14.5839 3.86692 15.1432C2.59391 16.7689 3.75705 19.1655 5.82779 19.1655C7.54648 19.1655 8.7587 17.4514 8.16931 15.8279H12.6648C12.0761 17.4493 13.2857 19.1655 15.0063 19.1655C16.3794 19.1655 17.4965 18.0484 17.4965 16.6754C17.4965 15.3023 16.3794 14.1852 15.0063 14.1852H5.83334C5.20942 14.1852 4.66571 13.8087 4.43104 13.2603L17.5576 12.4889C17.9159 12.4678 18.2191 12.2164 18.3062 11.8681L19.9752 5.19277C20.1045 4.67515 19.7127 4.1722 19.1783 4.1722ZM5.82779 17.5228C5.36055 17.5228 4.98038 17.1426 4.98038 16.6754C4.98038 16.2081 5.36055 15.8279 5.82779 15.8279C6.29507 15.8279 6.67525 16.2081 6.67525 16.6754C6.67525 17.1426 6.29507 17.5228 5.82779 17.5228ZM15.0062 17.5228C14.539 17.5228 14.1588 17.1426 14.1588 16.6754C14.1588 16.2081 14.539 15.8279 15.0062 15.8279C15.4735 15.8279 15.8537 16.2081 15.8537 16.6754C15.8537 17.1426 15.4735 17.5228 15.0062 17.5228ZM16.8589 10.8844L4.20993 11.6277L3.68817 5.8149H18.1263L16.8589 10.8844Z" fill="white"/>
+                                </svg>
+                            Отслеживать заказ
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+            <section class="adds-banners">
+                <div class="adds-banners__guts">
+                    <div class="wide-banner"></div>
+                    <div class="banner-grid">
+                        <div class="banner-grid__item"></div>
+                        <div class="banner-grid__item"></div>
+                        <div class="banner-grid__item"></div>
+                        <div class="banner-grid__item"></div>
+                    </div>
+                </div>
+            </section>
+        
+        </div>
+        <!--END header-->
+
+       
+
+    </div>
+
+    <!-- Mini Cart -->
+    <div id="cart-modal" class="cart-body">
+        <div class="cart-body__guts">
+            <figure>
+                <img src="img/cart-img.jpg" alt="model-img">
+            </figure>
+            <div class="cart-model">
+                <span class="cart-model__name">Toyota Land Cruiser 200</span>
+                <span class="cart-model__equipment">с 2015 по н.в. LС 200 4.5d А</span>
+            </div>
+            <h3 class="cart-title">Ваш заказ</h3>
+            
+            <div class="cart-order__details">
+                <ul class="cart-order__details-list">
+                    <li class="cart-order__details-list_item">
+                        <span class="cart-service-name">ТО</span>
+                        <span class="cart-service-price">
+                            14 356
+                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.00584 0H1.68755V4.1616H1.23755V5.5116H1.68755V6.11262H1.23755V7.46262H1.68755V9H3.03755V7.46262H4.72505V6.11262H3.03755V5.5125H5.00621C6.52614 5.5125 7.76255 4.27607 7.76255 2.75634C7.76255 1.23643 6.52612 0 5.00584 0ZM5.00639 4.1625H3.03755V4.1616V1.34982H5.00639C5.78183 1.34982 6.41272 1.98072 6.41272 2.75616C6.41272 3.5316 5.78183 4.1625 5.00639 4.1625Z" fill="#BB261A"/>
+                            </svg>
+                        </span>
+                        <span class="remove-this-item">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.59 0L5 3.59L1.41 0L0 1.41L3.59 5L0 8.59L1.41 10L5 6.41L8.59 10L10 8.59L6.41 5L10 1.41L8.59 0Z" fill="#BBBBBB"/>
+                            </svg>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cart-total__price">
+                Итого:
+                <span>14 356</span>
+                <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.34299 0H0.8125V6.93601H0.0625V9.18601H0.8125V10.1877H0.0625V12.4377H0.8125V15H3.0625V12.4377H5.875V10.1877H3.0625V9.1875H6.3436C8.87682 9.1875 10.9375 7.12679 10.9375 4.5939C10.9375 2.06071 8.87679 0 6.34299 0ZM6.3439 6.9375H3.0625V6.93601V2.24971H6.3439C7.6363 2.24971 8.68779 3.3012 8.68779 4.5936C8.68779 5.88601 7.6363 6.9375 6.3439 6.9375Z" fill="#BB261A"/>
+                </svg>  
+            </div>
+
+            <div class="cart-actual__price">Цена за актуальна на 30.10.2020г.</div>
+
+            <div class="cart-button">
+                <a class="cart-order__btn" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+                <a class="cart-invoice__btn" href="#">СКАЧАТЬ СЧЕТ</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Mini Cart END-->
+
+    <script src="js/app.min.js"></script>
+</body>
+</html>
