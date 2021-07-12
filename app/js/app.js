@@ -1,45 +1,45 @@
 /*** Body Repair Part Chooser ***/
 
-$("body").on('click', '#car area', function(event) {
+let areaItem = document.querySelectorAll('.area-item');
+
+$("body").on('click', 'area', function(event) {
 
     event.preventDefault();
+    
     closeDetailPopup();
+    var $this = $(this),
+       id = $this.data('id'),
+       parent = $this.closest('.calc__car-side'),
+       name = $this.attr('title'),
+       popup = $('.calc-detail-popup'),
+       showPopup = false;
+    var addwork = true;
+    
 
-    let $this = $(this),
-		id = $this.data('id'),
-        name = $this.attr('title')
-		parent = $this.closest('.body-repair__item'),
-		popup = $('.calc-detail-popup'),  
-		showPopup = false;
-	let addwork = true;
+       if ( parent.find('.calc__car-works--' +  id ).length ) {
+          addwork = false;
+          popup.append(parent.find('.calc__car-works--' +  id ));
+          showPopup = true;
+       }
 
 
-    if(parent.find('.calc__car-works--' +  id ).length ) {
-        addwork = false;
-        popup.append(parent.find('.calc__car-works--' +  id ));
-        showPopup = true;
+    if ( showPopup ) {
+         popup.css({left: event.pageX - 140,
+         top: event.pageY}).slideDown(100);
     }
-
-    if(showPopup){
-        popup.css({left: event.pageX,
-        top: event.pageY}).slideDown(100);
-    }
-
-    $(window).on('scroll', function(event) {
-        closeDetailPopup();   
-    });
-
-    $("body").on('click', '.calc-detail-popup', function(event) {
-        closeDetailPopup();
-    });
-
-
- })
+ });
 
  function closeDetailPopup() {
-    let popup = $('.calc-detail-popup');
+    var popup = $('.calc-detail-popup');
+    popup.find('.calc__car-works').each(function() {
+       $($(this).data('works-selector')).append($(this)); 
+    });
     popup.slideUp(100);
  }
+
+
+
+
     
     
 /*** Body Repair Part Chooser END ***/
@@ -442,19 +442,21 @@ if(forward !== null ){
 }
 
 let back = document.getElementById("tab-1");
-
-back.addEventListener("click", function () {
-    categories.forEach((category) => {
-      category.element.appendChild(category.content);
+if(back !== null){
+    back.addEventListener("click", function () {
+        categories.forEach((category) => {
+          category.element.appendChild(category.content);
+        });
+        categories.length = 0;
+    
+        services.forEach((service) => {
+            service.element.prepend(service.content);
+          });
+        services.length = 0;
+    
     });
-    categories.length = 0;
+}
 
-    services.forEach((service) => {
-        service.element.prepend(service.content);
-      });
-    services.length = 0;
-
-});
 
 
 /*** Показываем только выбраные сервисы/услуги ***/
@@ -555,7 +557,29 @@ if(addTypeItem !== null){
     })
 }
 
+/*** Calculator ***/
 
+let tableOurInputCell = document.querySelectorAll('.table__our-input-cell');
+if(tableOurInputCell !== null){
+    tableOurInputCell.forEach(item=>{
+        item.addEventListener('click', function(){
+            removeActiveFromCell();
+            let parrentElement = item.closest('.grid-table-row');
+            parrentElement.classList.add('active');
+        })
+    })
+}
+
+function removeActiveFromCell() {
+    let gridTableRow = document.querySelectorAll('.grid-table-row');
+    if(gridTableRow !== null){
+        gridTableRow.forEach(item=>{
+            if(item.classList.contains('active')){
+                item.classList.remove('active') 
+            }
+        })
+    }
+}
 
 
 

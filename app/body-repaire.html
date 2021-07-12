@@ -319,14 +319,18 @@
                         <div class="calc-detail-popup"></div>
                         <input type="hidden" name="item_id" value="67" class="itemId">
                         
-                        <div class="body-repair__item front-car">
-                            <img class="image-map body-repair__img" src="img/front.jpg" usemap="#image-map-1"  alt="front">
+                        <div class="body-repair__item kr-first calc__car-side front-car">
+
+                            <div class="car-tem__wrapper">
+                                <img class="image-map body-repair__img" src="img/front.jpg" usemap="#image-map-1"  alt="front">
+                            </div>
+
                             <map name="image-map-1">
-                                <area title="Передний бампер" data-id="1" href="#" coords="7,98,3,103,3,129,6,136,14,141,109,146,152,145,168,106,159,98,108,101,96,109,21,109,18,101" shape="poly" data-maphilight='{"strokeColor":false, "fillColor":"FF1300","shadow":false,"alwaysOn":false, "fillOpacity":0.5}'>
-                                <area title="Лобовое стекло" data-id="2" href="#" coords="181,65,189,52,194,40,198,29,170,31,140,32,122,32,107,34,88,49,74,63,93,63" shape="poly" data-maphilight='{"strokeColor":false, "fillColor":"FF1300","shadow":false,"alwaysOn":false, "fillOpacity":0.5}'>
-                                <area title="Капот" data-id="3" href="#" coords="69,65,30,71,24,79,96,77,106,81,150,79,185,69,134,64,94,64" shape="poly" data-maphilight='{"strokeColor":false, "fillColor":"FF1300","shadow":false,"alwaysOn":false, "fillOpacity":0.5}'>
-                                <area title="Решетка радиатора" data-id="4" href="#" coords="23,80,16,89,22,107,97,109,110,98,109,89,106,81,96,77" shape="poly" data-maphilight='{"strokeColor":false, "fillColor":"FF1300","shadow":false,"alwaysOn":false, "fillOpacity":0.5}'>
-                                <area title="Фара левая" data-id="5" href="#" coords="106,81,111,92,109,101,155,98,161,88,158,78,142,81" shape="poly"  data-maphilight='{"strokeColor":false, "fillColor":"FF1300","shadow":false,"alwaysOn":false, "fillOpacity":0.5}'>
+                                <area class="area-item" title="Передний бампер" data-id="1" href="#" coords="7,98,3,103,3,129,6,136,14,141,109,146,152,145,168,106,159,98,108,101,96,109,21,109,18,101" shape="poly" data-maphilight='{"strokeColor":false, "fillColor":"FF1300","shadow":false,"alwaysOn":false, "fillOpacity":0.5}'>
+                                <area class="area-item" title="Лобовое стекло" data-id="2" href="#" coords="181,65,189,52,194,40,198,29,170,31,140,32,122,32,107,34,88,49,74,63,93,63" shape="poly" data-maphilight='{"strokeColor":false, "fillColor":"FF1300","shadow":false,"alwaysOn":false, "fillOpacity":0.5}'>
+                                <area class="area-item" title="Капот" data-id="3" href="#" coords="69,65,30,71,24,79,96,77,106,81,150,79,185,69,134,64,94,64" shape="poly" data-maphilight='{"strokeColor":false, "fillColor":"FF1300","shadow":false,"alwaysOn":false, "fillOpacity":0.5}'>
+                                <area class="area-item" title="Решетка радиатора" data-id="4" href="#" coords="23,80,16,89,22,107,97,109,110,98,109,89,106,81,96,77" shape="poly" data-maphilight='{"strokeColor":false, "fillColor":"FF1300","shadow":false,"alwaysOn":false, "fillOpacity":0.5}'>
+                                <area class="area-item" title="Фара левая" data-id="5" href="#" coords="106,81,111,92,109,101,155,98,161,88,158,78,142,81" shape="poly"  data-maphilight='{"strokeColor":false, "fillColor":"FF1300","shadow":false,"alwaysOn":false, "fillOpacity":0.5}'>
                             </map>
 
                             <div class="calc__car-works calc__car-works--1" data-works-selector="#car .kr-first">
@@ -351,9 +355,36 @@
                                 
                             </div>
 
+                            <div class="calc__car-works calc__car-works--3" data-works-selector="#car .kr-first">
+                                
+                                <div class="calc__car-works-item">
+                                    <input id="bodypart-704" name="bodypart-704" type="checkbox" data-name="Стекло лобовое" class="getWorksByPart getWorksByPart--704" value="704">	
+                                    <label for="bodypart-704">Капот</label>   
+                                </div>
+                                
+                            </div>
+
+                            <div class="calc__car-works calc__car-works--4" data-works-selector="#car .kr-first">
+                                
+                                <div class="calc__car-works-item">
+                                    <input id="bodypart-705" name="bodypart-705" type="checkbox" data-name="Решетка радиатора" class="getWorksByPart getWorksByPart--705" value="705">	
+                                    <label for="bodypart-705">Решетка радиатора</label>   
+                                </div>
+                                
+                            </div>
+
+                            <div class="calc__car-works calc__car-works--5" data-works-selector="#car .kr-first">
+                                
+                                <div class="calc__car-works-item">
+                                    <input id="bodypart-706" name="bodypart-706" type="checkbox" data-name="Фара левая" class="getWorksByPart getWorksByPart--706" value="706">	
+                                    <label for="bodypart-706">Фара левая</label>   
+                                </div>
+                                
+                            </div>
+
                         </div>
 
-                        <div class="body-repair__item back-car">
+                        <div class="body-repair__item kr-second calc__car-side back-car">
                             <img class="body-repair__img" src="img/back.jpg" usemap="#Map2" alt="back">
                         </div>
 

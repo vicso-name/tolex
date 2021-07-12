@@ -40,6 +40,12 @@
             bottom: -18px
             left: 50%
             transform: translate(-50%)
+        &.next-step
+            &::after
+                width: 0
+                height: 0
+                opacity: 0
+
     .body-repaire__header-info
         font-size: 15px
         font-style: normal
@@ -110,7 +116,7 @@
     display: none
 
 .calc-detail-popup
-    //display: none
+    display: none
     padding-top: 16px
     padding-bottom: 14px
     padding-left: 14px
@@ -168,4 +174,130 @@
                     background-position: center
 .calc__car-works-item
     &:last-child
-        margin-bottom: 0       
+        margin-bottom: 0   
+
+/*** Choosed page ***/    
+
+.body-repair__order-form
+    display: grid
+    max-width: 1468px
+    grid-gap: 89px
+    grid-template-columns: 680px 1fr
+    padding-bottom: 62px
+.body-repair__grid
+    display: flex
+    width: 644.6px
+    margin: 0 auto
+    margin-top: 37px
+.body-order__item-guts
+    margin-top: 37px
+
+.body_repair-service
+    padding-left: 16px
+    display: flex
+    align-items: center
+    span
+        font-size: 15px
+        font-style: normal
+        font-weight: 700
+        line-height: 18px
+        letter-spacing: 0em
+        text-align: left
+    a
+        display: inline-block
+        width: 74px
+        height: 25px
+        padding-right: 8px
+        margin-left: 17px
+        border: 1px solid #BB261A
+        border-radius: 50px
+        font-size: 9px
+        font-style: normal
+        font-weight: 700
+        line-height: 21px
+        letter-spacing: 0em
+        text-align: right
+        text-decoration: none
+        color: #000000
+        position: relative
+        transition: all .5s ease
+        &::before
+            content: ""
+            position: absolute
+            left: 11px
+            top: 7px
+            width: 8px
+            height: 8px
+            background-repeat: no-repeat
+            background-image: url(/img/close.svg)
+        &:hover
+            background-color: #BB261A
+            color: #ffffff
+            &::before
+                background-image: url(/img/close-white.svg)
+.table__row
+    position: relative
+    margin-top: 14px
+    padding-bottom: 15px
+    &::after
+        content: ""
+        position: absolute
+        right: 0
+        bottom: 0
+        border-bottom: 1px dashed #cdcdcd
+        width: 94%
+.table__our-input-cell
+    padding-left: 45px
+    label
+        font-size: 13px
+        font-style: normal
+        font-weight: 500
+        line-height: 16px
+        letter-spacing: 0em
+        text-align: left
+        cursor: pointer
+    input
+        display: none
+        & + label
+            &::before
+                content: ""
+                display: block
+                position: absolute
+                width: 20px
+                height: 20px
+                -webkit-border-radius: 3px
+                border-radius: 100%
+                left: 16px
+                top: 3px
+                border: 1px solid #C8C8C8
+        &:checked
+            & + label
+                color: #BB261A
+                font-weight: 700 
+                &::after
+                    content: ""
+                    position: absolute
+                    width: 10px
+                    height: 10px
+                    border-radius: 100%
+                    top: 8px
+                    left: 21px
+                    background: #BB261A 
+                    background-repeat: no-repeat
+                    background-position: center
+                    
+.table__our-price-cell
+    font-size: 13px
+    font-style: normal
+    font-weight: 700
+    line-height: 16px
+    letter-spacing: 0em
+    text-align: left
+
+.grid-table-row
+    &.active
+        .grid-table-cell
+            .table__our-price-cell
+                color: #bb261a
+
+
