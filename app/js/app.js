@@ -1,3 +1,15 @@
+/*** Cart PopUp ***/
+
+const cartBtn = document.getElementById('cart-btn');
+const carModal = document.getElementById('cart-modal');
+if(cartBtn !== null){
+    cartBtn.addEventListener('click', function(){
+        carModal.classList.toggle('active');
+    })
+}
+
+/*** Cart PopUp END***/
+
 /*** Body Repair Part Chooser ***/
 
 let areaItem = document.querySelectorAll('.area-item');

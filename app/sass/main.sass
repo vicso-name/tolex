@@ -143,6 +143,9 @@ body
                     background-image: url(../img/calendar.svg)
 
 .cart
+    cursor: pointer
+    position: relative
+    display: inline-block
     text-decoration: none
     margin-right: 25px
 .notifications
@@ -1800,7 +1803,163 @@ body
             background-color:#BB261A
             color: #ffffff
 
-            
+.cart-body
+    visibility: hidden
+    opacity: 0
+    position: absolute
+    z-index: 999
+    bottom: 0
+    right: -36px
+    transform: translate(-50%, -50%)
+    background-color: #ffffff   
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6)   
+    border-radius: 4px
+    width: 282px
+    max-width: 100%  
+    height: 532px
+    max-height: 100%
+    transition: all .3s ease 
+    &.active
+        visibility: visible
+        opacity: 1
+
+.cart-body__guts
+    width: 100%
+    height: 100%
+    padding: 34px 21px 41px 21px
+    overflow: auto
+    figure
+        width: 238px 
+        height: 122px
+        margin: 0
+        img
+            width: 100%
+    .cart-model
+        margin-top: 18px
+        &__name
+            font-size: 14px
+            font-style: normal
+            font-weight: 400
+            line-height: 19px
+            letter-spacing: 0em
+            text-align: left
+        &__equipment 
+            font-size: 14px
+            font-style: normal
+            font-weight: 400
+            line-height: 19px
+            letter-spacing: 0em
+            text-align: left  
+    .cart-title
+        margin-top: 11px
+        margin-bottom: 16px
+        font-size: 20px
+        font-style: normal
+        font-weight: 700
+        line-height: 24px
+        letter-spacing: 0.02em
+        text-align: left
+.cart-order__details
+    &-list
+        list-style-type: none
+        margin: 0
+        padding: 0
+        &_item
+            padding-top: 11px
+            padding-bottom: 11px
+            border-top: 1px solid #CDCDCD
+            border-bottom: 1px solid #CDCDCD
+            position: relative
+            display: flex
+            justify-content: space-between
+            .cart-service-name
+                font-size: 13px
+                font-style: normal
+                font-weight: 700
+                line-height: 16px
+                letter-spacing: 0.02em
+                text-align: left
+            .cart-service-price
+                font-size: 13px
+                font-style: normal
+                font-weight: 700
+                line-height: 16px
+                letter-spacing: 0em
+                text-align: left
+                color: #BB261A
+                display: inline-block
+                margin-right: 24px
+            .remove-this-item
+                cursor: pointer
+                position: absolute
+                right: 0
+                top: 14px
+                line-height: 0
+.cart-total__price
+    margin-top: 24px
+    font-size: 20px
+    font-style: normal
+    font-weight: 700
+    line-height: 24px
+    letter-spacing: 0em
+    text-align: left
+    span
+        color: #BB261A
+        font-size: 20px
+        font-style: normal
+        font-weight: 700
+        line-height: 24px
+        letter-spacing: 0em
+        text-align: left
+.cart-actual__price
+    font-size: 13px
+    font-style: normal
+    font-weight: 400
+    line-height: 20px
+    letter-spacing: 0em
+    text-align: left
+.cart-button
+    margin-top: 19px
+    a
+        position: relative
+        display: block
+        height: 40px
+        line-height: 38px
+        text-align: center
+        font-size: 12px
+        font-style: normal
+        font-weight: 700
+        letter-spacing: 0em
+        text-align: center
+        text-decoration: none
+        border-radius: 50px
+    .cart-order__btn
+        background-color: #BB261A
+        color: #ffffff
+        margin-bottom: 11px
+        &::before
+            content: ''
+            position: absolute
+            width: 20px
+            left: 21px
+            top: 8px
+            height: 20px
+            background-repeat: no-repeat
+            background-image: url(../img/shopping-cart-white.svg)
+    .cart-invoice__btn
+        border: 1px solid #BB261A
+        color: #BB261A
+        &::before
+            content: ''
+            position: absolute
+            width: 20px
+            height: 20px
+            left: 21px
+            top: 8px
+            background-repeat: no-repeat
+            background-image: url(../img/download.svg)
+
+
 
 @import "slesrem"
 @import "profile"
