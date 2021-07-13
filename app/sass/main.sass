@@ -1728,15 +1728,14 @@ body
     #mileage-input
         position: relative
         cursor: pointer
+        padding-bottom: 6px
         width: 230px
         border: none
         border-bottom: 2px solid #BB261A
         text-align: center
+        font-size: 15px
+        font-weight: 600
         color: #A1A1A1
-        &::after
-            content: "KM"
-            position: absolute
-            margin-left: 4px
         &::before
             content: ""
             background-image: url(../img/milage_down.svg)
@@ -1799,9 +1798,23 @@ body
         border-radius: 4px
         cursor: pointer
         transition: all .5s ease
+        a
+            color: #000
+            text-decoration: none
+            transition: all .5s ease
+            display: inline-block
+            margin-right: 5px
         &:hover
             background-color:#BB261A
             color: #ffffff
+            a
+                color: #ffffff
+                text-decoration: none
+        span
+            display: inline-block
+            margin-right: 5px
+
+
 
 .cart-body
     visibility: hidden
@@ -1959,7 +1972,53 @@ body
             background-repeat: no-repeat
             background-image: url(../img/download.svg)
 
+.ui-datepicker-header
+    background-color: #ffffff
+    border: none
+.ui-datepicker th
+    color: #BB261A
+    font-size: 15px
+    font-style: normal
+    font-weight: 400
+    line-height: 18px
+    letter-spacing: 0em
 
+.ui-button, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, html .ui-button.ui-state-disabled:active, html .ui-button.ui-state-disabled:hover
+    border: none
+    background: transparent
+    font-weight: 400
+    color: #000000
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
+    position: relative
+    color: #ffffff!important
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
+    &::before
+        content: ""
+        position: absolute
+        width: 33px
+        z-index: -1
+        height: 33px
+        left: 6px
+        top: -3px
+        background-color: #bb261a
+        border-radius: 100%
+.ui-widget.ui-widget-content
+    border: none!important
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3)
+
+.ui-button, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, html .ui-button.ui-state-disabled:active, html .ui-button.ui-state-disabled:hover
+    border: none
+    background: 0 0
+    font-weight: 500
+    font-size: 15px
+    color: #000000
+
+.ui-datepicker-title
+    color: #000000
+
+.ui-icon, .ui-widget-content .ui-icon
+    background-image: none
 
 @import "slesrem"
 @import "profile"

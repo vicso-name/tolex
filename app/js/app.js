@@ -8,6 +8,13 @@ if(cartBtn !== null){
     })
 }
 
+const getOrder = document.getElementById('get_order');
+if(getOrder!==null){
+    getOrder.addEventListener('click', function(){
+        carModal.classList.toggle('active'); 
+    })
+}
+
 /*** Cart PopUp END***/
 
 /*** Body Repair Part Chooser ***/
@@ -238,7 +245,7 @@ if(mileageDropListItem !== null){
     mileageDropListItem.forEach(item => {
         item.addEventListener('click', function(){
            let inputValue = item.getAttribute('data-mileage');
-           mileageInput.innerHTML = inputValue;
+           mileageInput.innerHTML = inputValue + 'КМ';
            mileageInput.classList.remove('active');
            mileageDrop.classList.remove('active')
         })
