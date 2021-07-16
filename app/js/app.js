@@ -1,19 +1,54 @@
-/*** Cart PopUp ***/
 
-const cartBtn = document.getElementById('cart-btn');
-const carModal = document.getElementById('cart-modal');
-if(cartBtn !== null){
-    cartBtn.addEventListener('click', function(){
-        carModal.classList.toggle('active');
+
+
+/*** Input Mask ***/
+let inputsTel = document.querySelectorAll('input[type="tel"]');
+
+Inputmask({
+  "mask": "+7(999) 999-999-99",
+  showMaskOnHover: false
+}).mask(inputsTel);
+
+/*** Input Mask END ***/
+
+/*** First time sale ***/
+let firstTimeLabel = document.querySelector('.first-time__label');
+let totalSaleWrapper = document.querySelector('.total-sale-wrapper')
+if(firstTimeLabel !== null){
+    firstTimeLabel.addEventListener('click', function(){
+        totalSaleWrapper.classList.toggle('active')
     })
 }
 
+/*** First time sale END***/
+
+/*** Cart PopUp ***/
+
+
+
+const cartBtn = document.getElementById('cart-btn');
+const carModal = document.querySelector('.cart-body');
 const getOrder = document.getElementById('get_order');
+
 if(getOrder!==null){
     getOrder.addEventListener('click', function(){
         carModal.classList.toggle('active'); 
-    })
+   })
 }
+
+const popups = [...document.getElementsByClassName('cart')];
+
+window.addEventListener('click', ({ target }) => {
+
+    const popup = target.closest('.cart');
+    const clickedOnClosedPopup = popup && !popup.classList.contains('show');
+    
+    popups.forEach(p => p.classList.remove('show'));
+    
+    if (clickedOnClosedPopup) popup.classList.add('show'); 
+  
+ 
+});
 
 /*** Cart PopUp END***/
 

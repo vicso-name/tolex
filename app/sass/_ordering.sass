@@ -40,9 +40,16 @@
             border: 1px solid #CDCDCD
             border-radius: 4px
             padding-left: 16px
-            color: #000
+            color: #8A8A8A
+            font-family: Montserrat
+            font-size: 14px
+            font-style: normal
+            font-weight: 500
+            line-height: 17px
+            letter-spacing: 0em
+            text-align: left
             &::placeholder
-                color: #000
+                color: #8A8A8A
                 font-size: 14px
                 font-style: normal
                 font-weight: 500
@@ -70,6 +77,7 @@
             text-align: left
             padding-left: 28px
             cursor: pointer
+            transition: all .5s ease
             &::before
                 content: ""
                 display: block
@@ -81,6 +89,8 @@
                 left: 0
                 top: -3px
                 border: 1px solid #C8C8C8 
+        &:hover
+            color: #BB261A
         input
             display: none
             &:checked + label
@@ -118,8 +128,8 @@
         display: flex
         align-items: center
         justify-content: center
+        border: 1px solid #BB261A
         background-color: #BB261A
-        border: none
         border-radius: 50px
         text-transform: uppercase
         color: #ffffff
@@ -138,14 +148,15 @@
             right: 39px
 
         &:hover
-            color: #000000
+            color: #BB261A
             background-color: #ffffff
             border: 1px solid #BB261A
             svg
                 path
-                    fill: #000000
+                    fill: #BB261A
 
 .choose-service-date__field
+    position: relative
     label
         display: block
         margin-bottom: 10px
@@ -157,6 +168,7 @@
         letter-spacing: 0em
         text-align: left
     input
+        cursor: pointer
         width: 442px
         height: 40px
         position: relative
@@ -175,11 +187,13 @@
             color: #000000
         &:focus
             outline: none
-        &::after
-            content: ""
-            position: absolute
-            width: 13px
-            height: 13px
-            background-image: url(../img/arrow-down.svg)
-            background-repeat: no-repeat
-            background-position: center
+    &::after
+        content: ""
+        position: absolute
+        width: 13px
+        height: 13px
+        background-image: url(../img/arrow-down.svg)
+        background-repeat: no-repeat
+        background-position: center
+        top: 37px
+        right: 10px
