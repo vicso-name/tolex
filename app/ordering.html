@@ -177,7 +177,7 @@
                     </div>
 
                     <div class="header-info__item">
-                        <a class="service-book" href="/server-boock.html"><span>Моя сервисная книга</span></a>
+                        <a class="service-book" href="/tolex/dist/server-boock.html"><span>Моя сервисная книга</span></a>
                         <a class="service-book__mobile" href="#">
                             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 19.9999H4C2.93052 20.0319 2.03642 19.1933 2 18.1239V5.87494C2.03641 4.80575 2.93068 3.96737 4 3.99994H20C21.0693 3.96737 21.9636 4.80575 22 5.87494V18.1249C21.963 19.1939 21.0691 20.032 20 19.9999ZM4 5.99994V17.9889L20 17.9999V6.01094L4 5.99994ZM13.43 15.9999H6C6.07353 15.172 6.46534 14.4049 7.093 13.8599C7.79183 13.1667 8.73081 12.7691 9.715 12.7499C10.6992 12.7691 11.6382 13.1667 12.337 13.8599C12.9645 14.405 13.3563 15.1721 13.43 15.9999ZM18 14.9999H15V12.9999H18V14.9999ZM9.715 11.9999C9.17907 12.0186 8.65947 11.8138 8.28029 11.4347C7.9011 11.0555 7.69638 10.5359 7.715 9.99994C7.69668 9.4641 7.9015 8.94468 8.28062 8.56556C8.65974 8.18644 9.17916 7.98162 9.715 7.99994C10.2508 7.98162 10.7703 8.18644 11.1494 8.56556C11.5285 8.94468 11.7333 9.4641 11.715 9.99994C11.7336 10.5359 11.5289 11.0555 11.1497 11.4347C10.7705 11.8138 10.2509 12.0186 9.715 11.9999ZM18 10.9999H14V8.99994H18V10.9999Z" fill="#333333"/>
@@ -185,6 +185,55 @@
                         </a>
                         <div id="cart-btn" class="cart">
                             <img src="img/cart_active.svg" alt="cart">
+                            <!-- Mini Cart -->
+                            <div id="cart-modal" class="cart-body">
+                                <div class="cart-body__guts">
+                                    <figure>
+                                        <img src="img/cart-img.jpg" alt="model-img">
+                                    </figure>
+                                    <div class="cart-model">
+                                        <span class="cart-model__name">Toyota Land Cruiser 200</span>
+                                        <span class="cart-model__equipment">с 2015 по н.в. LС 200 4.5d А</span>
+                                    </div>
+                                    <h3 class="cart-title">Ваш заказ</h3>
+                                    
+                                    <div class="cart-order__details">
+                                        <ul class="cart-order__details-list">
+                                            <li class="cart-order__details-list_item">
+                                                <span class="cart-service-name">ТО</span>
+                                                <span class="cart-service-price">
+                                                    14 356
+                                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.00584 0H1.68755V4.1616H1.23755V5.5116H1.68755V6.11262H1.23755V7.46262H1.68755V9H3.03755V7.46262H4.72505V6.11262H3.03755V5.5125H5.00621C6.52614 5.5125 7.76255 4.27607 7.76255 2.75634C7.76255 1.23643 6.52612 0 5.00584 0ZM5.00639 4.1625H3.03755V4.1616V1.34982H5.00639C5.78183 1.34982 6.41272 1.98072 6.41272 2.75616C6.41272 3.5316 5.78183 4.1625 5.00639 4.1625Z" fill="#BB261A"/>
+                                                    </svg>
+                                                </span>
+                                                <span class="remove-this-item">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.59 0L5 3.59L1.41 0L0 1.41L3.59 5L0 8.59L1.41 10L5 6.41L8.59 10L10 8.59L6.41 5L10 1.41L8.59 0Z" fill="#BBBBBB"/>
+                                                    </svg>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="cart-total__price">
+                                        Итого:
+                                        <span>14 356</span>
+                                        <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.34299 0H0.8125V6.93601H0.0625V9.18601H0.8125V10.1877H0.0625V12.4377H0.8125V15H3.0625V12.4377H5.875V10.1877H3.0625V9.1875H6.3436C8.87682 9.1875 10.9375 7.12679 10.9375 4.5939C10.9375 2.06071 8.87679 0 6.34299 0ZM6.3439 6.9375H3.0625V6.93601V2.24971H6.3439C7.6363 2.24971 8.68779 3.3012 8.68779 4.5936C8.68779 5.88601 7.6363 6.9375 6.3439 6.9375Z" fill="#BB261A"/>
+                                        </svg>  
+                                    </div>
+
+                                    <div class="cart-actual__price">Цена за актуальна на 30.10.2020г.</div>
+
+                                    <div class="cart-button">
+                                        <a class="cart-order__btn" href="/tolex/dist/registration.html">ОФОРМИТЬ ЗАКАЗ</a>
+                                        <a class="cart-invoice__btn" href="#">СКАЧАТЬ СЧЕТ</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Mini Cart END-->
                         </div>
                         <a class="notifications" href="#">
                             <img src="img/notification_none.svg" alt="cart">
@@ -202,7 +251,7 @@
                     <ul class="stepper-content">
 
                         <li id="brand_selection" class="stepper-content__item">
-                            <a href="#" class="step-link">
+                            <a  href="/tolex/dist/" class="step-link">
                                 <div class="stepper-content__item-wrapper">
                                     <div class="step-count">Шаг 1</div>
                                     <div class="stepper-content__item-title">Выбор марки</div>
@@ -212,7 +261,7 @@
                         </li>
 
                         <li id="model_selection" class="stepper-content__item">
-                            <a href="#" class="step-link">
+                            <a href="/tolex/dist/step_one.html" class="step-link">
                                 <div class="stepper-content__item-wrapper">
                                     <div class="step-count">Шаг 2</div>
                                     <div class="stepper-content__item-title">Выбор модели</div>
@@ -222,7 +271,7 @@
                         </li>
 
                         <li id="choice_equipment" class="stepper-content__item">
-                            <a href="#" class="step-link">
+                            <a href="/tolex/dist/step_two.html"  class="step-link">
                                 <div class="stepper-content__item-wrapper">
                                     <div class="step-count">Шаг 3</div>
                                     <div class="stepper-content__item-title">Выбор комплектации</div>
@@ -232,7 +281,7 @@
                         </li>
 
                         <li id="repair_type" class="stepper-content__item">
-                            <a href="#" class="step-link">
+                            <a href="/tolex/dist/step_three.html" class="step-link">
                                 <div class="stepper-content__item-wrapper">
                                     <div class="step-count">Шаг 4</div>
                                     <div class="stepper-content__item-title">Тип ремонта</div>
@@ -242,7 +291,7 @@
                         </li>
 
                         <li id="ordering" class="stepper-content__item active">
-                            <a href="#" class="step-link">
+                            <a href="/tolex/dist/registration.html" class="step-link">
                                 <div class="stepper-content__item-wrapper">
                                     <div class="step-count">Шаг 5</div>
                                     <div class="ordering-title stepper-content__item-title">Оформление заказа</div>
@@ -312,7 +361,7 @@
                                 <input type="text" id="datepicker" placeholder="28.05.2021">
                             </div>
 
-                            <a href="/recordtable.html" class="ordering-btn">
+                            <a href="/tolex/dist/recordtable.html" class="ordering-btn">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11.0002 20.1666C5.93755 20.1666 1.8335 16.0625 1.8335 10.9999C1.8335 5.93731 5.93755 1.83325 11.0002 1.83325C16.0628 1.83325 20.1668 5.93731 20.1668 10.9999C20.1613 16.0602 16.0605 20.161 11.0002 20.1666ZM3.66683 11.1576C3.7102 15.1921 7.00451 18.4337 11.0392 18.4121C15.0738 18.3903 18.3331 15.1135 18.3331 11.0787C18.3331 7.04405 15.0738 3.76721 11.0392 3.74542C7.00451 3.72384 3.7102 6.96545 3.66683 10.9999V11.1576ZM11.9168 15.5833H10.0835V11.9166H6.41683V10.0833H10.0835V6.41659H11.9168V10.0833H15.5835V11.9166H11.9168V15.5833Z" fill="white"/>
                                 </svg>
@@ -381,55 +430,7 @@
         
         <!--END header-->
     </div>
-    <!-- Mini Cart -->
-    <div id="cart-modal" class="cart-body">
-        <div class="cart-body__guts">
-            <figure>
-                <img src="img/cart-img.jpg" alt="model-img">
-            </figure>
-            <div class="cart-model">
-                <span class="cart-model__name">Toyota Land Cruiser 200</span>
-                <span class="cart-model__equipment">с 2015 по н.в. LС 200 4.5d А</span>
-            </div>
-            <h3 class="cart-title">Ваш заказ</h3>
-            
-            <div class="cart-order__details">
-                <ul class="cart-order__details-list">
-                    <li class="cart-order__details-list_item">
-                        <span class="cart-service-name">ТО</span>
-                        <span class="cart-service-price">
-                            14 356
-                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.00584 0H1.68755V4.1616H1.23755V5.5116H1.68755V6.11262H1.23755V7.46262H1.68755V9H3.03755V7.46262H4.72505V6.11262H3.03755V5.5125H5.00621C6.52614 5.5125 7.76255 4.27607 7.76255 2.75634C7.76255 1.23643 6.52612 0 5.00584 0ZM5.00639 4.1625H3.03755V4.1616V1.34982H5.00639C5.78183 1.34982 6.41272 1.98072 6.41272 2.75616C6.41272 3.5316 5.78183 4.1625 5.00639 4.1625Z" fill="#BB261A"/>
-                            </svg>
-                        </span>
-                        <span class="remove-this-item">
-                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.59 0L5 3.59L1.41 0L0 1.41L3.59 5L0 8.59L1.41 10L5 6.41L8.59 10L10 8.59L6.41 5L10 1.41L8.59 0Z" fill="#BBBBBB"/>
-                            </svg>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="cart-total__price">
-                Итого:
-                <span>14 356</span>
-                <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.34299 0H0.8125V6.93601H0.0625V9.18601H0.8125V10.1877H0.0625V12.4377H0.8125V15H3.0625V12.4377H5.875V10.1877H3.0625V9.1875H6.3436C8.87682 9.1875 10.9375 7.12679 10.9375 4.5939C10.9375 2.06071 8.87679 0 6.34299 0ZM6.3439 6.9375H3.0625V6.93601V2.24971H6.3439C7.6363 2.24971 8.68779 3.3012 8.68779 4.5936C8.68779 5.88601 7.6363 6.9375 6.3439 6.9375Z" fill="#BB261A"/>
-                </svg>  
-            </div>
-
-            <div class="cart-actual__price">Цена за актуальна на 30.10.2020г.</div>
-
-            <div class="cart-button">
-                <a class="cart-order__btn" href="/registration.html">ОФОРМИТЬ ЗАКАЗ</a>
-                <a class="cart-invoice__btn" href="#">СКАЧАТЬ СЧЕТ</a>
-            </div>
-
-        </div>
-    </div>
-    <!-- Mini Cart END-->
+   
     <script src="js/app.min.js"></script>
 </body>
 </html>
