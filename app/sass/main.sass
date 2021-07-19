@@ -151,6 +151,14 @@ body
                 color: #bb261a
                 span
                     background-image: url(../img/services_book-white.svg)
+            &.return-order
+                span
+                    background-image: url(../img/calendar.svg)
+                &:hover
+                    span
+                        background-image: url(../img/calendar-red.svg)
+                    
+
 .cart-body
     visibility: hidden
     opacity: 0
@@ -682,6 +690,9 @@ body
             a
                 color: #000000
                 text-decoration: none
+                display: block
+                width: 100%
+                height: 100%
             &.inactive
                 a
                     color: #AEAEAE
@@ -724,6 +735,8 @@ body
                     background-color: #AEAEAE
             &:hover
                 background-color: #DEDEDE
+            &-wrapper
+                margin-top: 15px
                 
 .stepper-mobile
     position: relative
@@ -857,10 +870,7 @@ body
                     border-radius: 100%
                 .model-type
                     display: none
-
-
-.ordering-title
-    margin-top: -15px                    
+               
 
 .step-count
     position: absolute
@@ -1182,6 +1192,8 @@ body
             &::-webkit-scrollbar-thumb
                 border-radius: 50px
                 background-color: #cccccc
+            &:last-child
+                margin-top: -41px
 .calcultor-form__item-header
     border-bottom: 1px solid #CDCDCD
     max-width: 680px
@@ -1892,6 +1904,8 @@ body
         cursor: pointer
         transition: all .5s ease
         a
+            width: 100%
+            height: 100%
             color: #000
             text-decoration: none
             transition: all .5s ease

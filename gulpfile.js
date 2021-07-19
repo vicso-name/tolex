@@ -24,7 +24,6 @@ function scripts() {
 		'node_modules/jquery/dist/jquery.min.js',
 		'node_modules/owl.carousel/dist/owl.carousel.js',
 		'app/libs/jquery-ui/jquery-ui.js',
-		'app/libs/fullpage/fullpage.js',
 		'app/libs/maphilight/jquery.maphilight.min.js',
 		'app/libs/inputmask/dist/jquery.inputmask.js',
 		'app/js/app.js',

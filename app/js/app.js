@@ -100,10 +100,10 @@ $("body").on('click', 'area', function(event) {
 
 /*** fullpage page function ***/
 
-new fullpage('#fullPage', {
-    autoScrolling: true,
-    navigation: false
-});
+//new fullpage('#fullPage', {
+//    autoScrolling: true,
+//    navigation: false
+//});
 
 /*** fullpage page function END***/
 
