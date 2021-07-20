@@ -1,6 +1,3 @@
-
-
-
 /*** Input Mask ***/
 let inputsTel = document.querySelectorAll('input[type="tel"]');
 
@@ -12,19 +9,16 @@ Inputmask({
 /*** Input Mask END ***/
 
 /*** First time sale ***/
-let firstTimeLabel = document.querySelector('.first-time__label');
-let totalSaleWrapper = document.querySelector('.total-sale-wrapper')
-if(firstTimeLabel !== null){
-    firstTimeLabel.addEventListener('click', function(){
-        totalSaleWrapper.classList.toggle('active')
-    })
-}
-
+    let firstTimeLabel = document.querySelector('.first-time__label');
+    let totalSaleWrapper = document.querySelector('.total-sale-wrapper')
+    if(firstTimeLabel !== null){
+        firstTimeLabel.addEventListener('click', function(){
+            totalSaleWrapper.classList.toggle('active')
+        })
+    }
 /*** First time sale END***/
 
 /*** Cart PopUp ***/
-
-
 
 const cartBtn = document.getElementById('cart-btn');
 const carModal = document.querySelector('.cart-body');
@@ -32,23 +26,27 @@ const getOrder = document.getElementById('get_order');
 
 if(getOrder!==null){
     getOrder.addEventListener('click', function(){
-        carModal.classList.toggle('active'); 
+        carModal.classList.toggle('show'); 
+        
    })
 }
 
 const popups = [...document.getElementsByClassName('cart')];
 
 window.addEventListener('click', ({ target }) => {
-
     const popup = target.closest('.cart');
+    const toOrder = target.closest('.get_order');
     const clickedOnClosedPopup = popup && !popup.classList.contains('show');
-    
     popups.forEach(p => p.classList.remove('show'));
-    
     if (clickedOnClosedPopup) popup.classList.add('show'); 
-  
- 
 });
+
+if(getOrder!==null){
+    getOrder.addEventListener('click', function(){
+        carModal.classList.toggle('show'); 
+        
+   })
+}
 
 /*** Cart PopUp END***/
 
@@ -228,12 +226,24 @@ $('.inner-mileage-slider').owlCarousel({
     dots:false,
     responsive:{
         0:{
-            items:2
+            items:3
         },
         600:{
+            items:3
+        },
+        768:{
+            items:5
+        },
+        1024:{
+            items:6 
+        },
+        1200:{
+            items:3
+        },
+        1300:{
             items:4
         },
-        1000:{
+        1600:{
             items:5
         }
     }

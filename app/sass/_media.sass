@@ -13,6 +13,89 @@
         height: auto
     .popular-repairs__grid
         grid-template-columns: repeat(5,1fr)
+
+
+    /*** Calculator TO ***/
+    .total-value
+        padding-right: 27px
+    .calcultor-form__wrapper 
+        .to-calcultor-form
+            grid-template-columns: 1fr 1fr
+            grid-gap: 54px
+    .calcultor-form__item-header
+        max-width: 500px
+    .inner-mileage-slider li .mileage-value
+        font-size: 12px
+    .inner-mileage-slider li .price-value
+        font-size: 12px
+    .price-compare-tolex-img
+        display: none
+    .price-compare__guts li h4
+        font-size: 11px
+    .price-compare__guts li .price-compare-average span
+        font-size: 12px
+    .price-compare__guts li .price-compare-official span 
+        font-size: 12px
+    .price-compare__guts li .price-compare-tolex span
+        font-size: 12px   
+    .order-section-imgs_car img
+        width: 196px
+        height: 147px 
+    .order-section-imgs_logo
+        img
+            width: 126px
+            height: 37px
+    .order-section
+        grid-template-columns: 250px 1fr  
+        padding-left: 15px
+        padding-top: 15px
+    .order-section .order-section__content-header .dilers-varanty-save
+        font-size: 12px
+    .order-section .order-details h3
+        font-size: 19px
+    .order-section .order-details h5
+        font-size: 12px
+    .first-time__label
+        font-size: 12px
+    .billing-btns a
+        font-size: 10px
+        width: 130px
+        height: 33px
+        line-height: 33px 
+        svg
+            width: 15px
+    .billing-btns button
+        width: 112px
+        height: 33px
+        line-height: 29px
+        font-size: 11px
+        svg
+            width: 16px   
+    .inner-mileage-slider
+        max-width: 430px
+    .stepper-content__item-title
+        font-size: 12px
+    .stepper-content__item-subtitle
+        font-size: 12px
+    .price-compare__guts
+        grid-template-columns: 1fr 1fr 120px
+    .calcultor-form__wrapper::before
+        left: 48%
+    .calcultor-form__item-header h2
+        font-size: 19px
+    .grid-table-row.category
+        grid-template-columns: 270px 1fr 1fr 1fr
+    .grid-table-row
+        grid-template-columns: 299px 1fr 1fr 1fr
+    .label-item__wrapper
+        max-width: 222px
+    .grid-table-cell.service-cathegory label
+        font-size: 12px
+    .grid-table-cell.service label
+        font-size: 12px
+
+        
+
 @media (max-width: 1200px)
     .model-catalog__content-grid
         grid-template-columns: repeat(3,1fr)
@@ -22,9 +105,20 @@
         grid-template-columns: repeat(2,1fr)
     .popular-repairs__grid
         grid-template-columns: repeat(5,1fr)
+
+    .stepper-content__item-subtitle
+        font-size: 11px
+    .inner-mileage-slider
+        max-width: 380px
+    .order-section-imgs_car img
+        width: 144px
+        height: 109px
+    .calcultor-form__wrapper .to-calcultor-form
+        grid-gap: 25px
+    .calcultor-form__item-header
+        max-width: 475px
+
 @media (max-width: 1024px)
-    .stepper-content__item-title
-        font-size: 13px!important
     .stepper-content
         padding-left: 0!important
         padding-right: 0!important
@@ -39,102 +133,269 @@
         margin-bottom: 0!important
     .stepper
         margin-right: 0!important
-        padding-left: 15px
+        padding-left: 0
         padding-right: 15px
     .popular-repairs__grid
         grid-template-columns: repeat(3,1fr)
+        
+    .calcultor-form__wrapper .to-calcultor-form
+        grid-template-columns: 1fr
+    .inner-mileage-slider
+        max-width: 685px
+    .calcultor-form__wrapper::before
+        width: 0
+    .price-compare-tolex-img
+        display: block
+    .price-compare__guts
+        grid-template-columns: 1fr 1fr 1fr
+    .order-section-imgs_car img
+        width: 247px
+        height: 185px
+    .calcultor-form__item-header
+        max-width: 98%
+    .price-compare
+        max-width: 100%
+    .order-section
+        max-width: 100%
+        margin-bottom: 45px
+    .stepper-content__item-title
+        font-size: 11px
+    .stepper-content__item
+        padding-left: 22px
+    .calcultor-form__wrapper
+        margin-top: 38px
+    .inner-mileage-slider .owl-nav .owl-next
+        right: -131px
+    .inner-mileage-slider .owl-nav .owl-prev
+        left: -131px
+    .order-section-imgs_logo img
+        width: 164px
+        height: 48px
+    .grid-table-row.category
+        grid-template-columns: 365px 1fr 1fr 1fr
+    .grid-table-row
+        grid-template-columns: 396px 1fr 1fr 1fr
+    .label-item__wrapper
+        max-width: 296px
+
+            
+@media (max-width: 992px)   
+    .aside
+        display: none
+
+    .wrapper-inner
+        display: block
+
+    .sidebar-for-mobile
+        display: block
 
 @media (max-width: 768px)
+    .container-fluid
+        padding-right: 0
+        padding-left: 0
+
+    .header-info__item .phone-contact
+        padding-left: 30px
+
+    .header-info__item-content .phone-number__content
+        font-size: 12px
+
+    .stepper-content__item-title
+        font-size: 11px!important
+        width: 101px
+        white-space: nowrap
+        overflow: hidden
+
+    .stepper-content__item-subtitle
+        font-size: 11px!important
+        width: 101px
+        white-space: nowrap
+        overflow: hidden
+
+    .header-info__content
+        padding-left: 28px
+
+    .inner-mileage-slider
+        max-width: 700px
+
     body
         background-image: none!important
 
     .wrapper-inner
         overflow: inherit
-    .mobile-logo
-        width: 175px
-    .header-info
-        border-bottom: none
-    .top-menu
-        display: none
-    .header-info__item
-        display: none
-        &.mobile-version
-            display: block
-        &.phone-contact
-            display: block
+    
     .service-book
         display: none!important
-    .top-menu__mobile
-        display: flex!important
-        align-items: center
-        justify-content: space-between
-        padding-top: 10px
-        padding-bottom: 12px
+        
     .cart
         margin-right: 19px
-    .header-info__item-content
-        display: -webkit-box!important
-        padding-left: 95px
+
     .selection-block__item-content .toyota
         width: 178px
         height: 114.55px
+
     .selection-block__item-content .lexsus
         width: 186px
         height: 116px
-    .stepper-content__item-title
-        font-size: 11px!important
 
-    .header-info__content
-        justify-content: center!important    
     .wrapper-inner
         grid-template-columns: 0
-    .aside
-        display: none!important 
-    .stepper
-        display: none
-    .stepper-mobile__wrapper
-        display: block!important
-        opacity: 1!important
 
-    .breadcrumbs
+    .aside
         display: none!important
+
     .header-wrapper
         padding-left: 0!important 
-    .model-catalog__content-grid
-        grid-template-columns: repeat(3, 1fr )    
 
-    .header-info__item-content .phone-number
-        margin-right: 38px!important
-    .container-fluid.mobile-slider
-        overflow: auto
-        max-width: 320px
+    .model-catalog__content-grid
+        grid-template-columns: repeat(3, 1fr )
 
     .choose-modele-title
         display: none
 
-    .mileage-value
-        margin-bottom: 6px
-
     .model-presentation::before
         width: 0
+
     .select__fixing-type_guts
         flex-direction: column
+
     .model-presentation
         margin: 0 auto
+
     .select__fixt-type
         max-width: 420px
         margin: 0 auto
+
     .select__fixt-type-title
         margin-top: 22px
+
     .mileage-value #mileage-input
         width: 100%
+
     .mileage-drop__list
         width: 100%
 
     .wrapper-inner.inner-pages
         grid-template-columns: max-content
 
+    .calcultor-form__wrapper .to-calcultor-form .detailing-repair__tabs-container
+        padding-right: 0
+
+    .calcultor-form__item-header
+        max-width: 100%
+
+    .wrapper-inner
+        padding-right: 15px
+        padding-left: 15px
+
+    .inner-mileage-slider .owl-nav .owl-prev
+        left: -12px
+
+    .inner-mileage-slider .owl-nav .owl-next
+        right: -12px
+
+    .stepper-mobile__guts
+        margin-top: 25px
+
+    .price-compare__guts li h4
+        font-size: 14px
+    .mobile-rem-chooser
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+    .mobile-rem-chooser .mobile-rem-chooser_item
+        margin: 0
+    .sidebar-for-mobile
+        position: fixed
+        bottom: 0
+        width: 100%
+        left: 0
+        right: 0
+    .mobile-rem-chooser .mobile-rem-chooser_item a
+        font-size: 12px
+    .sidebar-for-mobile__header .sidebar-for-mobile__total-wrapp
+        font-size: 15px
+    .sidebar-for-mobile__header h3 span
+        font-size: 15px
+    .header-info__item-content .phone-number__content
+        font-size: 15px
+    .header-info__item-content .phone-number__title
+        font-size: 12px
+    .inner-mileage-slider li .mileage-value
+        font-size: 14px
+    .inner-mileage-slider li .price-value
+        font-size: 14px
+    .price-compare__guts li .price-compare-average span
+        font-size: 14px
+    .price-compare__guts li .price-compare-official span
+        font-size: 14px
+    .price-compare__guts li .price-compare-tolex span
+        font-size: 14px
+    .order-section
+        padding-top: 33px
+        padding-left: 35px
+    .order-section .order-section__content-header h2
+        margin-bottom: 5px
+    .calcultor-form__wrapper .to-calcultor-form .calcultor-form__item:last-child
+        margin-bottom: 50px
+
+
 @media (max-width: 570px)
+
+    .header-info__item-content .phone-number__content
+        font-size: 12px
+    .header-info__item-content .phone-number__title
+        font-size: 10px
+    .price-compare__guts li h4
+        font-size: 12px
+    .price-compare__guts li .price-compare-average span
+        font-size: 12px
+    .price-compare__guts li .price-compare-official span
+        font-size: 12px
+    .price-compare__guts li .price-compare-tolex span
+        font-size: 12px
+
+    .mobile-logo
+        width: 175px
+
+    .header-info
+        border-bottom: none
+    .top-menu
+        display: none
+
+    .header-info__item
+        display: none
+        &.mobile-version
+            display: block
+        &.phone-contact
+            display: block
+
+    .stepper
+        display: none
+        
+    .breadcrumbs
+        display: none!important
+
+    .header-info__item-content .phone-number
+        margin-right: 38px!important
+        width: 130px
+        
+    .container-fluid.mobile-slider
+        overflow: auto
+        max-width: 520px
+
+    .stepper-mobile__wrapper
+        display: block!important
+        opacity: 1!important
+
+    .stepper-mobile
+        width: 100%
+
+    .top-menu__mobile
+        display: flex!important
+        align-items: center
+        justify-content: space-between
+        padding-top: 10px
+        padding-bottom: 12px
     
     .mobile-logo
         width: 100px
@@ -182,7 +443,7 @@
         grid-template-columns: repeat(1, 1fr ) 
 
     .stepper-mobile__menu ul li.active
-        width: 185px
+        width: 100%
     .type-selector li
         width: 149px
         height: 72px
@@ -204,5 +465,87 @@
         font-size: 16px
     .mileage-value-title
         font-size: 16px
+
+    .inner-mileage-slider .owl-nav .owl-prev
+        left: -12px
+    .inner-mileage-slider .owl-nav .owl-next
+        right: -12px
+
+    .order-section
+        position: relative
+        grid-template-columns: 1fr
+        padding-top: 83px
+        margin-top: 75px
+
+    .order-section-imgs_logo img
+        display: none
+    .order-section__content-header
+        margin-top: 35px
+    .order-section-imgs_car
+        display: inline
+        position: absolute
+        bottom: 255px
+        left: 50%
+        transform: translate(-50%)
+    .calcultor-form__wrapper 
+        .to-calcultor-form 
+            .detailing-repair__tabs-container
+                max-height: max-content
+
+    .inner-mileage-slider
+        max-width: 500px
+
+    .order-section
+        margin-top: 95px
+
+    .tabs-content
+        width: 540px
+        overflow: auto
+    .tab-content.active
+        width: 700px
+        overflow: hidden
+
+    .detailing-repair__tabs
+        flex-wrap: wrap
+    .order-section-imgs_car img
+        width: 181px
+        height: 135px
+    .order-section-imgs_car
+        bottom: 275px
+    .order-section-imgs_car
+        transform: translate(-62%)
+        
+
+
+@media (max-width: 420px)
+    .tabs-content
+        width: 390px
+        overflow: auto
+    .detailing-repair__tabs .general-and-separate
+        margin-bottom: 9px
+    .detailing-repair-btn
+        margin-right: 7px
+    .inner-mileage-slider
+        max-width: 266px
+    .inner-mileage-slider li .mileage-value
+        font-size: 12px
+    .inner-mileage-slider li .price-value
+        font-size: 12px
+    
+
+@media (max-width: 375px)
+    .tabs-content
+        width: 345px
+
+
+@media (max-width: 320px)
+    .tabs-content
+        width: 290px
+    .order-section
+        padding-left: 19px
+    .order-section-imgs_car
+        transform: translate(-56%)
+        
+    
 
     

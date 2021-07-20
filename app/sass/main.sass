@@ -608,6 +608,8 @@ body
                 text-decoration: none
                 width: 123px
                 height: 35px
+.sidebar-for-mobile
+    display: none
 .aside
     height: 100vh
     position: fixed
@@ -1180,10 +1182,11 @@ body
         max-width: 1468px
         grid-gap: 89px
         grid-template-columns: 680px 1fr
-        .calcultor-form__item
-            max-height: 588px
+        .detailing-repair__tabs-container
+            max-height: 588px   
             overflow: auto
             padding-right: 20px
+            margin-top: 9px
             &::-webkit-scrollbar-track
                 background-color: transparent
             &::-webkit-scrollbar
@@ -1192,6 +1195,7 @@ body
             &::-webkit-scrollbar-thumb
                 border-radius: 50px
                 background-color: #cccccc
+        .calcultor-form__item
             &:last-child
                 margin-top: -41px
 .calcultor-form__item-header
@@ -1398,10 +1402,12 @@ body
 
 /*** Order Section ***/
 .total-sale-wrapper
+    display: none
     opacity: 0
     visibility: hidden
     transition: all .5s ease
     &.active
+        display: block
         opacity: 1
         visibility: visible
 .order-section
@@ -1458,7 +1464,8 @@ body
             line-height: 1
             letter-spacing: 0em
             margin-bottom: 21px
-    
+        svg
+            margin-bottom: 2px
 .first-time__label
     position: relative
     cursor: pointer
