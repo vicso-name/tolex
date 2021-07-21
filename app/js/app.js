@@ -234,8 +234,15 @@ $('.inner-mileage-slider').owlCarousel({
         768:{
             items:5
         },
+
         1024:{
             items:6 
+        },
+        1150:{
+            items:4  
+        },
+        1180:{
+            items:4  
         },
         1200:{
             items:3

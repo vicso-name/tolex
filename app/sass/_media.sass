@@ -6,8 +6,11 @@
     .calcultor-form__wrapper .to-calcultor-form .calcultor-form__item::before
         right: -10px
     .inner-mileage-slider
-        width: 430px
+        max-width: 430px
 
+@media (max-width: 1360px)
+    .inner-mileage-slider
+        max-width: 430px
     
 @media (max-width: 1300px)
     .model-catalog__content-guts
@@ -132,8 +135,32 @@
         grid-gap: 25px
     .calcultor-form__item-header
         max-width: 475px
+    .calcultor-form__item
+        overflow: hidden
+    .tab-content
+        width: 625px
+    .detailing-repair__tabs
+        width: 625px
+
+    .stepper-content__item-title
+        font-size: 13px
+        white-space: nowrap
+    .stepper-content__item-subtitle
+        white-space: nowrap
+
+    .inner-mileage-slider
+         max-width: 380px
+
+    .service-book
+        display: none!important
+    
+
 
 @media (max-width: 1024px)
+    .tab-content
+        width: 100%
+    .detailing-repair__tabs
+        width: 100%
     .stepper-content
         padding-left: 0!important
         padding-right: 0!important
@@ -231,7 +258,7 @@
         padding-left: 28px
 
     .inner-mileage-slider
-        max-width: 700px
+        max-width: 580px
 
     body
         background-image: none!important
@@ -620,7 +647,7 @@
         transform: translate(-56%)
         
     .inner-mileage-slider
-        width: 255px
+        max-width: 255px
     
 
     
