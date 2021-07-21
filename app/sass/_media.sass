@@ -1,4 +1,5 @@
 
+
 @media (max-width: 1440px)
     .calcultor-form__wrapper .to-calcultor-form
         grid-gap: 32px
@@ -7,6 +8,17 @@
         right: -10px
     .inner-mileage-slider
         max-width: 430px
+    .grid-table-row
+        grid-template-columns: 314px 1fr 1fr 1fr
+    .grid-table-row.category
+        grid-template-columns: 290px 1fr 1fr 1fr
+    .label-item__wrapper
+        max-width: 240px
+    .detailing-repair__tabs
+        flex-wrap: wrap
+    .general-and-separate
+        margin-bottom: 6px
+
 
 @media (max-width: 1360px)
     .inner-mileage-slider
@@ -385,26 +397,13 @@
     .order-section .order-section__content-header .dilers-varanty-save
         font-size: 15px
     
-
-
-@media (max-width: 570px)
-
-    .header-info__item-content .phone-number__content
-        font-size: 15px
+@media (max-width: 720px)
     .header-info__item-content .phone-number__title
         font-size: 10px
-    .price-compare__guts li h4
-        font-size: 12px
-    .price-compare__guts li .price-compare-average span
-        font-size: 12px
-    .price-compare__guts li .price-compare-official span
-        font-size: 12px
-    .price-compare__guts li .price-compare-tolex span
-        font-size: 12px
-
     .mobile-logo
         width: 158px
-
+    .stepper-mobile__menu ul li.active
+        width: 100%
     .header-info
         border-bottom: none
     .top-menu
@@ -441,6 +440,35 @@
         padding-top: 10px
         padding-bottom: 12px
 
+
+@media (max-width: 570px)
+
+    .total-sale-wrapper
+        display: block
+        opacity: 0
+        visibility: hidden
+        transition: all .5s ease
+    &.active
+        opacity: 1
+        visibility: visible
+
+    .header-info__item-content .phone-number__content
+        font-size: 15px
+    .header-info__item-content .phone-number__title
+        font-size: 10px
+    .price-compare__guts li h4
+        font-size: 12px
+    .price-compare__guts li .price-compare-average span
+        font-size: 12px
+    .price-compare__guts li .price-compare-official span
+        font-size: 12px
+    .price-compare__guts li .price-compare-tolex span
+        font-size: 12px
+
+    .mobile-logo
+        width: 158px
+
+    
     .container-fluid
         padding-right: 5px
         padding-left: 5px
@@ -525,7 +553,7 @@
     .order-section-imgs_car
         display: inline
         position: absolute
-        bottom: 233px
+        bottom: 265px
         left: 50%
         transform: translate(-50%)
     .calcultor-form__wrapper 
@@ -534,7 +562,7 @@
                 max-height: max-content
 
     .inner-mileage-slider
-        max-width: 500px
+        max-width: 470px
 
     .order-section
         margin-top: 95px
@@ -568,6 +596,9 @@
 
 
 @media (max-width: 420px)
+
+    .inner-mileage-slider
+        max-width: 420px
 
     .container-fluid.mobile-slider
         overflow: auto
@@ -621,11 +652,6 @@
         font-size: 13px
         font-size: 500
 
-    .billing-btns button
-        width: 141px
-    .billing-btns a
-        width: 165px
-
     .price-compare__guts li .price-compare-official span
         font-size: 13px
         font-size: 500
@@ -636,9 +662,18 @@
 @media (max-width: 375px)
     .tabs-content
         width: 345px
+    .mobile-logo
+        width: 105px
+    .order-section-imgs_car
+        bottom: 300px
+    .inner-mileage-slider
+        max-width: 300px
 
 
 @media (max-width: 320px)
+    .order-section-imgs_car
+        bottom: 323px
+    
     .tabs-content
         width: 290px
     .order-section
