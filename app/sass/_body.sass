@@ -184,10 +184,20 @@
 
 .body-repair__order-form
     display: grid
-    max-width: 1468px
+    width: 100%
     grid-gap: 89px
     grid-template-columns: 680px 1fr
     padding-bottom: 62px
+    .body-order__item.left-side-item
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 1px
+            right: -40px
+            height: 93%
+            bottom: 0
+            background-color: #c5c5cc
 .body-repair__grid
     display: flex
     width: 644.6px
@@ -195,6 +205,9 @@
     margin-top: 37px
 .body-order__item-guts
     margin-top: 37px
+    overflow: auto
+    padding-right: 20px
+
 
 .body_repair-service
     padding-left: 16px

@@ -1168,18 +1168,11 @@ body
 
 .calcultor-form__wrapper
     position: relative   
-    margin-top: 45px
+    margin-top: 30px
     padding-bottom: 68px
-    &::before
-        content: ""
-        position: absolute
-        width: 1px
-        left: 47%
-        height: 100%
-        background-color: #c5c5cc
     .to-calcultor-form
         display: grid
-        max-width: 1468px
+        max-width: 100%
         grid-gap: 89px
         grid-template-columns: 680px 1fr
         .detailing-repair__tabs-container
@@ -1196,11 +1189,20 @@ body
                 border-radius: 50px
                 background-color: #cccccc
         .calcultor-form__item
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                width: 1px
+                right: -40px
+                height: 110%
+                background-color: #c5c5cc
             &:last-child
-                margin-top: -41px
+                margin-top: 0
 .calcultor-form__item-header
     border-bottom: 1px solid #CDCDCD
-    max-width: 680px
+    max-width: 100%
+    margin-right: 20px
     h2
         font-size: 22px
         margin-bottom: 13px
@@ -1415,8 +1417,7 @@ body
     grid-template-columns: 294px 1fr
     background-color: #efefef
     border-radius: 4px
-    max-width: 653px
-    margin: 0 auto
+    width: 100%
     margin-top: 17px
     padding-top: 33px
     padding-bottom: 39px
