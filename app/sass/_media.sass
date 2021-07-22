@@ -186,7 +186,10 @@
     .popular-repairs__grid
         grid-template-columns: repeat(3, 1fr)
 
-
+    .popular-body__repaire-content_item
+        width: 165px
+        a
+            font-size: 12px
 @media (max-width: 1024px)
     .tab-content
         width: 100%
@@ -255,6 +258,11 @@
     .order-section
         padding-top: 33px
         padding-left: 34px
+
+    .popular-body__repaire-content_item
+        width: 175px
+    .popular-body__repaire-content_item span
+        font-size: 12px
             
 @media (max-width: 992px)  
     .popular-repairs__grid
@@ -275,7 +283,15 @@
         display: grid
         grid-template-columns: repeat(4,1fr)
 
+    .body-repaire__header .body-repaire__header-list li
+        font-size: 12px
+
+    .popular-body__repaire-content
+        margin-left: -25px
+
 @media (max-width: 768px)
+    .body-repair__forms
+        width: 320px
     .select__fixt-type-title
         text-align: center
         
@@ -445,8 +461,17 @@
         grid-template-columns: 295px 1fr
     .order-section .order-section__content-header .dilers-varanty-save
         font-size: 15px
-    
+    .popular-body__repaire-content
+        grid-template-columns: repeat(2, 1fr)
+    .popular-body__repaire-content_item
+        width: 300px
+    .body-repair__forms
+        flex-wrap: wrap
+        justify-content: space-around
+
 @media (max-width: 720px)
+    .popular-body__repaire-content_item
+        width: 250px
     .header-info__item-content .phone-number__title
         font-size: 10px
     .mobile-logo
@@ -488,9 +513,14 @@
         justify-content: space-between
         padding-top: 10px
         padding-bottom: 12px
-
+    .body-repaire__header .body-repaire__header-list
+        grid-template-columns: repeat(1, auto)
+        grid-gap: 16px
 
 @media (max-width: 570px)
+
+    .body-repaire__header .body-repaire__header-info
+        text-align: center
 
     .total-sale-wrapper
         display: block
@@ -636,6 +666,7 @@
 
     .order-section
         padding-right: 23px
+        margin-bottom: 0
     
     .detailing-repair__tabs
         border-bottom: none
@@ -664,8 +695,12 @@
         .detailing-repair-btn
             &:first-child
                 margin-right: 6px
-
-
+    .popular-body__repaire-content_item
+        width: 142px
+        margin: 0 auto
+        
+    .popular-body__repaire-content
+        margin-left: 0
 
 @media (max-width: 420px)
     .model-catalog__content-grid li
