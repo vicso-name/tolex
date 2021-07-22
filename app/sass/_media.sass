@@ -252,6 +252,9 @@
         max-width: 296px
     .type-selector li
         width: 217px
+    .order-section
+        padding-top: 33px
+        padding-left: 34px
             
 @media (max-width: 992px)  
     .popular-repairs__grid
@@ -265,10 +268,34 @@
     .sidebar-for-mobile
         display: block
 
+    body
+        background-image: none
+
+    .mobile-rem-chooser
+        display: grid
+        grid-template-columns: repeat(4,1fr)
+
 @media (max-width: 768px)
+    .select__fixt-type-title
+        text-align: center
+        
+    .mileage-value-title
+        text-align: center
     .container-fluid
         padding-right: 0
         padding-left: 0
+    .select__fixing-type_guts
+        padding-bottom: 200px
+    .select__fixt-type
+        text-align: center
+    .select__fixt-type-title
+        display: inline
+        background-position-x: 0
+    .mileage-value-title
+        display: inline
+        background-position-x: 0
+    .model-presentation
+        margin-bottom: 25px
 
     .header-info__item .phone-contact
         padding-left: 30px
@@ -536,7 +563,7 @@
     .stepper-mobile__menu ul li.active
         width: 100%
     .type-selector li
-        width: 149px
+        width: 125px
         height: 72px
     .type-selector__item-guts-title
         font-size: 11px
@@ -619,16 +646,36 @@
     .popular-repairs__grid-item
         width: 100%
 
+@media (max-width: 520px)
+    .container-fluid.mobile-slider
+        overflow: auto
+        max-width: 520px
+    .select__fixing-type_guts
+        padding-bottom: 200px
+    .selected-services
+        width: 100%
+    .detailing-repair-btn
+        width: 100%
+    .general-and-separate
+        width: 100%
+    .detailing-repair-btn
+        margin-right: 0
+    .general-and-separate
+        .detailing-repair-btn
+            &:first-child
+                margin-right: 6px
+
+
+
 @media (max-width: 420px)
+    .model-catalog__content-grid li
+        margin-bottom: 0!important
+
     .model-catalog__content-grid li h3
         margin-top: 0
 
     .inner-mileage-slider
         max-width: 420px
-
-    .container-fluid.mobile-slider
-        overflow: auto
-        max-width: 520px
 
     .tabs-content
         width: 390px
@@ -697,6 +744,8 @@
 
 
 @media (max-width: 320px)
+    .billing-btns a
+        width: 126px
     .order-section-imgs_car
         bottom: 323px
     

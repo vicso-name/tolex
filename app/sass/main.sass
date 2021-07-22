@@ -783,10 +783,14 @@ body
         li
             margin-top: 6px
             position: relative
-            width: 30px
+            width: 55px
             background-color: #ffffff
             text-align: center
             a
+                white-space: nowrap
+                height: 43px
+                overflow: hidden
+                text-overflow: ellipsis
                 margin-top: 14px
                 font-size: 9px
                 font-style: normal
@@ -855,7 +859,7 @@ body
                     text-align: left
                     color: #000000
             &.choosed
-                width: 20px
+                width: 38px
                 margin-right: 4px
                 &::before
                     content: ""
@@ -897,12 +901,6 @@ body
     &__content
         position: relative
         max-height: 100% 
-        &-guts
-            position: absolute
-            top: 0
-            left: 0
-            width: 100%
-            height: 100%
         &-img
             height: 103px
             background-position: left
@@ -1632,7 +1630,14 @@ body
 .table-price
     padding-top: 15px 
     padding-bottom: 15px 
-
+.cell-quantity
+    font-family: Montserrat
+    font-size: 13px
+    font-style: normal
+    font-weight: 700
+    line-height: 16px
+    letter-spacing: 0em
+    text-align: left
 .table-sub__cath
     position: relative
     .table-sub__cath-cell
