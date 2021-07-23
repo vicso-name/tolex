@@ -26,8 +26,7 @@ const getOrder = document.getElementById('get_order');
 
 if(getOrder!==null){
     getOrder.addEventListener('click', function(){
-        carModal.classList.toggle('show'); 
-        
+        carModal.classList.toggle('show');   
    })
 }
 
@@ -88,11 +87,7 @@ $("body").on('click', 'area', function(event) {
     });
     popup.slideUp(100);
  }
-
-
-
-
-    
+  
     
 /*** Body Repair Part Chooser END ***/
 
@@ -199,7 +194,7 @@ if( freeStatus !== null){
 
 /*** Master Status END ***/
 
-/*** mileage sliders ***/
+/*** Mileage sliders ***/
 
 $('.mileage-slider').owlCarousel({
     loop:true,
@@ -278,9 +273,9 @@ function inner_mileage_slider(){
 
 inner_mileage_slider()
 
-/*** mileage sliders END ***/
+/*** Mileage sliders END ***/
 
-/*** mileage-input ***/
+/*** Mileage-input ***/
 
 let mileageInput = document.getElementById('mileage-input');
 let mileageDrop = document.querySelector('.mileage-drop');
@@ -304,7 +299,7 @@ if(mileageDropListItem !== null){
     })
 }
 
-/*** mileage-input END***/
+/*** Mileage-input END***/
 
 /** Testimon windows **/
 
@@ -387,7 +382,7 @@ if(ascBtn !== null && decsBtn !== null){
     });
 }
 
-/*** Sort Order END***/
+/*** Sort Order END ***/
 
 //Product Category
 
@@ -638,6 +633,29 @@ if(tableOurInputCell !== null){
             let parrentElement = item.closest('.grid-table-row');
             parrentElement.classList.add('active');
         })
+    })
+}
+
+let labelItem = document.querySelectorAll('.label-item');
+if(labelItem !== null){
+    labelItem.forEach(item=>{
+        item.addEventListener('click', function(){
+            removeActiveFromCell();
+            let parrentElement = item.closest('.grid-table-row');
+            parrentElement.classList.add('active');
+        })
+    })
+}
+
+let serviceInputItem = document.querySelectorAll('.service-input-item'); 
+if(labelItem !== null){
+    labelItem.forEach(item=>{
+        console.log(item.checked);
+      
+        if(item.checked){
+            
+            item.classList.add('sjsjsjs')
+        }
     })
 }
 

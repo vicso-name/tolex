@@ -1,4 +1,12 @@
 @media (max-width: 1550px)
+    .profile-info-form .profile-info-form__item input
+        width: 270px
+    .profile__content-guts
+        grid-template-columns: 650px auto
+    .car-details-form__input input
+        width: 170px
+    .car-details__wrapper
+        max-width: 585px
     .type-selector li
         width: 185px
     .popular-repairs__grid-item .popular-repairs__title
@@ -7,6 +15,27 @@
         font-size: 12px
     .popular-repairs__grid
         grid-template-columns: repeat(5, 1fr)
+    .ordering-details__fields .ordering-details__field input
+        width: 240px
+    .choose-service-date__field input
+        width: 275px
+    .ordering-content__guts
+        grid-template-columns: 550px 1fr
+    .technical-center__fields
+        grid-template-columns: repeat(2,1fr)
+        max-width: 450px
+    .ordering-content__guts
+        grid-gap: 40px
+    .client-order__guts-item__images-car img
+        width: 160px
+        height: auto
+    .client-order__guts-item__images-logo img
+        width: 103px
+        height: auto
+    .registration-content__item.ordering-item::before
+        right: -4%
+    .wrapper-inner
+        padding-bottom: 100px
 
 @media (max-width: 1440px)
     .calcultor-form__wrapper .to-calcultor-form
@@ -32,7 +61,16 @@
         white-space: nowrap
     .stepper-content__item-subtitle
         white-space: nowrap
-
+    .client-order__guts
+        max-width: 528px
+    .profile__content-guts
+        grid-template-columns: 550px auto
+    .profile-info-form .profile-info-form__item input
+        width: 200px
+    .profile-info-form .profile-info-form__item input
+        font-size: 12px
+        &:placeholder
+            font-size: 12px
 
 @media (max-width: 1360px)
     .inner-mileage-slider
@@ -45,8 +83,12 @@
         font-size: 14px
     .popular-repairs__grid
         grid-template-columns: repeat(4, 1fr)
+    .client-order__guts
+        max-width: 528px
     
 @media (max-width: 1300px)
+    .adds-banners__guts .banner-grid
+        grid-template-columns: repeat(2, 1fr)
     .model-catalog__content-guts
         background-color: #fff
     .model-catalog__content-grid
@@ -59,7 +101,29 @@
     .model-photo__wrapp
         width: 245px
         height: auto
+    .profile__content-guts
+        grid-template-columns: 470px auto
 
+    /*** Total Invoice ***/
+
+    .client-order__guts
+        position: relative
+        padding-top: 80px
+        padding-right: 20px
+        padding-bottom: 25px
+        margin-top: 50px
+    .client-order__guts-item__images-logo
+        display: none
+    .client-order__guts-item__images-car
+        position: absolute
+        top: -55px
+        left: 50%
+        transform: translate(-50%)
+    .client-order__guts
+        grid-template-columns: 1fr
+        max-width: 360px
+
+    /*** Total invoice END ***/
 
     /*** Calculator TO ***/
     .total-value
@@ -145,8 +209,57 @@
         grid-gap: 32px
         grid-template-columns: 1fr 1fr   
 
+    .car-details-form__input input
+        font-size: 12px
+        &::placeholder
+            font-size: 12px
+
+    .car-details-form__input input
+        width: 150px
+
+    .car-details__wrapper
+        width: 525px
 
 @media (max-width: 1200px)
+
+    .item-profile-info::before
+        width: 0
+
+    .item-profile-details 
+        margin-top: 15px
+
+    .profile__content-guts
+        grid-template-columns: 1fr
+
+    .registration-content__guts
+        grid-template-columns: 1fr
+    .register-phone input
+        width: 360px
+
+    /*** Total Invoice ***/
+
+    .client-order__guts
+        position: relative
+        padding-top: 28px
+
+    .client-order__guts-item__images-logo
+        display: block
+
+    .client-order__guts-item__images-car img
+        width: 210px
+
+    .client-order__guts-item__images-car
+        position: relative
+        top: unset
+        left: unset
+        transform: unset
+
+    .client-order__guts
+        grid-template-columns: 1fr 1fr
+        max-width: 650px
+
+    /*** Total invoice END ***/
+
     .model-catalog__content-grid
         grid-template-columns: repeat(3,1fr)
     .stepper-content__item-title
@@ -190,6 +303,14 @@
         width: 165px
         a
             font-size: 12px
+    .ordering-content__guts
+        grid-template-columns: 1fr
+    .ordering-details__fields
+        max-width: 95%
+    .technical-center__fields
+        grid-template-columns: repeat(3, 1fr)
+        max-width: 95%
+
 @media (max-width: 1024px)
     .tab-content
         width: 100%
@@ -470,6 +591,8 @@
         justify-content: space-around
 
 @media (max-width: 720px)
+    .adds-banners
+        padding-right: 0
     .popular-body__repaire-content_item
         width: 250px
     .header-info__item-content .phone-number__title
@@ -516,8 +639,64 @@
     .body-repaire__header .body-repaire__header-list
         grid-template-columns: repeat(1, auto)
         grid-gap: 16px
+    .technical-center__field-item_content label
+        font-size: 12px
 
 @media (max-width: 570px)
+
+    .adds-banners__guts .banner-grid
+        grid-template-columns: 1fr
+
+    .profile-info-form-guts
+        flex-wrap: wrap
+
+    .car-details__wrapper
+        width: 100%
+    .car-details-form__inputs
+        display: grid
+        grid-template-columns: 1fr
+    .car-details-form__input input
+        width: 100%
+    .car-details-form__input
+        margin: 0
+    .profile-info-form-wrapper
+        margin: 0
+        margin-top: 10px
+        width: 100%
+    .profile-info-form .profile-info-form__item input
+        width: 100%
+    .car-details .model-and-equipment h3
+        font-size: 12px
+
+    .car-details .model-and-equipment p
+        font-size: 10px
+
+    /*** Total Invoice ***/
+
+    .client-order__guts
+        position: relative
+        padding-top: 80px
+        padding-right: 20px
+        padding-bottom: 25px
+        margin-top: 60px
+    .client-order__guts-item__images-logo
+        display: none
+    .client-order__guts-item__images-car img
+        width: 160px
+    .client-order__guts-item__images-car
+        position: absolute
+        top: -55px
+        left: 50%
+        transform: translate(-50%)
+    .client-order__guts
+        grid-template-columns: 1fr
+        max-width: 360px
+
+    .technical-center__fields
+        grid-template-columns: 1fr
+        grid-gap: 5px
+
+    /*** Total invoice END ***/
 
     .body-repaire__header .body-repaire__header-info
         text-align: center
@@ -677,7 +856,26 @@
     .popular-repairs__grid-item
         width: 100%
 
+    
+
 @media (max-width: 520px)
+
+    .choose-service-date__wrapper .ordering-btn
+        margin-left: 0
+
+    .choose-service-date__wrapper
+        flex-wrap: wrap
+
+    .ordering-btn
+        margin-top: 15px
+    
+    .ordering-details__fields
+        flex-wrap: wrap
+        .ordering-details__field:first-child
+            margin-bottom: 20px
+    .ordering-details__fields .ordering-details__field input
+        width: 310px
+
     .container-fluid.mobile-slider
         overflow: auto
         max-width: 520px
@@ -763,8 +961,11 @@
     .price-compare__guts li .price-compare-official span
         font-size: 13px
         font-size: 500
+    .client-order__guts-item .client-order__guts-item__slogan
+        font-size: 12px
 
-    
+    .register-phone input
+        width: 285px
     
 
 @media (max-width: 375px)
@@ -776,7 +977,12 @@
         bottom: 300px
     .inner-mileage-slider
         max-width: 300px
-
+    .ordering-details__fields .ordering-details__field input
+        width: 285px
+    .choose-service-date__field input
+        width: 285px
+    .client-order__guts
+        max-width: 285px
 
 @media (max-width: 320px)
     .billing-btns a
