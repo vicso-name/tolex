@@ -2122,6 +2122,58 @@ body
 
 .ui-icon, .ui-widget-content .ui-icon
     background-image: none
+.ui-widget.ui-widget-content
+    width: 310px
+    padding-left: 30px
+    padding-right: 30px
+    padding-bottom: 15px
+    padding-top: 15px
+.ui-datepicker .ui-datepicker-next span, .ui-datepicker .ui-datepicker-prev span
+    background-color: #BB261A
+    width: 25px
+    height: 25px
+    border-radius: 50%
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-prev span
+    background-color: #BB261A
+    width: 25px
+    height: 25px
+    border-radius: 50%
+    
+.ui-button:focus, .ui-button:hover, .ui-state-focus, .ui-state-hover, .ui-widget-content .ui-state-focus, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-focus, .ui-widget-header .ui-state-hover
+    border: unset
+    transform: unset
+    background: unset
+    color: unset
+    cursor: pointer
+
+.ui-datepicker .ui-datepicker-prev
+    left: 0
+    top: 0
+    &::before
+        content: ''
+        width: 10px
+        height: 10px
+        position: absolute
+        background-image: url(../img/left-arrow.svg)
+        background-repeat: no-repeat
+        background-position: center
+        z-index: 9999
+        top: 13px
+        right: 6px
+.ui-datepicker .ui-datepicker-next
+    right: 0
+    top: 0
+    &::before
+        content: ''
+        width: 10px
+        height: 10px
+        position: absolute
+        background-image: url(../img/right-arrow.svg)
+        background-repeat: no-repeat
+        background-position: center
+        z-index: 9999
+        top: 13px
+        right: 4px
 
 @import "slesrem"
 @import "profile"
