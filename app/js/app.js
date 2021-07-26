@@ -131,6 +131,10 @@ $( function() {
     $("#datepicker").datepicker({
         dateFormat: "dd.mm.yy"
     });
+    $("#change-date").datepicker({
+        dateFormat: "dd.mm.yy"
+    });
+
 });
 
 ( function( factory ) {
