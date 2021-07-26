@@ -80,8 +80,8 @@
         text-align: left
         margin-bottom: 16px
 .staff
-    display: flex
-    justify-content: space-between
+    display: grid
+    grid-template-columns: repeat(3,1fr)
     max-width: 721px
     padding-bottom: 21px
     border-bottom: 1px solid #CDCDCD
@@ -241,6 +241,7 @@
 
 .rating
     display: flex
+    flex-wrap: wrap
     align-items: center
     padding-top: 18px
     padding-bottom: 21px
@@ -345,6 +346,9 @@
         &.active
             border-bottom: 3px solid #BB261A
             background-color: #EFEFEF
+    a
+        text-decoration: none
+        color: #000000
 .record-price
     font-weight: 700
 
