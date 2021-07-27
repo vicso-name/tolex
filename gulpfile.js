@@ -26,7 +26,9 @@ function scripts() {
 		'app/libs/jquery-ui/jquery-ui.js',
 		'app/libs/maphilight/jquery.maphilight.min.js',
 		'app/libs/inputmask/dist/jquery.inputmask.js',
+		'app/libs/fullpage/fullpage.js',
 		'app/js/app.js',
+		
 		])
 	.pipe(concat('app.min.js'))
 	.pipe(uglify())

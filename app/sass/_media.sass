@@ -106,6 +106,8 @@
         grid-template-columns: repeat(4, 1fr)
     .client-order__guts
         max-width: 528px
+    .locksmith-repair__form-wrapper .locksmith-repair__form
+        grid-template-columns: 580px 1fr
     
 @media (max-width: 1300px)
     .adds-banners__guts .banner-grid
@@ -351,8 +353,11 @@
     .server-book__content-guts .item-server-book h2
         width: 65%
         font-size: 17px
-
+    .main-description__wrapper h1
+        font-size: 40px
 @media (max-width: 1024px)
+    .locksmith-repair__form-wrapper .locksmith-repair__form
+        grid-template-columns: 1fr
     .body-repair__order-form
         grid-template-columns: 1fr
     .responsive-tab__wrapper
@@ -437,7 +442,9 @@
         width: 175px
     .popular-body__repaire-content_item span
         font-size: 12px
-            
+    .main-description__wrapper h1
+        font-size: 38px  
+
 @media (max-width: 992px) 
     .record-table__new-version-wrapper
         width: 100%
@@ -470,7 +477,65 @@
     .popular-body__repaire-content
         margin-left: -25px
 
+    .main-description__wrapper h1
+        font-size: 29px
+
 @media (max-width: 768px)
+    .mobile-menu
+        display: block
+        position: fixed
+        z-index: 9999999
+        top: 0
+        background: #F4F4F4
+        width: 86%
+        left: -900px
+        right: 0
+        padding-top: 48px
+        padding-bottom: 48px
+        padding-left: 19px
+        padding-right: 19px
+        transition: all .5s ease
+        min-height: 100vh
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &.active
+            left: 0
+        ul
+            padding: 0
+            list-style-type: none
+            margin: 0
+            li
+                margin-bottom: 24px
+                &:last-child
+                    margin-bottom: 0
+                a
+                    text-decoration: none
+                    color: #000000
+                    font-size: 14px
+                    font-style: normal
+                    font-weight: 600
+                    line-height: 23px
+                    letter-spacing: 0.02em
+                    text-align: left
+        .mobile-menu__extra
+            text-align: center
+            min-height: 50px
+            figure
+                margin-bottom: 25px
+                img
+                    width: 130px
+                    height: auto
+        .mobile-menu-closer
+            position: absolute
+            background: #F4F4F4
+            line-height: 35px
+            text-align: center
+            width: 38px
+            height: 38px
+            top: 0
+            right: -38px
+            cursor: pointer
     .staff
         grid-template-columns: 1fr
     .server-book__table-wrapper
@@ -672,7 +737,17 @@
         width: 625px
     .responsive-tab__content
         width: 700px
-        overflow: hidden   
+        overflow: hidden 
+
+    .main-description__wrapper h1
+        font-size: 20px
+        line-height: 24px
+    .main-description h2
+        font-size: 15px
+        line-height: 24px
+    .main-description__wrapper
+        padding-right: 15px
+
 @media (max-width: 720px)
     .server-book__table-wrapper
         width: 600px

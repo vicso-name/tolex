@@ -1,3 +1,22 @@
+/*** Mobile Menu Opener***/
+let humburger = document.querySelector('.humburger');
+let mobileMenu = document.querySelector('.mobile-menu');
+let mobileMenuCloser = document.querySelector('.mobile-menu-closer');
+
+if(humburger !== null){
+    humburger.addEventListener('click', function(){
+        mobileMenu.classList.add('active')
+    })
+}
+
+if(mobileMenuCloser !== null){
+    mobileMenuCloser.addEventListener('click', function(){
+        mobileMenu.classList.remove('active')
+    })
+}
+
+/*** Mobile Menu  END***/
+
 /*** Input Mask ***/
 let inputsTel = document.querySelectorAll('input[type="tel"]');
 
@@ -93,10 +112,10 @@ $("body").on('click', 'area', function(event) {
 
 /*** fullpage page function ***/
 
-//new fullpage('#fullPage', {
-//    autoScrolling: true,
-//    navigation: false
-//});
+new fullpage('#fullPage', {
+    autoScrolling: true,
+    navigation: false
+});
 
 /*** fullpage page function END***/
 

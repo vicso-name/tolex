@@ -13,6 +13,49 @@ body
     background-repeat: no-repeat
     letter-spacing: 0.5px
 
+section
+    &.s2    
+        background-image: url(../img/sect_bg.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+
+.main-description__wrapper
+    position: relative
+    max-height: 350px
+    overflow: auto
+    padding-right: 100px    
+    &::-webkit-scrollbar-track
+        background-color: transparent
+    &::-webkit-scrollbar
+        width: 8px
+        background-color: #F5F5F5
+    &::-webkit-scrollbar-thumb
+        border-radius: 50px
+        height: 50px
+        background-color: #cccccc
+    h1
+        font-size: 50px
+        font-style: normal
+        font-weight: 700
+        line-height: 86px
+        letter-spacing: 0em
+        text-align: left
+
+.border-contasiner
+    position: relative
+    padding-bottom: 150px
+    &::before
+        content: ''
+        width: 100%
+        top: -60px
+        position: absolute
+        border-top: 1px solid #D0D0D0
+    &::after
+        content: ''
+        width: 100%
+        bottom: 50px
+        position: absolute
+        border-bottom: 1px solid #D0D0D0
 .wrapper
     min-height: 100vh
 
@@ -69,8 +112,6 @@ body
         letter-spacing: 0em
         text-align: left
 
-
-
 .header
     border-bottom: 1px solid $border
     z-index: 9
@@ -84,7 +125,8 @@ body
 
 .top-menu__mobile
     display: none
-
+.mobile-menu
+    display: none
 .main-menu
     ul
         padding: 0
@@ -262,6 +304,21 @@ body
             height: 13.67px
             left: -19px
             top: -2px
+    &.in-mobile-menu
+        width: 224px
+        height: 40px
+        line-height: 40px
+        font-size: 12px
+        font-style: normal
+        font-weight: 700
+        line-height: 15px
+        letter-spacing: 0em
+        span
+            display: block
+            position: relative
+            &::before
+                width: 20px
+                height: 20px
     &:hover
         background-color: #bb261a
         color: #ffffff
