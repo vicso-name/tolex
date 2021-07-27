@@ -43,8 +43,19 @@
         width: 90%
     .server-book__content-guts .item-server-book:first-child::before
         right: -4%
+    .body-repair__order-form
+        grid-template-columns: 648px 1fr
+        grid-gap: 45px
+    .body-repair__order-form .body-order__item.left-side-item::before
+        right: -25px
 
 @media (max-width: 1440px)
+    .responsive-tab__wrapper
+        width: 540px
+        overflow: auto
+    .responsive-tab__content
+        width: 700px
+        overflow: hidden
     .server-book__content-guts
         grid-template-columns: 500px 1fr
         grid-gap: 25px
@@ -342,6 +353,10 @@
         font-size: 17px
 
 @media (max-width: 1024px)
+    .body-repair__order-form
+        grid-template-columns: 1fr
+    .responsive-tab__wrapper
+        width: 100%
     body
         background-image: none
     .staff
@@ -647,6 +662,17 @@
         flex-wrap: wrap
         justify-content: space-around
 
+    .body-repair__grid
+        grid-template-columns: 1fr
+    .body-repair__item
+        margin: 0 auto
+    .body-repair__item:last-child
+        margin: 0 auto
+    .responsive-tab__wrapper
+        width: 625px
+    .responsive-tab__content
+        width: 700px
+        overflow: hidden   
 @media (max-width: 720px)
     .server-book__table-wrapper
         width: 600px
@@ -736,7 +762,7 @@
         position: relative
 
 @media (max-width: 570px)
-
+    
     .server-book__table-wrapper
         max-width: 400px
         overflow: auto  
@@ -962,7 +988,12 @@
     .popular-repairs__grid-item
         width: 100%
 
-    
+    .order-section-imgs_car img
+        display: none
+    .order-section
+        margin-top: 10px 
+    .body-repair__order-form
+        padding-bottom: 0
 
 @media (max-width: 520px)
 
