@@ -1467,6 +1467,13 @@ body
     padding-left: 133px
     padding-right: 40px
     position: relative
+    &::before
+        content: ''
+        position: absolute
+        width: 76%
+        border-bottom: 1px solid #CBCBCB
+        bottom: 0
+        z-index: -1
     .build-direction
         width: 141px
         height: 25px
@@ -1489,12 +1496,6 @@ body
         padding: 0
         list-style-type: none
         position: relative
-        &::before
-            content: ''
-            position: absolute
-            width: 100%
-            border-bottom: 1px solid #CBCBCB
-            bottom: -20px
         li
             font-size: 13px
             font-style: normal
@@ -1863,6 +1864,7 @@ body
     .special__offers-section-inner_content
         display: grid
         grid-template-columns: 1fr 404px
+        margin-bottom: 90px
         .header-send__application
             padding-left: 45px
             margin-top: 46px
@@ -1900,7 +1902,7 @@ body
         margin-bottom: 0
 main
     padding-right: 67px
-aside
+.innner-aside
     padding-left: 72px
     margin-bottom: 91px
     position: relative
@@ -1935,3 +1937,85 @@ aside
                 letter-spacing: 0em
                 text-align: left
 
+.blog-grid-second
+    display: grid
+    grid-gap: 20px
+    grid-template-columns: repeat(2, 1fr)
+.blog-item
+    h3
+        margin-bottom: 26px
+        a
+            color: #000
+            text-decoration: none
+            font-size: 18px
+            font-style: normal
+            font-weight: 700
+            line-height: 28px
+            letter-spacing: 0em
+            text-align: left
+.blog-item_image
+    img
+        width: 100%
+        height: 336px
+.main-blog
+    margin-bottom: 90px
+    .section-titles
+        margin-bottom: 50px
+
+.main-blog-post_content
+    figure
+        margin: 0
+        img
+            width: 100%
+            max-height: 285px
+    p
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: 27px
+        letter-spacing: 0em
+        text-align: left
+        margin-bottom: 55px
+    h3
+        font-size: 20px
+        font-style: normal
+        font-weight: 700
+        line-height: 28px
+        letter-spacing: 0
+        text-align: left
+    h4
+        font-size: 16px
+        font-style: normal
+        font-weight: 700
+        line-height: 28px
+        letter-spacing: 0
+        text-align: left 
+
+.article-meta
+    display: flex
+    justify-content: space-between
+    margin-top: 16px
+    margin-bottom: 34px
+    .article-meta_data
+        font-size: 16px
+        font-style: normal
+        font-weight: 500
+        line-height: 20px
+        letter-spacing: 0em
+        text-align: left
+    .watch-count
+        span
+            font-size: 16px
+            font-style: normal
+            font-weight: 500
+            line-height: 20px
+            letter-spacing: 0em
+            text-align: left
+.main-blog-post_content
+    h2
+        font-size: 18px
+        font-style: normal
+        font-weight: 700
+        line-height: 28px
+        letter-spacing: 0em
+        text-align: left
