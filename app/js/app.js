@@ -1,4 +1,19 @@
+/*** comphort waiting section***/
 
+let slider = tns({
+    container: '.waiting-slider',
+    items: 1,
+    loop: true,
+    speed: 400,
+    mouseDrag: true,
+    nav:false,
+    slideBy: 'page',
+    autoplay: false,
+    controlsContainer: "#customize-controls",
+    
+  });
+
+/*** comphort waiting section END***/
 
 const teamItems = document.querySelectorAll('.team-item');
 const teamContentItems = document.querySelectorAll('.team-content-item');
