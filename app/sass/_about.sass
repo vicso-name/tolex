@@ -1,0 +1,1937 @@
+.innern-container
+    width: 1430px
+    max-width: 100%
+    padding-left: 15px
+    padding-right: 15px
+    margin: 0 auto
+    position: relative
+.innern-container-responsibility
+    width: 1170px
+    max-width: 100%
+    padding-left: 15px
+    padding-right: 15px
+    margin: 0 auto
+    position: relative
+
+body
+    &.about
+        background-image: none
+        .mini-cart__model
+            filter: invert(1)
+        .notifications
+            img
+                filter: invert(1)
+        .header-info
+            position: absolute
+            width: 100%
+            left: 0
+            right: 0
+            background-color: transparent
+            top: 46px
+            border-bottom: none
+        .header
+            position: absolute
+            width: 100%
+            left: 0
+            right: 0
+            background-color: transparent
+            border-bottom: 1px solid #424E60
+            
+        .main-menu ul li a
+            color: #ffffff
+        .main-menu 
+            ul 
+                li
+                    position: relative
+                    &:hover
+                        &::before
+                            content: ''
+                            position: absolute
+                            bottom: -13px
+                            width: 100%
+                            height: 3px
+                            background-color: #BB261A
+                    &.current_menu_item
+                        &::before
+                            content: ''
+                            position: absolute
+                            bottom: -13px
+                            width: 100%
+                            height: 3px
+                            background-color: #BB261A
+        .phone-number__title
+            color: #ffffff
+        .header-info__item-content .phone-number__content
+            color: #ffffff
+        .header-info__item-content .phone-number__content::before
+            background-image: url(../img/phone-white.svg)
+        .write-director
+            color: #ffffff
+        .about_main
+            min-height: 684px
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            position: relative
+            display: flex
+            justify-content: end
+            align-items: center
+            &.guts-pages
+                min-height: 441px
+            &::before
+                content: ''
+                position: absolute
+                width: 100%
+                left: 0
+                right: 0
+                top: 0
+                bottom: 0
+                background-color: #132035
+                opacity: 0.85
+        .about_main-content
+            position: relative
+            max-width: 772px
+            width: 100%
+            h1
+                font-size: 36px
+                color: #ffffff
+                font-style: normal
+                font-weight: 400
+                line-height: 52px
+                letter-spacing: 0em
+                text-align: left
+                width: 600px
+                margin-bottom: 24px
+                span
+                    font-size: 36px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 52px
+                    letter-spacing: 0em
+                    text-align: left
+            .about_main-content_slogan
+                p
+                    color: #ffffff
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 27px
+                    letter-spacing: 0em
+                    text-align: left
+                    margin: 0
+                .calculator-links__content-btns
+                    margin-top: 43px!important
+.about-order__form-wrapper
+    display: flex
+    align-items: center
+    padding-left: 141px
+    width: 709px
+    max-width: 100%
+    height: 100%
+    background-color: rgba(187, 38, 26, 0.9)
+.about-order__form
+    width: 325px
+    h2
+        color: #ffffff
+        font-size: 20px
+        font-style: normal
+        font-weight: 500
+        line-height: 31px
+        letter-spacing: 0em
+        text-align: left
+        text-transform: uppercase
+        margin-bottom: 16px
+        span
+            font-size: 20px
+            font-style: normal
+            font-weight: 700
+            line-height: 31px
+            letter-spacing: 0em
+            text-align: left
+            
+    .about-order__form-input
+        margin-bottom: 22px
+        &:last-child
+            margin-bottom: 0
+        input
+            width: 100%
+            background-color: transparent
+            border: none
+            border-bottom: 1px solid #C8C8C8
+            color: #ffffff
+            &:focus
+                outline: none
+            &::placeholder
+                color: #ffffff
+                font-size: 13px
+                font-style: normal
+                font-weight: 500
+                line-height: 34px
+                letter-spacing: 0em
+                text-align: left
+        .privaci-validation-label    
+            position: relative
+            margin-top: 18px
+            padding-left: 27px
+            cursor: pointer
+            a
+                color: #ffffff
+        input[type=checkbox]
+                display: none
+                & + .privaci-validation-label
+                    &::before
+                        content: ""
+                        display: block
+                        position: absolute
+                        width: 20px
+                        height: 20px
+                        border-radius: 50px
+                        left: 0
+                        top: 0
+                        border: 1px solid #ffffff
+                &:checked
+                    & + .privaci-validation-label
+                        &::after
+                            content: ""
+                            position: absolute
+                            width: 10px
+                            height: 10px
+                            border-radius: 50px
+                            background-color: #ffffff
+                            top: 5px
+                            left: 5px
+                
+        .privaci-validation-label
+            color: #ffffff
+            font-size: 11px
+            font-style: normal
+            font-weight: 500
+            line-height: 20px
+            letter-spacing: 0em
+            text-align: left
+
+    button
+        color: #ffffff
+        width: 100%
+        height: 50px
+        margin-top: 29px
+        border-radius: 50px
+        border: none
+        background-color: #000000
+        font-size: 15px
+        font-style: normal
+        font-weight: 700
+        line-height: 18px
+        letter-spacing: 0em
+        text-align: center  
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            right: 14px
+            top: 10px
+            width: 29px
+            height: 29px
+            border-radius: 50%
+            background-color: #262626
+            background-image: url(../img/leftbtn.svg)
+            background-repeat: no-repeat
+            background-repeat: no-repeat
+            background-size: 7px
+            background-position: center
+
+.model-form__image
+    display: flex
+    margin-top: 63px
+    img
+        width: 212px
+        height: auto
+.calculator-links__content
+    margin-top: 62px
+    margin-bottom: 62px
+    display: grid
+    grid-template-columns: 601px 1fr
+    p
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: 27px
+        letter-spacing: 0em
+        text-align: left
+        margin-bottom: 0
+.calculator-links__content-btns
+    a
+        display: inline-block
+        width: 249px
+        height: 50px
+        border-radius: 50px
+        line-height: 45px
+        color: #ffffff
+        text-decoration: none
+        font-size: 13px
+        font-style: normal
+        font-weight: 700
+        letter-spacing: 0em
+        text-align: center
+        position: relative
+        &:first-child
+            background-image: url(../img/toy-btn.png)
+            background-size: 33px
+            background-position-y: 12px
+            background-position-x: 10px
+            background-color: #BB261A
+            background-repeat: no-repeat
+            margin-right: 15px
+            &::before
+                content: ''
+                background-image: url(../img/leftbtn.svg)
+                background-repeat: no-repeat
+                background-size: 7px
+                background-position: center
+                position: absolute
+                right: 12px
+                top: 10px
+                width: 29px
+                height: 29px
+                line-height: 29px
+                border-radius: 50px
+                background-color: #931D14
+        &:last-child
+            background-image: url(../img/lex-btn.png)
+            background-size: 33px
+            background-position-y: 12px
+            background-position-x: 10px
+            background-color: #000000
+            background-repeat: no-repeat
+            &::before
+                content: ''
+                right: 12px
+                top: 10px
+                background-image: url(../img/leftbtn.svg)
+                background-repeat: no-repeat
+                background-size: 7px
+                background-position: center
+                position: absolute
+                width: 29px
+                height: 29px
+                line-height: 29px
+                border-radius: 50px
+                background-color: #262626
+
+.special__offers-section
+    margin-top: 6px
+    .special__offers-section-content
+        padding-top: 48px
+.special__offers-item_image
+    img
+        width: 100%
+.section-titles
+    font-size: 26px
+    font-style: normal
+    font-weight: 700
+    line-height: 35px
+    letter-spacing: 0em
+    text-align: left
+    position: relative
+    text-transform: uppercase
+    &::before
+        content: ''
+        position: absolute
+        width: 41px
+        height: 5px
+        background-color: #BB261A
+        bottom: -13px
+.special__offers-section-content_grid
+    margin-top: 48px
+    display: grid
+    grid-gap: 20px
+    grid-template-columns: repeat(4, 1fr)
+    &.block-two
+        grid-template-columns: repeat(2, 1fr)
+        .special__offers-item_image
+            img
+                height: 336px
+    &.block-three
+        margin-bottom: 74px
+        grid-template-columns: repeat(1, 1fr)
+        .special__offers-item_image
+            img
+                height: 336px
+
+    h3
+        a
+            color: #000000
+            font-size: 18px
+            font-style: normal
+            font-weight: 700
+            line-height: 28px
+            letter-spacing: 0em
+            text-align: left
+            margin-bottom: 0
+            margin-top: 18px
+            text-decoration: none
+
+.all-special__offers
+    text-align: center
+    a
+        display: inline-block
+        text-decoration: none
+        margin-left: 22px
+        margin-right: 22px
+        padding-right: 30px
+        color: #ffffff
+        width: 183px
+        height: 50px
+        margin-top: 16px
+        border-radius: 50px
+        border: none
+        background-color: #000000
+        font-size: 15px
+        font-style: normal
+        font-weight: 700
+        line-height: 50px
+        letter-spacing: 0em
+        text-align: center  
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            right: 14px
+            top: 10px
+            width: 29px
+            height: 29px
+            border-radius: 50%
+            background-color: #262626
+            background-image: url(../img/leftbtn.svg)
+            background-repeat: no-repeat
+            background-repeat: no-repeat
+            background-size: 7px
+            background-position: center
+
+.popular-services__section
+    margin-top: 60px
+
+.popular-services__grid
+    margin-top: 36px
+    display: grid
+    grid-gap: 20px
+    grid-template-columns: repeat(2, 1fr)
+
+.popular-services__item
+    display: flex
+    width: 100%
+    padding-left: 55px
+    justify-content: flex-start
+    align-items: center
+    background-color: #EBEBEB
+    height: 278px
+
+.popular-services__item-btn
+    display: inline-block
+    padding-right: 10px
+    background-color: #BB261A
+    border: 2px solid #BB261A
+    width: 233px
+    height: 50px
+    line-height: 46px
+    color: #ffffff
+    text-decoration: none
+    font-size: 13px
+    font-style: normal
+    font-weight: 700
+    letter-spacing: 0em
+    text-align: center
+    border-radius: 50px
+    transition: all .5s ease
+    position: relative
+    &:hover
+        background-color: transparent
+        color: #000000
+    &::before
+        content: '\f105'
+        font-family: "Font Awesome 5 Free"
+        position: absolute
+        width: 29px
+        height: 29px
+        line-height: 29px
+        right: 6px
+        top: 8px
+        background-color: #931D14
+        border-radius: 50px
+        
+.popular-services__item_content
+    margin-top: 70px
+    h3
+        font-size: 18px
+        font-style: normal
+        font-weight: 700
+        line-height: 28px
+        letter-spacing: 0em
+        text-align: left
+
+.general-director
+    border-bottom: 1px solid #CBCBCB
+.general-director__grid
+    min-height: 540px
+    display: grid
+    grid-template-columns: 1.2fr 1.5fr
+    grid-gap: 70px
+.general-director__grid-item
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+    height: 100%
+.general-director__grid-item_content
+    padding-top: 80px
+    h2
+        width: 475px
+        max-width: 100%
+.general-director__grid-item_content-list
+    padding: 0
+    margin-top: 38px
+    list-style-type: none
+    li
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: 27px
+        letter-spacing: 0em
+        text-align: left
+        margin-bottom: 17px
+        background-image: url(../img/fi_check-red.svg)
+        background-repeat: no-repeat
+        background-position-y: 5px
+        padding-left: 26px
+        &:last-child
+            margin-bottom: 0
+        a
+            color: #BB261A
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: 27px
+            letter-spacing: 0em
+            text-align: left
+
+.general-director__video-play
+    background-color: #fff
+    width: 98px
+    height: 98px
+    border-radius: 50px
+    border: none
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15)
+    position: absolute
+    right: -45px
+    top: 45%
+    &::before
+        content: ''
+        background-image: url(../img/play-button.svg)
+        width: 21px
+        height: 21px
+        position: absolute
+        font-weight: 900
+        font-size: 20px 
+        top: 50%
+        left: 50%
+        transform: translate(-35%, -45%)
+
+.proff-team
+    margin-top: 67px
+
+.teams-tabs
+    display: flex
+    margin-top: 55px
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        bottom: -18px
+        border-bottom: 1px solid #CBCBCB
+    .team-item
+        margin-right: 55px
+        font-size: 15px
+        font-style: normal
+        font-weight: 500
+        line-height: 8px
+        letter-spacing: 0em
+        color: #BB261A
+        position: relative
+        cursor: pointer
+        transition: all .5s ease
+        &:last-child
+            margin-right: 0
+        &.active
+            text-shadow: 0 0 .65px #BB261A, 0 0 .65px #BB261A
+            &::before
+                content: ''
+                width: 100%
+                height: 3px
+                background-color: #BB261A
+                position: absolute
+                bottom: -19px
+        &:hover
+            &::before
+                content: ''
+                width: 100%
+                height: 3px
+                background-color: #BB261A
+                position: absolute
+                bottom: -19px
+.teams-content
+    margin-top: 72px
+
+.team-content-item
+    display: none
+    opacity: 0
+    &.show
+        display: block
+        opacity: 1
+
+.team-slider-item
+    display: flex
+    padding-left: 120px
+    .team-member-photo
+        margin-right: 61px
+        img
+            width: 297px
+            height: 368px
+
+.team-member-info
+    padding-top: 30px
+    width: 423px
+    max-width: 100%
+    h3
+        font-size: 18px
+        font-style: normal
+        font-weight: 700
+        line-height: 8px
+        letter-spacing: 0em
+        margin-bottom: 22px
+    span
+        font-size: 13px
+        font-style: normal
+        font-weight: 500
+        line-height: 8px
+        letter-spacing: 0em
+    p
+        font-size: 13px
+        font-style: normal
+        font-weight: 500
+        line-height: 24px
+        letter-spacing: 0em
+        margin-top: 28px
+.team-location-form
+    input
+        border: none
+        border-bottom: 1px solid #C8C8C8
+        width: 325px
+        color: #000000
+        font-size: 13px
+        font-style: normal
+        font-weight: 500
+        line-height: 34px
+        letter-spacing: 0em
+        text-align: left
+        &::placeholder
+            color: #000000
+            font-size: 13px
+            font-style: normal
+            font-weight: 500
+            line-height: 34px
+            letter-spacing: 0em
+            text-align: left
+        &:focus
+            outline: none
+    button
+        margin-top: 40px
+        display: inline-block
+        padding-right: 10px
+        background-color: #BB261A
+        border: 2px solid #BB261A
+        width: 325px
+        height: 50px
+        line-height: 46px
+        color: #ffffff
+        text-decoration: none
+        font-size: 13px
+        font-style: normal
+        font-weight: 700
+        letter-spacing: 0em
+        text-align: center
+        border-radius: 50px
+        transition: all .5s ease
+        position: relative
+        &:hover
+            background-color: transparent
+            color: #000000
+        &::before
+            content: '\f105'
+            font-family: "Font Awesome 5 Free"
+            position: absolute
+            width: 29px
+            height: 29px
+            line-height: 29px
+            right: 6px
+            top: 8px
+            background-color: #931D14
+            border-radius: 50px
+.team-slider-owl
+    .owl-nav
+        position: absolute
+        width: 100%
+        top: 50%
+        button
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            border: 1px solid #BB261A!important
+            color: #BB261A!important
+            transition: all .5s ease
+            &:hover
+                background-color: #BB261A!important
+                color: #ffffff!important
+        .owl-prev
+            left: 0
+            position: absolute
+        .owl-next
+            right: 0
+            position: absolute
+    .owl-dots
+        text-align: center
+        margin-top: 27px
+        .owl-dot
+            border-radius: 50px
+            margin-right: 13px
+            width: 6px
+            height: 6px
+            background-color: #C4C4C4
+            &:last-child
+                margin-right: 0
+            &.active
+                width: 10px
+                height: 10px
+                background-color: #BB261A
+
+
+.diagnostic-gift
+    margin-top: 38px
+    background-size: cover
+    background-repeat: no-repeat
+    height: 598px
+    
+.licenses-certificates
+    padding-top: 64px
+    padding-bottom: 117px
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    &::before
+        content: ''
+        background-image: url(../img/background2.png)
+        background-size: cover
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        width: 100%
+    h2
+        width: 588px
+        max-width: 100%
+
+.licenses-tabs
+    margin-top: 62px
+    display: flex
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        bottom: -18px
+        border-bottom: 1px solid #cbcbcb
+    .licenses-tab-item
+        position: relative
+        margin-right: 55px
+        cursor: pointer
+        &:last-child
+            margin-right: 0
+        color: #BB261A
+        font-size: 16px
+        font-style: normal
+        font-weight: 500
+        line-height: 8px
+        letter-spacing: 0em
+        text-align: center
+        &.active
+            text-shadow: 0 0 .65px #BB261A, 0 0 .65px #BB261A
+            &::before
+                content: ''
+                width: 100%
+                height: 3px
+                background-color: #BB261A
+                position: absolute
+                bottom: -19px
+.licenses-content
+    margin-top: 80px
+.licenses-content-item
+    display: none
+    opacity: 0
+    &.show
+        display: block
+        opacity: 1
+    
+
+.licenses-content-item_grid
+    display: flex
+    img
+        width: 244px
+        height: 352px
+        object-fit: cover
+        margin-right: 24px
+        &:last-child
+            margin-right: 0
+
+.real-testemonials
+    margin-top: 70px
+    h2
+        width: 377px
+        max-width: 100%
+    p
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: 27px
+        letter-spacing: 0em
+        text-align: left
+        margin-top: 28px
+        margin-bottom: 36px
+
+.review-tabs
+    display: flex
+    padding-top: 20px
+    padding-bottom: 20px
+    border-top: 1px solid #CBCBCB
+    border-bottom: 1px solid #CBCBCB
+    .review-tab-item
+        cursor: pointer
+        display: flex
+        align-items: center
+        position: relative
+        margin-right: 118px
+        padding-left: 35px
+        &:nth-child(1)
+            img
+                width: 92px
+                height: 33px    
+        &:nth-child(2)
+            img
+                width: 73px
+                height: 21px
+        &:nth-child(3)
+            img
+                width: 65px
+                height: 28px
+        &:nth-child(4)
+            img
+                width: 141px 
+                height: 32px
+        &:nth-child(5)
+            img
+                width: 128px
+                height: 32px
+        &:last-child
+            margin-right: 0
+        &::before
+            content: ''
+            position: absolute
+            width: 20px
+            height: 20px
+            border: 1px solid #D0D0D0
+            border-radius: 50px
+            left: 0
+            top: 6px
+        &.active
+            &::before
+                content: '\f111'
+                position: absolute
+                font-family: "Font Awesome 5 Free"
+                font-weight: 900
+                color: #BB261A
+                width: 20px
+                height: 20px
+                border: 1px solid #D0D0D0
+                border-radius: 50px
+                line-height: 19px
+                text-align: center
+                font-size: 10px
+                background: #ffffff
+.review-content
+    margin: 0 auto
+    margin-top: 43px
+    width: 1160px
+    padding-right: 15px
+    padding-left: 15px
+    max-width: 100%
+    margin-bottom: 75px
+.review-content-item
+    display: none
+    opacity: 0
+    &.show
+        display: block
+        opacity: 1
+
+.review-slider__item
+    border: 1px solid #E5E5E5
+    padding-left: 29px
+    padding-right: 29px
+    padding-top: 23px
+    width: 375px
+    height: 429px
+    max-width: 100%
+    figure
+        margin-bottom: 22px
+        padding-bottom: 15px
+        border-bottom: 1px solid #C6C6C6
+        .google-logot
+            width: 92px
+            height: 33px
+        .yandex-logot
+            width: 73px
+            height: 21px
+        .youtube-logot
+            width: 65px
+            height: 28px
+        .prado-logot
+            width: 141px
+            height: 32px
+        .lexus-logot
+            width: 128px
+            height: 32px
+
+.review-slider__item-header
+    display: flex
+    align-items: center
+    .reviewer-logo
+        width: 60px!important
+        height: 60px
+        object-fit: cover
+        margin-right: 18px
+.review-slider__item-header-content
+    .reviewer-name
+        color: #BB261A
+        font-size: 16px
+        font-style: normal
+        font-weight: 700
+        letter-spacing: 0em
+        text-align: left
+        margin: 0
+    .reviewer-data
+        font-size: 13px
+        font-style: normal
+        font-weight: 500
+        letter-spacing: 0em
+        text-align: left
+        color: #939393
+
+.review-slider__item-reiting
+    display: flex
+    margin-top: 10px
+    .review-slider__item-reiting-list
+        padding: 0
+        margin: 0
+        list-style-type: none
+        display: flex
+        margin-right: 15px
+        li
+            margin-right: 5px
+            &:last-child
+                margin-right: 0
+            .fas.fa-star
+                font-size: 10px
+                color: #FFC632
+    .raiting-avarage
+        font-size: 13px
+        font-style: normal
+        font-weight: 500
+        line-height: 28px
+        letter-spacing: 0em
+        text-align: left
+        color: #939393
+.review-slider__item-text
+    margin-top: 5px
+    p
+        font-size: 13px
+        margin: 0
+        font-style: normal
+        font-weight: 400
+        line-height: 21px
+        letter-spacing: 0em
+        text-align: left
+
+.review-owl-slider
+    .owl-nav
+        position: absolute
+        width: 100%
+        top: 50%
+        button
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            border: 1px solid #BB261A!important
+            color: #BB261A!important
+            transition: all .5s ease
+            &:hover
+                background-color: #BB261A!important
+                color: #ffffff!important
+        .owl-prev
+            left: -125px
+            position: absolute
+        .owl-next
+            right: -125px
+            position: absolute
+    .owl-dots
+        text-align: center
+        margin-top: 27px
+        .owl-dot
+            border-radius: 50px
+            margin-right: 13px
+            width: 6px
+            height: 6px
+            background-color: #C4C4C4
+            &:last-child
+                margin-right: 0
+            &.active
+                width: 10px
+                height: 10px
+                background-color: #BB261A
+
+
+
+.footer-inner
+    background-color: #000000
+    padding-top: 100px
+    .footer-menu
+        h3
+            color: #ffffff
+            font-size: 15px
+            font-style: normal
+            font-weight: 700
+            line-height: 18px
+            letter-spacing: 0em
+            text-align: left
+            margin-bottom: 23px
+        ul
+            padding: 0
+            margin: 0
+            list-style-type: none
+            li
+                margin-bottom: 10px
+                &:last-child
+                    margin-bottom: 0
+                a
+                    text-decoration: none
+                    color: #ffffff
+                    font-size: 13px
+                    font-style: normal
+                    font-weight: 500
+                    line-height: 22px
+                    letter-spacing: 0em
+                    text-align: left
+
+.social-footer
+    padding: 0
+    margin: 0
+    list-style-type: none
+    display: flex
+    justify-content: flex-end
+    li
+        margin-right: 23px
+        &:last-child
+            margin-right: 0
+        a
+            color: #ffffff
+            text-decoration: none
+
+.footer-menu__section
+    display: flex
+    .footer-menu-item
+        margin-right: 50px
+        &:last-child
+            margin-right: 0
+            flex-grow: 2
+            text-align: left
+
+.footer-contact
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 140px
+.footer-contact__phone-list
+    padding: 0
+    margin: 0
+    list-style-type: none
+    display: flex
+    li
+        margin-right: 30px
+        &:last-child
+            margin-right: 0
+        address
+            font-size: 11px
+            font-style: normal
+            font-weight: 700
+            line-height: 13px
+            letter-spacing: 0em
+            text-align: left
+            color: #ffffff
+            margin-bottom: 3px
+        a
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: 20px
+            letter-spacing: 0em
+            text-align: center
+            color: #ffffff
+            text-decoration: none
+        
+.footer-links
+    .footer-links-toy
+        margin-right: 18px
+        display: inline-block
+        width: 249px
+        height: 50px
+        border-radius: 50px
+        border: 1px solid #BB261A 
+        font-size: 13px
+        font-style: normal
+        font-weight: 700
+        letter-spacing: 0em
+        text-align: center
+        color: #ffffff
+        line-height: 50px
+        text-decoration: none
+        position: relative
+        background-image: url(../img/toy-btn.png)
+        background-size: 33px
+        background-position-y: 12px
+        background-position-x: 10px
+        background-repeat: no-repeat
+        &::before
+            content: ''
+            position: absolute
+            right: 14px
+            top: 10px
+            width: 29px
+            height: 29px
+            border-radius: 50%
+            background-color: #931D14
+            background-image: url(../img/leftbtn.svg)
+            background-repeat: no-repeat
+            background-repeat: no-repeat
+            background-size: 7px
+            background-position: center
+    .footer-links-lexus
+        display: inline-block
+        width: 249px
+        height: 50px
+        border-radius: 50px
+        border: 1px solid #FFFFFF
+        font-size: 13px
+        font-style: normal
+        font-weight: 700
+        letter-spacing: 0em
+        text-align: center
+        color: #ffffff
+        line-height: 50px
+        text-decoration: none
+        position: relative
+        background-image: url(../img/lex-btn.png)
+        background-size: 33px
+        background-position-y: 12px
+        background-position-x: 10px
+        background-repeat: no-repeat
+        &::before
+            content: ''
+            position: absolute
+            right: 14px
+            top: 10px
+            width: 29px
+            height: 29px
+            border-radius: 50%
+            background-color: #262626
+            background-image: url(../img/leftbtn.svg)
+            background-repeat: no-repeat
+            background-repeat: no-repeat
+            background-size: 7px
+            background-position: center
+.footer-copiright
+    border: 1px solid #292929
+    padding-top: 18px
+    padding-bottom: 20px
+    margin-top: 28px      
+.footer-copiright__logo
+    img
+        &:nth-child(1)
+            margin-right: 32px
+        &:nth-child(2)
+            margin-right: 16px
+
+.footer-copiright__text
+    font-size: 11px
+    font-style: normal
+    font-weight: 500
+    line-height: 13px
+    letter-spacing: 0em
+    text-align: left
+    color: #747474
+
+.footer-privacy
+    display: flex
+    align-items: center
+
+.footer-privacy__list
+    padding: 0
+    margin: 0
+    margin-right: 37px
+    list-style-type: none
+    li
+        margin-bottom: 3px
+        &:last-child
+            margin-bottom: 0
+        a
+            color: #747474
+            text-decoration: none
+            font-size: 11px
+            font-style: normal
+            font-weight: 500
+            line-height: 13px
+            letter-spacing: 0em
+            text-align: left
+    
+
+.service-moscow
+    border-top: 1px solid #CBCBCB
+    padding-top: 55px
+
+.footer-copiright__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.service-moscow__content
+    max-height: 222px
+    overflow: auto
+    margin-top: 40px
+    padding-bottom: 20px
+    margin-bottom: 40px
+    &::-webkit-scrollbar-track
+        background-color: transparent
+    &::-webkit-scrollbar
+        width: 8px
+        background-color: #F5F5F5
+    &::-webkit-scrollbar-thumb
+        border-radius: 50px
+        height: 50px
+        background-color: #cccccc
+    
+    p
+        font-size: 15px
+        font-style: normal
+        font-weight: 500
+        line-height: 26px
+        letter-spacing: 0em
+        text-align: left
+    h4
+        font-size: 16px
+        font-style: normal
+        font-weight: 700
+        line-height: 27px
+        letter-spacing: 0em
+        text-align: left
+
+.responsible-politeness
+    height: 331px
+    background-image: url(../img/resposibility.png)
+    background-repeat: no-repeat
+    background-size: 350px
+    padding-bottom: 46px
+    margin-top: 75px
+    display: flex
+    align-items: center
+.responsible-politeness__content
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-end
+.responsible-politeness__content-info
+    flex-basis: 39%
+    margin-right: 66px
+    p
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: 27px
+        letter-spacing: 0em
+        text-align: left
+        margin-top: 30px
+.responsible-politeness__content-form
+    position: relative
+    flex-basis: 30%
+    padding-left: 73px
+    &::before
+        content: ''
+        position: absolute
+        width: 1px
+        left: 0
+        height: 100%
+        background-color: #CBCBCB
+
+.responsible-form-row
+    input
+        border: none
+        border-bottom: 1px solid #c8c8c8
+        width: 325px
+        color: #000
+        font-size: 13px
+        font-style: normal
+        font-weight: 500
+        line-height: 34px
+        letter-spacing: 0
+        text-align: left
+        &:focus
+            outline: none
+        &::placeholder
+            color: #000000
+            font-size: 13px
+            font-style: normal
+            font-weight: 500
+            line-height: 34px
+            letter-spacing: 0em
+            text-align: left
+
+.responsible-politeness-form
+    button
+        color: #ffffff
+        width: 325px
+        height: 50px
+        margin-top: 29px
+        border-radius: 50px
+        border: none
+        background-color: #000000
+        font-size: 15px
+        font-style: normal
+        font-weight: 700
+        line-height: 18px
+        letter-spacing: 0em
+        text-align: center  
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            right: 14px
+            top: 10px
+            width: 29px
+            height: 29px
+            border-radius: 50%
+            background-color: #262626
+            background-image: url(../img/leftbtn.svg)
+            background-repeat: no-repeat
+            background-repeat: no-repeat
+            background-size: 7px
+            background-position: center
+    .responsible-politeness-form-label
+        position: relative
+        font-size: 11px
+        font-style: normal
+        font-weight: 500
+        line-height: 20px
+        letter-spacing: 0em
+        text-align: left
+        width: 325px
+        padding-left: 33px
+        margin-top: 22px
+        a
+            color: #000000
+    input[type=checkbox]
+        display: none
+        & + .responsible-politeness-form-label
+            &::before
+                content: ""
+                display: block
+                position: absolute
+                width: 20px
+                height: 20px
+                border-radius: 50px
+                left: 0
+                top: 0
+                border: 1px solid #D0D0D0
+        &:checked
+            & + .responsible-politeness-form-label
+                &::after
+                    content: ""
+                    position: absolute
+                    width: 10px
+                    height: 10px
+                    border-radius: 50px
+                    background-color: #BB261A
+                    top: 5px
+                    left: 5px
+
+.certified-auto-service
+    background-size: cover
+    background-repeat: no-repeat
+    padding-top: 110px
+
+.certified-auto-service__content
+    display: flex
+    justify-content: space-between
+.certified-auto-service__content-info
+    background-color: rgba(187,38,26,.8)
+.certified-auto-service__content-info_list
+    padding-top: 88px
+    padding-left: 110px
+    padding-bottom: 70px
+    list-style-type: none
+    li
+        margin-bottom: 47px
+        &:last-child
+            margin-bottom: 0
+        h3
+            font-size: 40px
+            font-style: normal
+            font-weight: 700
+            line-height: 27px
+            letter-spacing: 0em
+            text-align: left
+            color: #ffffff
+            margin-bottom: 24px
+        p
+            font-size: 18px
+            font-style: normal
+            font-weight: 500
+            line-height: 27px
+            letter-spacing: 0em
+            text-align: left
+            color: #ffffff
+.certified-auto-service__content-info_imgs
+    display: flex
+    img
+        width: 354px
+
+.certified-auto-service__content-text
+    flex-basis: 50%
+    padding-top: 88px
+    padding-left: 125px
+    img
+        margin-bottom: 25px
+    p
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: 27px
+        letter-spacing: 0em
+        text-align: left
+        margin-top: 30px
+        margin-bottom: 0
+
+.map-builder_content
+    display: flex
+    justify-content: space-between
+    .map-builder_content-item
+        position: relative
+        .section-titles
+            padding-left: 130px
+        &:first-child
+            flex-basis: 39%
+            padding-top: 80px
+            padding-bottom: 80px
+        flex-basis: 61%
+
+.map-content
+    height: 100%
+    .map-content-item
+        height: 100%
+        display: none
+        opacity: 0
+        &.show
+            display: block
+            opacity: 1
+.map-tabs
+    margin-top: 44px
+    h2
+        padding-left: 133px
+.map-item
+    cursor: pointer
+    padding-top: 23px
+    padding-bottom: 23px
+    padding-left: 133px
+    padding-right: 40px
+    position: relative
+    .build-direction
+        width: 141px
+        height: 25px
+        text-decoration: none
+        color: #000000
+        border: 1px solid #000000
+        background-color: transparent
+        border-radius: 50px
+        font-size: 9px
+        text-transform: uppercase
+        font-style: normal
+        font-weight: 700
+        line-height: 25px
+        letter-spacing: 0em
+        text-align: center
+        position: absolute
+        top: 50%
+        right: 7%
+    ul
+        padding: 0
+        list-style-type: none
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 100%
+            border-bottom: 1px solid #CBCBCB
+            bottom: -20px
+        li
+            font-size: 13px
+            font-style: normal
+            font-weight: 500
+            line-height: 19px
+            letter-spacing: 0em
+            text-align: left
+            &:first-child
+                margin-bottom: 4px
+                color: #000000
+                font-size: 16px
+                font-style: normal
+                font-weight: 700
+                line-height: 20px
+                letter-spacing: 0em
+            &:last-child
+                margin-top: 4px
+                a
+                    color: #000
+                    text-decoration: none
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 27px
+                    letter-spacing: 0em
+                    text-align: left
+    &.active
+        background-color: #BB261A
+        ul
+            &::before
+                width: 0
+        li
+            color: #ffffff
+            &:first-child
+                color: #ffffff
+            &:last-child
+                a
+                    color: #ffffff
+        .build-direction
+            border: 1px solid #ffffff
+            color: #ffffff
+.tow_truck-wrapper
+    text-align: center
+    padding-left: 90px
+.tow_truck
+    position: relative
+    color: #ffffff
+    width: 416px
+    height: 50px
+    margin-top: 29px
+    border-radius: 50px
+    border: none
+    background-color: #000000
+    font-size: 15px
+    font-style: normal
+    font-weight: 700
+    line-height: 18px
+    letter-spacing: 0em
+    text-align: center  
+    &::before
+        content: ''
+        position: absolute
+        right: 14px
+        top: 10px
+        width: 29px
+        height: 29px
+        border-radius: 50%
+        background-color: #262626
+        background-image: url(../img/leftbtn.svg)
+        background-repeat: no-repeat
+        background-repeat: no-repeat
+        background-size: 7px
+        background-position: center
+
+.waiting-comfort
+    display: flex
+
+.waiting-comfort__info
+    width: 709px
+    padding-top: 66px
+    padding-bottom: 76px
+    padding-left: 119px
+    padding-right: 253px
+    background-color: #BB261A
+    input
+        background-color: transparent
+        border-bottom: 1px solid #ffffff
+        color: #ffffff
+        &::placeholder
+            color: #ffffff
+    input[type=checkbox]
+        display: none
+        & + .responsible-politeness-form-label
+            &::before
+                content: ""
+                display: block
+                position: absolute
+                width: 20px
+                height: 20px
+                border-radius: 50px
+                left: 0
+                top: 0
+                border: 1px solid #ffffff
+        &:checked
+            & + .responsible-politeness-form-label
+                &::after
+                    content: ""
+                    position: absolute
+                    width: 10px
+                    height: 10px
+                    border-radius: 50px
+                    background-color: #ffffff
+                    top: 5px
+                    left: 5px
+    .responsible-politeness-form-label
+        color: #ffffff
+        a
+            color: #ffffff
+    .section-titles
+        color: #ffffff
+        margin-bottom: 25px
+        &::before
+            background-color: #ffffff
+    p
+        color: #ffffff
+        font-size: 16px
+        font-style: normal
+        font-weight: 500
+        line-height: 26px
+        letter-spacing: 0em
+        text-align: left
+    .more-buns
+        padding: 0
+        list-style-type: none
+        margin: 0
+        margin-bottom: 40px
+        display: flex
+        li
+            color: #ffffff
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: 26px
+            letter-spacing: 0em
+            text-align: left
+            padding-left: 60px
+            &:nth-child(1)
+                background-image: url(../img/coffe.svg)
+                background-repeat: no-repeat
+                background-position-x: -2px
+                background-position-y: -5px
+                padding-left: 35px
+            &:nth-child(2)
+                background-image: url(../img/wife.svg)
+                background-repeat: no-repeat
+                background-position-x: 18px
+                background-position-y: 1px
+            &:nth-child(3)
+                background-image: url(../img/tv.svg)
+                background-repeat: no-repeat
+                background-position-x: 18px
+                background-position-y: 1px
+
+.header-send__application-content
+    display: flex
+    align-items: center
+    padding-top: 28px
+    padding-bottom: 28px
+    .header-send__application-content_item
+        &:first-child
+            flex-basis: 32%
+                
+.header-send__application
+    background-color: #BB261A
+.header-send__application-text
+    color: #ffffff
+    text-transform: uppercase
+    font-size: 20px
+    font-style: normal
+    font-weight: 500
+    line-height: 35px
+    letter-spacing: 0em
+    text-align: left
+    margin-bottom: 0
+    span
+        font-size: 20px
+        font-style: normal
+        font-weight: 700
+        line-height: 35px
+        letter-spacing: 0em
+        text-align: left
+.header-send__application-form
+    display: flex
+    align-items: center
+    input
+        width: 200px
+        border: none
+        border-bottom: 1px solid #ffffff
+        background-color: transparent
+        color: #ffffff
+        font-size: 13px
+        font-style: normal
+        font-weight: 500
+        line-height: 34px
+        letter-spacing: 0em
+        text-align: left
+        &:focus
+            outline: none
+        &::placeholder
+            color: #ffffff
+            font-size: 13px
+            font-style: normal
+            font-weight: 500
+            line-height: 34px
+            letter-spacing: 0em
+            text-align: left
+    button
+        margin-left: 22px
+        margin-right: 22px
+        padding-right: 40px
+        color: #ffffff
+        width: 218px
+        height: 50px
+        margin-top: 29px
+        border-radius: 50px
+        border: none
+        background-color: #000000
+        font-size: 15px
+        font-style: normal
+        font-weight: 700
+        line-height: 18px
+        letter-spacing: 0em
+        text-align: center  
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            right: 14px
+            top: 10px
+            width: 29px
+            height: 29px
+            border-radius: 50%
+            background-color: #262626
+            background-image: url(../img/leftbtn.svg)
+            background-repeat: no-repeat
+            background-repeat: no-repeat
+            background-size: 7px
+            background-position: center
+    .header-send-politeness-form-label
+        position: relative
+        color: #ffffff
+        font-size: 11px
+        font-style: normal
+        font-weight: 500
+        line-height: 20px
+        letter-spacing: 0em
+        text-align: left
+        width: 325px
+        padding-left: 33px
+        margin-top: 22px
+        a
+            color: #ffffff
+    input[type=checkbox]
+        display: none
+        & + .header-send-politeness-form-label
+            &::before
+                content: ""
+                display: block
+                position: absolute
+                width: 20px
+                height: 20px
+                border-radius: 50px
+                left: 0
+                top: 0
+                border: 1px solid #ffffff
+        &:checked
+            & + .header-send-politeness-form-label
+                &::after
+                    content: ""
+                    position: absolute
+                    width: 10px
+                    height: 10px
+                    border-radius: 50px
+                    background-color: #ffffff
+                    top: 5px
+                    left: 5px
+.warnty__saver-wrapper
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    background: rgba(24, 34, 51, .8)
+.warnty__saver
+    display: flex
+    padding-top: 16px
+    padding-bottom: 16px
+    .warnty__saver-item
+        margin-right: 47px
+        color: #ffffff
+        font-size: 16px
+        font-style: normal
+        font-weight: 700
+        line-height: 27px
+        letter-spacing: 0em
+        text-align: left
+        position: relative
+        &:last-child
+            margin-right: 0
+        &::before
+            content: ''
+            position: absolute
+            width: 17.14px
+            height: 17.14px
+            background-image: url(../img/fi_check.svg)
+            left: -26px
+            top: 4px
+.warnty__saver-wrapper_guts
+    display: flex
+    justify-content: space-between
+    align-items: center
+.little-logos
+    display: flex
+    img
+        &:first-child
+            margin-right: 16px
+
+.header-contact-logo
+    img
+        width: 142px
+        height: 42px
+        image-rendering:  -webkit-optimize-contrast
+        image-rendering:  -moz-crisp-edges
+        image-rendering:  -o-crisp-edges
+.about_main-content_wrapper
+    height: 100%
+    width: 100%
+    margin-top: 122px
+.breadcrumbs-inner
+    .kama_breadcrumbs
+        padding-top: 94px
+        span
+            a
+                text-decoration: none
+                color: #ffffff
+                font-size: 11px
+                font-style: normal
+                font-weight: 500
+                line-height: 13px
+                letter-spacing: 0.03em
+                text-align: left
+        .kb_title
+            color: #ffffff
+            font-size: 11px
+            font-style: normal
+            font-weight: 700
+            line-height: 13px
+            letter-spacing: 0.03em
+            text-align: left
+        .kb_sep
+            display: inline-block
+            color: #ffffff
+            margin-top: 5px
+
+.special__offers-section-inner
+    margin-top: 70px
+    .special__offers-section-inner_content
+        display: grid
+        grid-template-columns: 1fr 404px
+        .header-send__application
+            padding-left: 45px
+            margin-top: 46px
+            margin-bottom: 91px
+    .main-content
+        .figure
+            margin-bottom: 50px
+            img
+                width: 100%
+        h2
+            font-size: 18px
+            font-style: normal
+            font-weight: 700
+            line-height: 28px
+            letter-spacing: 0em
+            text-align: left 
+        p
+            font-size: 16px
+            font-style: normal
+            font-weight: 400
+            line-height: 27px
+            letter-spacing: 0em
+            text-align: left
+            padding-bottom: 50px
+.sell-alert
+    border: 1px solid #CBCBCB
+    padding-top: 32px
+    padding-bottom: 32px 
+    p
+        font-size: 20px
+        font-style: normal
+        font-weight: 700
+        letter-spacing: 0em
+        text-align: center
+        margin-bottom: 0
+main
+    padding-right: 67px
+aside
+    padding-left: 72px
+    margin-bottom: 91px
+    position: relative
+    .section-titles
+        font-size: 20px
+        margin-bottom: 32px
+    &::before
+        content: ''
+        position: absolute
+        width: 1px
+        background-color: #CBCBCB
+        height: 100%
+        left: 0
+    
+.aside-content-items
+    .aside-content-item
+        border-bottom: 1px solid #CBCBCB
+        margin-bottom: 22px
+        figure
+            margin-bottom: 22px
+            img
+                width: 100%
+        h2
+            margin-bottom: 23px
+            a
+                color: #000
+                text-decoration: none
+                font-size: 18px
+                font-style: normal
+                font-weight: 700
+                line-height: 28px
+                letter-spacing: 0em
+                text-align: left
+

@@ -1,3 +1,234 @@
+
+
+const teamItems = document.querySelectorAll('.team-item');
+const teamContentItems = document.querySelectorAll('.team-content-item');
+
+function selectTeam(e){
+    removeTeamTabActive()
+    removeTeamContentActive()
+    this.classList.add('active');
+    const teamContentItem = document.querySelector(`#${this.id}-content`);
+	teamContentItem.classList.add('show');
+}
+
+function removeTeamTabActive() {
+	teamItems.forEach(item => {
+		item.classList.remove('active');
+	});
+}
+
+function removeTeamContentActive() {
+	teamContentItems.forEach(item => {
+		item.classList.remove('show');
+	});
+}
+
+teamItems.forEach(item => {
+	item.addEventListener('click', selectTeam);
+});
+
+$('.mosfilm-team-slider').owlCarousel({
+    loop:true,
+    nav:true,
+    items:1,
+    dots:true
+})
+
+$('.sushevka-team-slider').owlCarousel({
+    loop:true,
+    nav:true,
+    items:1,
+    dots:true
+})
+
+$('.taganka-team-slider').owlCarousel({
+    loop:true,
+    nav:true,
+    items:1,
+    dots:true
+})
+
+const licensesItems = document.querySelectorAll('.licenses-tab-item');
+const licensesContentItems = document.querySelectorAll('.licenses-content-item');
+
+function selectlicenses(e){
+    removeLicensesTabActive()
+    removeLicensesContentActive()
+    this.classList.add('active');
+    const licensesContentItem = document.querySelector(`#${this.id}-content`);
+	licensesContentItem.classList.add('show');
+}
+
+function removeLicensesTabActive() {
+	licensesItems.forEach(item => {
+		item.classList.remove('active');
+	});
+}
+
+function removeLicensesContentActive() {
+	licensesContentItems.forEach(item => {
+		item.classList.remove('show');
+	});
+}
+
+licensesItems.forEach(item => {
+	item.addEventListener('click', selectlicenses);
+});
+
+$('.google-owl__slider').owlCarousel({
+    loop:true,
+    nav:true,
+    margin:20,
+    dots:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+$('.youtube-owl__slider').owlCarousel({
+    loop:true,
+    nav:true,
+    margin:20,
+    dots:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+$('.prado-owl__slider').owlCarousel({
+    loop:true,
+    nav:true,
+    margin:20,
+    dots:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+$('.lexus-owl__slider').owlCarousel({
+    loop:true,
+    nav:true,
+    margin:20,
+    dots:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+$('.yandex-owl__slider').owlCarousel({
+    loop:true,
+    nav:true,
+    margin:20,
+    dots:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+const reviewItems = document.querySelectorAll('.review-tab-item');
+const reviewContentItems = document.querySelectorAll('.review-content-item');
+
+function selectReview(e){
+    removereviewTabActive()
+    removeReviewContentActive()
+    this.classList.add('active');
+    const reviewContentItem = document.querySelector(`#${this.id}-content`);
+	reviewContentItem.classList.add('show');
+}
+
+function removereviewTabActive() {
+	reviewItems.forEach(item => {
+		item.classList.remove('active');
+	});
+}
+
+function removeReviewContentActive() {
+	reviewContentItems.forEach(item => {
+		item.classList.remove('show');
+	});
+}
+
+reviewItems.forEach(item => {
+	item.addEventListener('click', selectReview);
+});
+
+
+$('.waiting-comfort__slider').owlCarousel({
+    loop:true,
+    nav:true,
+    items:1,
+    dots:true
+})
+
+/*** Map Tabs ***/
+const mapItems = document.querySelectorAll('.map-item');
+const mapContentItems = document.querySelectorAll('.map-content-item');
+
+function selectmap(e){
+    removemapTabActive()
+    removemapContentActive()
+    this.classList.add('active');
+    const mapContentItem = document.querySelector(`#${this.id}-content`);
+	mapContentItem.classList.add('show');
+}
+
+function removemapTabActive() {
+	mapItems.forEach(item => {
+		item.classList.remove('active');
+	});
+}
+
+function removemapContentActive() {
+	mapContentItems.forEach(item => {
+		item.classList.remove('show');
+	});
+}
+
+mapItems.forEach(item => {
+	item.addEventListener('click', selectmap);
+});
+/*** Map Tabs END***/
+
 /*** Mobile Menu Opener***/
 let humburger = document.querySelector('.humburger');
 let mobileMenu = document.querySelector('.mobile-menu');

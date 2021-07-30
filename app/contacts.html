@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css">
+    <title>TOLEX</title>
+</head>
+<body class="about">
+    <div class="wrapper">
+        <!-- Mobile Menu-->
+        <nav class="mobile-menu">
+            <ul>
+                <li ><a href="https://vicso-name.github.io/tolex/dist/about-company.html">О компании</a></li>
+                <li><a href="https://vicso-name.github.io/tolex/dist/offer.html">Спецпредложения и акции</a></li>
+                <li><a href="https://vicso-name.github.io/tolex/dist/blog.html">Блог</a></li>
+                <li><a href="https://vicso-name.github.io/tolex/dist/contacts.html">Контакты</a></li>
+                <li><a href="https://vicso-name.github.io/tolex/dist/">Калькулятор</a></li>
+                
+            </ul>
+            <div class="mobile-menu__extra">
+                <figure>
+                    <img src="img/tolx.png" alt="logo">
+                </figure>
+                <button id="write-director" class="write-director in-mobile-menu" type="button"><span>Написать директору</span></button>
+            </div>
+            <div class="mobile-menu-closer">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.59 0L5 3.59L1.41 0L0 1.41L3.59 5L0 8.59L1.41 10L5 6.41L8.59 10L10 8.59L6.41 5L10 1.41L8.59 0Z" fill="#BBBBBB"/>
+                </svg>
+            </div>
+        </nav>
+        <!--BEGIN header-->
+        <header class="header">
+
+            <div class="innern-container">
+                <div class="top-menu">
+                    <nav class="main-menu">
+                        <ul>
+                            <li ><a href="https://vicso-name.github.io/tolex/dist/about-company.html">О компании</a></li>
+                            <li><a href="https://vicso-name.github.io/tolex/dist/offer.html">Спецпредложения и акции</a></li>
+                            <li><a href="https://vicso-name.github.io/tolex/dist/blog.html">Блог</a></li>
+                            <li><a href="https://vicso-name.github.io/tolex/dist/contacts.html">Контакты</a></li>
+                            <li><a href="https://vicso-name.github.io/tolex/dist/">Калькулятор</a></li>
+                        </ul>
+                    </nav>
+                    <button id="write-director" class="write-director" type="button"><span>Написать директору</span></button>
+                </div>
+
+                
+                <div class="top-menu__mobile">
+                    <button class="humburger" type="button">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.25 6.5L16.25 6.5L16.25 8.66667L3.25 8.66666L3.25 6.5ZM3.25 11.9167L22.75 11.9167L22.75 14.0833L3.25 14.0833L3.25 11.9167ZM3.25 17.3333L16.25 17.3333L16.25 19.5L3.25 19.5L3.25 17.3333Z" fill="black"/>
+                        </svg>
+                    </button>
+                    <img class="mobile-logo" src="img/logo-tolex.png" alt="logo-tolex">
+                    
+                    <div class="header-info__item mobile-version">
+                        <a class="service-book__mobile" href="#">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 19.9999H4C2.93052 20.0319 2.03642 19.1933 2 18.1239V5.87494C2.03641 4.80575 2.93068 3.96737 4 3.99994H20C21.0693 3.96737 21.9636 4.80575 22 5.87494V18.1249C21.963 19.1939 21.0691 20.032 20 19.9999ZM4 5.99994V17.9889L20 17.9999V6.01094L4 5.99994ZM13.43 15.9999H6C6.07353 15.172 6.46534 14.4049 7.093 13.8599C7.79183 13.1667 8.73081 12.7691 9.715 12.7499C10.6992 12.7691 11.6382 13.1667 12.337 13.8599C12.9645 14.405 13.3563 15.1721 13.43 15.9999ZM18 14.9999H15V12.9999H18V14.9999ZM9.715 11.9999C9.17907 12.0186 8.65947 11.8138 8.28029 11.4347C7.9011 11.0555 7.69638 10.5359 7.715 9.99994C7.69668 9.4641 7.9015 8.94468 8.28062 8.56556C8.65974 8.18644 9.17916 7.98162 9.715 7.99994C10.2508 7.98162 10.7703 8.18644 11.1494 8.56556C11.5285 8.94468 11.7333 9.4641 11.715 9.99994C11.7336 10.5359 11.5289 11.0555 11.1497 11.4347C10.7705 11.8138 10.2509 12.0186 9.715 11.9999ZM18 10.9999H14V8.99994H18V10.9999Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                        <a class="cart" href="#">
+                            <img src="img/cart_active.svg" alt="cart">
+                        </a>
+                        <a class="notifications" href="#">
+                            <img src="img/notification_none.svg" alt="cart">
+                        </a>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+        
+        <div class="header-info">
+
+            <div class="innern-container mobile-slider">
+                <div class="header-info__content">
+
+                    <div class="header-info__item phone-contact">
+                        <div class="header-info__item-content">
+                            <div class="phone-number">
+                                <h5 class="phone-number__title">Toyota на Мосфильме</h5>
+                                <a href="tel:84951533379" class="phone-number__content">8(495)153-33-79</a>
+                            </div>
+                            <div class="phone-number">
+                                <h5 class="phone-number__title">Toyota на Cущевке</h5>
+                                <a href="tel:84951531163" class="phone-number__content">8(495)153-11-63</a>
+                            </div>
+                            <div class="phone-number">
+                                <h5 class="phone-number__title">Toyota на Таганке</h5>
+                                <a href="tel:84951535998" class="phone-number__content">8(495)153-59-98</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-contact-logo">
+                        <img src="img/logo-tolex-tuning.png" alt="logo">
+                    </div>
+
+                    <div class="header-info__item">
+                        <a class="service-book" href="/tolex/dist/server-boock.html"><span>Моя сервисная книга</span></a>
+                        <a class="service-book__mobile" href="#">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 19.9999H4C2.93052 20.0319 2.03642 19.1933 2 18.1239V5.87494C2.03641 4.80575 2.93068 3.96737 4 3.99994H20C21.0693 3.96737 21.9636 4.80575 22 5.87494V18.1249C21.963 19.1939 21.0691 20.032 20 19.9999ZM4 5.99994V17.9889L20 17.9999V6.01094L4 5.99994ZM13.43 15.9999H6C6.07353 15.172 6.46534 14.4049 7.093 13.8599C7.79183 13.1667 8.73081 12.7691 9.715 12.7499C10.6992 12.7691 11.6382 13.1667 12.337 13.8599C12.9645 14.405 13.3563 15.1721 13.43 15.9999ZM18 14.9999H15V12.9999H18V14.9999ZM9.715 11.9999C9.17907 12.0186 8.65947 11.8138 8.28029 11.4347C7.9011 11.0555 7.69638 10.5359 7.715 9.99994C7.69668 9.4641 7.9015 8.94468 8.28062 8.56556C8.65974 8.18644 9.17916 7.98162 9.715 7.99994C10.2508 7.98162 10.7703 8.18644 11.1494 8.56556C11.5285 8.94468 11.7333 9.4641 11.715 9.99994C11.7336 10.5359 11.5289 11.0555 11.1497 11.4347C10.7705 11.8138 10.2509 12.0186 9.715 11.9999ZM18 10.9999H14V8.99994H18V10.9999Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                        <div id="cart-btn" class="cart">
+                            <img class="mini-cart__model"  src="img/cart_active.svg" alt="cart">
+                            <!-- Mini Cart -->
+                            <div id="cart-modal" class="cart-body">
+                                <div class="cart-body__guts">
+                                    <figure>
+                                        <img src="img/cart-img.jpg" alt="model-img">
+                                    </figure>
+                                    <div class="cart-model">
+                                        <span class="cart-model__name">Toyota Land Cruiser 200</span>
+                                        <span class="cart-model__equipment">с 2015 по н.в. LС 200 4.5d А</span>
+                                    </div>
+                                    <h3 class="cart-title">Ваш заказ</h3>
+                                    
+                                    <div class="cart-order__details">
+                                        <ul class="cart-order__details-list">
+                                            <li class="cart-order__details-list_item">
+                                                <span class="cart-service-name">ТО</span>
+                                                <span class="cart-service-price">
+                                                    14 356
+                                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.00584 0H1.68755V4.1616H1.23755V5.5116H1.68755V6.11262H1.23755V7.46262H1.68755V9H3.03755V7.46262H4.72505V6.11262H3.03755V5.5125H5.00621C6.52614 5.5125 7.76255 4.27607 7.76255 2.75634C7.76255 1.23643 6.52612 0 5.00584 0ZM5.00639 4.1625H3.03755V4.1616V1.34982H5.00639C5.78183 1.34982 6.41272 1.98072 6.41272 2.75616C6.41272 3.5316 5.78183 4.1625 5.00639 4.1625Z" fill="#BB261A"/>
+                                                    </svg>
+                                                </span>
+                                                <span class="remove-this-item">
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.59 0L5 3.59L1.41 0L0 1.41L3.59 5L0 8.59L1.41 10L5 6.41L8.59 10L10 8.59L6.41 5L10 1.41L8.59 0Z" fill="#BBBBBB"/>
+                                                    </svg>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="cart-total__price">
+                                        Итого:
+                                        <span>14 356</span>
+                                        <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.34299 0H0.8125V6.93601H0.0625V9.18601H0.8125V10.1877H0.0625V12.4377H0.8125V15H3.0625V12.4377H5.875V10.1877H3.0625V9.1875H6.3436C8.87682 9.1875 10.9375 7.12679 10.9375 4.5939C10.9375 2.06071 8.87679 0 6.34299 0ZM6.3439 6.9375H3.0625V6.93601V2.24971H6.3439C7.6363 2.24971 8.68779 3.3012 8.68779 4.5936C8.68779 5.88601 7.6363 6.9375 6.3439 6.9375Z" fill="#BB261A"/>
+                                        </svg>  
+                                    </div>
+
+                                    <div class="cart-actual__price">Цена за актуальна на 30.10.2020г.</div>
+
+                                    <div class="cart-button">
+                                        <a class="cart-order__btn" href="/tolex/dist/registration.html">ОФОРМИТЬ ЗАКАЗ</a>
+                                        <a class="cart-invoice__btn" href="#">СКАЧАТЬ СЧЕТ</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Mini Cart END-->
+                        </div>
+                        <a class="notifications" href="#">
+                            <img src="img/notification_none.svg" alt="cart">
+                        </a>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--END header-->
+
+        <section class="about_main guts-pages" style="background-image: url(/img/about_bg.jpg);">
+            <div class="about_main-content_wrapper">
+                <div class="innern-container">
+                    <div class="about_main-content">
+                        <h1><span>Контакты</span></h1>
+                        <div class="about_main-content_slogan">
+                            <p>TOLEX TUNING - лучший клубный сервис TOYOTA, LEXUS.</p>
+                            <p>Обслуживаем клиентов с 1997 года. Мы можем то, что не под силу официальному дилеру.</p>
+                        </div>
+                       
+                    </div> 
+                     <!-- Breadscrumbs -->
+                     <section class="breadcrumbs-inner">
+                        <div class="kama_breadcrumbs">
+                            <span>
+                            <a href="#">
+                                <span>Главная</span>
+                            </a>
+                            </span>
+                            <span class="kb_sep">/</span>
+                            <span class="kb_title">Контакты</span>
+                        </div>
+                    </section>
+                    <!-- Breadscrumbs END-->
+                    
+                </div>
+            </div>
+            
+
+        </section>
+    
+
+        
+        <section class="map-builder">
+            <div class="map-builder_content">
+                <div class="map-builder_content-item">
+                    <h2 class="section-titles">Наши сервисы</h2>
+                    <div class="map-tabs">
+                        <div id="map-1" class="map-item active">
+                           <ul>
+                               <li>Бережковская наб.,36</li>
+                               <li>Ежедневно 09:00 — 21:00 </li>
+                               <li><a href="tel:8(495)153-29-23">8(495)153-29-23</a></li>
+                           </ul>
+                           <a target="_blanck" href="https://goo.gl/maps/gahGpMs3M9aeMAxa6" class="build-direction">Построить маршрут</a>
+                        </div>
+                        <div id="map-2" class="map-item">
+                            <ul>
+                                <li>Сущевский вал, ул. Складочная,1 стр. 9</li>
+                                <li>Ежедневно 09:00 — 21:00 </li>
+                                <li><a href="tel:8(495)153-16-71">8(495)153-16-71</a></li>
+                            </ul>
+                            <a target="_blanck" href="https://goo.gl/maps/Y9iKmTjcF8qWkPcH6" class="build-direction">Построить маршрут</a>
+                        </div>
+                        <div id="map-3" class="map-item">
+                            <ul>
+                                <li>2 ул. Машиностроения, д.27, стр. 2</li>
+                                <li>Ежедневно 09:00 — 21:00 </li>
+                                <li><a href="tel:8(495)153-59-98">8(495)153-59-98</a></li>
+                            </ul>
+                            <a target="_blanck" href="https://goo.gl/maps/CR5JGgXFzhTr39nT8" class="build-direction">Построить маршрут</a>
+                        </div>
+                    </div>
+                    <div class="tow_truck-wrapper" >
+                        <button class="tow_truck">Вызвать эвакуватор</button>
+                    </div>
+                    
+                </div>
+                <div class="map-builder_content-item">
+                    <div class="map-content">
+                        <!--adress one-->
+                        <div id="map-1-content" class="map-content-item show">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2503.5496697751064!2d37.54158941602163!3d55.73418032826152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bed1fd73a93%3A0xbe655206a7e29ad9!2sBerezhkovskaya%20naberezhnaya%2C%2036%2C%20Moskva%2C%20Russia%2C%20121059!5e0!3m2!1sen!2sua!4v1627561767941!5m2!1sen!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <!--adress two-->
+                        <div id="map-2-content" class="map-content-item">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d8970.692202446668!2d37.586003296784874!3d55.798914950418805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0KHRg9GJ0LXQstGB0LrQuNC5INCy0LDQuywg0YPQuy4g0KHQutC70LDQtNC-0YfQvdCw0Y8sMSDRgdGC0YAuIDk!5e0!3m2!1sen!2sua!4v1627561828947!5m2!1sen!2sua" width="100%" height="100% style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <!--adress three-->
+                        <div id="map-3-content" class="map-content-item">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.3156745163947!2d37.68653831600281!3d55.71826600212249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab52a3e5dba7b%3A0x2a7c787857d6e11f!2s2-Ya%20Ulitsa%20Mashinostroyeniya%2C%2027%2C%20Moskva%2C%20Russia%2C%20115088!5e0!3m2!1sen!2sua!4v1627561868770!5m2!1sen!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+       
+
+        <section class="waiting-comfort">
+        <div class="waiting-comfort__item">
+            <img style="width: 100%; height: 100%; object-fit: cover;" src="img/waiting-slider.jpg" alt="slider">
+        </div>
+          <!--  <div class="waiting-comfort__item">
+                <div class="waiting-comfort__slider owl-carousel">
+                    <img src="img/waiting-slider.jpg" alt="slider">
+                    <img src="img/waiting-slider.jpg" alt="slider">
+                    <img src="img/waiting-slider.jpg" alt="slider">
+                </div>
+            </div>-->
+            
+            <div class="waiting-comfort__info">
+                <div class="waiting-comfort__info-guts">
+                    <h2 class="section-titles">Комфорт при ожидании в нашей зоне отдыха</h2>
+                    <p>Для того чтоб Ваше ожидание прошло в комфорте мы рады предоставить Вам для этого все условия.</p>
+                    <ul class="more-buns">
+                        <li>Кафе</li>
+                        <li>WiFi</li>
+                        <li>Кинозал</li>
+                    </ul>
+                    <form class="responsible-politeness-form">
+                        <div class="responsible-form-row">
+                            <input type="tel" name="responsible-politeness" placeholder="+7 (XXX) XXX-XX-XX" pattern="^\+\d{2}\(\d{3}\)\s\d{3}[-]\d{2}[-]\d{2}$">
+                        </div>
+                        <button type="submit">Запишите меня</button>
+                        <div class="responsible-form-row">
+                            <input class="responsible-privaci-validation" id="responsible-privaci-validation" name="privaci-validation" type="checkbox">
+                            <label class="responsible-politeness-form-label" for="responsible-privaci-validation">Я соглашаюсь с <a href="#">Политикой конфиденциальности</a>  и <a href="#">Пользовательским соглашением</a></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-inner">
+            <div class="innern-container">
+
+                <!--Footer Menu-->
+                <div class="footer-menu__section">
+                    
+                    <div class="footer-menu-item">
+                        <nav class="footer-menu">
+                            <h3>РЕМОНТ TOYOTA</h3>
+                            <ul>
+                                <li><a href="#">Техничекое обслуживание</a></li>
+                                <li><a href="#">Ремонт АКПП</a></li>
+                                <li><a href="#">Слесарный ремонт</a></li>
+                                <li><a href="#">Кузовной ремонт</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    
+                    <div class="footer-menu-item">
+                        <nav class="footer-menu">
+                            <h3>РЕМОНТ LEXUS</h3>
+                            <ul>
+                                <li><a href="#">Техничекое обслуживание</a></li>
+                                <li><a href="#">Ремонт АКПП</a></li>
+                                <li><a href="#">Слесарный ремонт</a></li>
+                                <li><a href="#">Кузовной ремонт</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="footer-menu-item">
+                        <nav class="footer-menu">
+                            <h3>КЛИЕНТАМ</h3>
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Спецпредложения и акции</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="footer-menu-item">
+                        <nav class="footer-menu">
+                            <h3>НАШИ УСЛУГИ</h3>
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Спецпредложения и акции</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="footer-menu-item">
+                        <ul class="social-footer">
+                            <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!--Footer Contact-->
+
+                <div class="footer-contact">
+
+                    <div class="footer-contact__phone">
+                        <ul class="footer-contact__phone-list">
+                            <li>
+                                <address>Toyota на Мосфильме</address>
+                                <a href="tel:8(495)153-33-79">8(495)153-33-79</a>
+                            </li>
+                            <li>
+                                <address>Toyota на Cущевке</address>
+                                <a href="tel:8(495)153-11-63">8(495)153-11-63</a>
+                            </li>
+                            <li>
+                                <address>Toyota на Таганке</address>
+                                <a href="tel:8(495)153-59-98">8(495)153-59-98</a>
+                            </li>
+                            <li>
+                                <address>Сотрудничество</address>
+                                <a href="mail:info@tolextining.ru">info@tolextining.ru</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <a class="footer-links-toy" href="#">Калькулятор Toyota</a>
+                        <a class="footer-links-lexus" href="#">Калькулятор Lexus</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-copiright">
+
+                <div class="innern-container">
+
+                    <div class="footer-copiright__content">
+
+                        <div class="footer-copiright__logo">
+                            <img src="img/logo-tolex-tuning-footer.png" alt="main">
+                            <img src="img/toy-logo-footer.png" alt="toy">
+                            <img src="img/lexus_logo-footer.png" alt="lex">
+                        </div>
+    
+                        <div class="footer-copiright__text">
+                            2021 © TOLEX TUNING
+                        </div>
+    
+                        <div class="footer-privacy">
+                            <ul class="footer-privacy__list">
+                                <li><a href="#">Пользовательско е осглашение</a></li>
+                                <li><a href="#">Политика конфиденциальности </a></li>
+                            </ul>
+                            <div class="footer-write-chife">
+                                <button id="write-director" class="write-director" type="button"><span>Написать директору</span></button>
+                            </div>
+                        </div>
+
+                    </div>
+                
+                </div>
+
+            </div>
+        </footer>
+
+
+        <script src="js/app.min.js"></script>
+        <script src="https://kit.fontawesome.com/6997fd8dc6.js" crossorigin="anonymous"></script>
+</body>
+</html>
