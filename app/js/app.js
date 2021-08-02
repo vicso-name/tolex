@@ -1,17 +1,17 @@
 /*** comphort waiting section***/
 
-let slider = tns({
-    container: '.waiting-slider',
-    items: 1,
-    loop: true,
-    speed: 400,
-    mouseDrag: true,
-    nav:false,
-    slideBy: 'page',
-    autoplay: false,
-    controlsContainer: "#customize-controls",
+///let slider = tns({
+//    container: '.waiting-slider',
+//    items: 1,
+//    loop: true,
+//    speed: 400,
+//    mouseDrag: true,
+//    nav:false,
+ //   slideBy: 'page',
+//    autoplay: false,
+///    controlsContainer: "#customize-controls",
     
-  });
+///});
 
 /*** comphort waiting section END***/
 
@@ -323,6 +323,7 @@ $("body").on('click', 'area', function(event) {
     event.preventDefault();
     
     closeDetailPopup();
+
     var $this = $(this),
        id = $this.data('id'),
        parent = $this.closest('.calc__car-side'),
@@ -345,23 +346,23 @@ $("body").on('click', 'area', function(event) {
     }
  });
 
- function closeDetailPopup() {
+function closeDetailPopup() {
     var popup = $('.calc-detail-popup');
     popup.find('.calc__car-works').each(function() {
        $($(this).data('works-selector')).append($(this)); 
     });
     popup.slideUp(100);
- }
+}
   
     
 /*** Body Repair Part Chooser END ***/
 
 /*** fullpage page function ***/
 
-new fullpage('#fullPage', {
-    autoScrolling: true,
-    navigation: false
-});
+//new fullpage('#fullPage', {
+//    autoScrolling: true,
+//    navigation: false
+//});
 
 /*** fullpage page function END***/
 

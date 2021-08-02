@@ -784,6 +784,7 @@ body
 
 .licenses-content-item_grid
     display: flex
+    flex-wrap: wrap
     img
         width: 244px
         height: 352px
@@ -1569,11 +1570,19 @@ body
         background-repeat: no-repeat
         background-size: 7px
         background-position: center
+#tns1
+    height: 670px
+#tns1 > .tns-item
+    width: calc(12.5%)
+    height: 100%
+    object-fit: cover
 
 .waiting-comfort
     display: flex
+
 .waiting-slider-wrapper
     position: relative
+
 #customize-controls
     padding: 0
     list-style-type: none
