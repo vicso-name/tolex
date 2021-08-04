@@ -23,7 +23,7 @@ function scripts() {
 	return src([
 		'node_modules/jquery/dist/jquery.min.js',
 		'node_modules/owl.carousel/dist/owl.carousel.js',
-		//'app/libs/tiny-slider/dist/tiny-slider.js',
+		'app/libs/tiny-slider/dist/tiny-slider.js',
 		'app/libs/jquery-ui/jquery-ui.js',
 		'app/libs/maphilight/jquery.maphilight.min.js',
 		'app/libs/inputmask/dist/jquery.inputmask.js',

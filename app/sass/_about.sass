@@ -68,7 +68,6 @@ body
         .write-director
             color: #ffffff
         .about_main
-            min-height: 684px
             background-repeat: no-repeat
             background-size: cover
             background-position: center
@@ -89,10 +88,12 @@ body
                 background-color: #132035
                 opacity: 0.75
         .about_main-content
+            margin-top: 191px
             position: relative
             max-width: 772px
             width: 100%
             h1
+                text-transform: uppercase
                 font-size: 36px
                 color: #ffffff
                 font-style: normal
@@ -121,6 +122,7 @@ body
                     margin: 0
                 .calculator-links__content-btns
                     margin-top: 43px!important
+                    padding-bottom: 166px
 .about-order__form-wrapper
     display: flex
     align-items: center
@@ -461,6 +463,8 @@ body
         
 .popular-services__item_content
     margin-top: 70px
+    img
+        display: none
     h3
         font-size: 18px
         font-style: normal
@@ -537,16 +541,43 @@ body
 
 .proff-team
     margin-top: 67px
-
+.licenses-tabs__overflow
+    height: 105px
+    overflow: auto
+    overflow-y: clip
+    &::-webkit-scrollbar-track
+        background-color: transparent
+    &::-webkit-scrollbar
+        width: 4px
+        background-color: transparent
+    &::-webkit-scrollbar-thumb
+        border-radius: 50px
+        height: 50px
+        background-color: transparent
+.teams-tabs__overflow
+    overflow: auto
+    overflow-y: clip
+    height: 105px
+    &::-webkit-scrollbar-track
+        background-color: transparent
+    &::-webkit-scrollbar
+        width: 4px
+        background-color: transparent
+    &::-webkit-scrollbar-thumb
+        border-radius: 50px
+        height: 50px
+        background-color: transparent
 .teams-tabs
     display: flex
     margin-top: 55px
+    padding-bottom: 22px
+    width: 100%
     position: relative
     &::before
         content: ''
         position: absolute
         width: 100%
-        bottom: -18px
+        bottom: 4px
         border-bottom: 1px solid #CBCBCB
     .team-item
         margin-right: 55px
@@ -743,6 +774,7 @@ body
 .licenses-tabs
     margin-top: 62px
     display: flex
+    width: 100%
     position: relative
     &::before
         content: ''
@@ -809,7 +841,8 @@ body
         margin-bottom: 36px
 
 .review-tabs
-    display: flex
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
     padding-top: 20px
     padding-bottom: 20px
     border-top: 1px solid #CBCBCB
@@ -819,7 +852,7 @@ body
         display: flex
         align-items: center
         position: relative
-        margin-right: 118px
+        margin-right: 90px
         padding-left: 35px
         &:nth-child(1)
             img
@@ -841,8 +874,6 @@ body
             img
                 width: 128px
                 height: 32px
-        &:last-child
-            margin-right: 0
         &::before
             content: ''
             position: absolute
@@ -852,6 +883,18 @@ body
             border-radius: 50px
             left: 0
             top: 6px
+        &::after
+            content: ''
+            position: absolute
+            height: 100%
+            background-color: #CBCBCB
+            width: 1px
+            right: -51px
+        &:last-child
+            margin-right: 0
+            &::after
+                width: 0
+
         &.active
             &::before
                 content: '\f111'
@@ -1067,6 +1110,7 @@ body
     display: flex
     align-items: center
     justify-content: space-between
+    flex-wrap: wrap
     margin-top: 140px
 .footer-contact__phone-list
     padding: 0
@@ -1382,12 +1426,17 @@ body
     background-size: cover
     background-repeat: no-repeat
     padding-top: 110px
+    position: relative
 
 .certified-auto-service__content
     display: flex
     justify-content: space-between
+
+
+
 .certified-auto-service__content-info
     background-color: rgba(187,38,26,.8)
+
 .certified-auto-service__content-info_list
     padding-top: 88px
     padding-left: 110px
@@ -1435,6 +1484,12 @@ body
         margin-top: 30px
         margin-bottom: 0
 
+.certified-auto-service__content-text
+    background-image: url(../img/ofre.png)
+    background-repeat: no-repeat
+    background-size: 50%
+    background-position-y: 139px
+    background-position-x: 70px
 .map-builder_content
     display: flex
     justify-content: space-between
@@ -1475,6 +1530,25 @@ body
         border-bottom: 1px solid #CBCBCB
         bottom: 0
         z-index: -1
+    ul
+        li
+            position: relative
+            &:first-child
+                &::before
+                    content: ''
+                    position: absolute
+                    left: -26px
+                    width: 21px
+                    height: 21px
+                    background-repeat: no-repeat
+                    background-image: url(../img/place-black.svg)
+    &.active
+        ul
+            li
+                &:first-child
+                    &::before
+                        background-image: url(../img/place-white.svg)
+
     .build-direction
         width: 141px
         height: 25px
@@ -1495,6 +1569,7 @@ body
         right: 7%
     ul
         padding: 0
+        padding-left: 20px
         list-style-type: none
         position: relative
         li
@@ -1700,6 +1775,7 @@ body
 
 .header-send__application-content
     display: flex
+    flex-wrap: wrap
     align-items: center
     padding-top: 28px
     padding-bottom: 28px
@@ -1728,6 +1804,7 @@ body
         text-align: left
 .header-send__application-form
     display: flex
+    flex-wrap: wrap
     align-items: center
     input
         width: 200px

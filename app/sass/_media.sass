@@ -52,6 +52,8 @@
         padding-left: 30px
     
 @media (max-width: 1440px)
+    .responsible-politeness
+        background-size: 285px
     .responsive-tab__wrapper
         width: 540px
         overflow: auto
@@ -94,6 +96,13 @@
         font-size: 12px
         &:placeholder
             font-size: 12px
+    .review-owl-slider .owl-nav .owl-prev
+        left: -85px
+    .review-owl-slider .owl-nav .owl-next
+        right: -85px
+    .certified-auto-service__content-text
+        background-position-y: 143px
+        background-position-x: 89px   
 
 @media (max-width: 1360px)
     .inner-mileage-slider
@@ -112,6 +121,10 @@
         grid-template-columns: 580px 1fr
     
 @media (max-width: 1300px)
+    .review-owl-slider .owl-nav .owl-prev
+        left: -60px
+    .review-owl-slider .owl-nav .owl-next
+        right: -60px
     .adds-banners__guts .banner-grid
         grid-template-columns: repeat(2, 1fr)
     .model-catalog__content-guts
@@ -249,6 +262,8 @@
     .rating h3
         margin-bottom: 10px  
 @media (max-width: 1200px)
+    .certified-auto-service__content-info_list
+        padding-left: 70px
     .staff
         grid-template-columns: repeat(2,1fr)
         grid-gap: 25px
@@ -372,8 +387,7 @@
     .licenses-certificates
         padding-bottom: 30px
         padding-top: 30px
-    .review-tabs .review-tab-item
-        margin-right: 75px
+
     .map-item
         padding-right: 40px
     .responsible-politeness
@@ -386,6 +400,11 @@
         justify-content: space-around
     .header-send__application-text
         font-size: 18px
+
+@media (max-width: 1050px)
+    .footer-links
+        margin-top: 44px
+
 @media (max-width: 1024px)
     .locksmith-repair__form-wrapper .locksmith-repair__form
         grid-template-columns: 1fr
@@ -477,6 +496,48 @@
         font-size: 38px  
 
 @media (max-width: 992px) 
+    .review-tabs
+        display: grid
+        grid-gap: 17px
+        grid-template-columns: repeat(4, 1fr)
+    .review-tabs
+        flex-wrap: wrap
+    .review-tabs 
+        .review-tab-item
+            &:nth-child(5)
+                //padding-top: 17px
+            &:nth-child(4)
+                //padding-top: 17px
+                &::after
+                    width: 0
+    .about-order__form-wrapper
+        width: 100%
+    .general-director__grid-item_content h2
+        width: 100%
+    .general-director__grid-item_content
+        padding-right: 15px
+        padding-left: 15px
+        padding-top: 15px
+    .general-director__grid
+        grid-template-columns: 1fr
+        .general-director__grid-item
+            &:nth-child(1)
+                height: 490px
+    .general-director__video-play
+        bottom: -40px
+        width: 80px
+        height: 80px
+        top: unset
+        right: unset
+        left: 50% 
+        transform: translate(-50%)           
+    .popular-services__grid
+        grid-template-columns: 1fr
+    .popular-services__item
+        background-position: right
+        background-repeat: no-repeat
+    .header-send__application-content .header-send__application-content_item:first-child
+        flex-basis: 100%
     .record-table__new-version-wrapper
         width: 100%
         overflow: auto
@@ -514,7 +575,159 @@
         grid-template-columns: repeat(2,1fr)
     .certified-auto-service__content-info_imgs img
         width: 100%
+
+    .certified-auto-service__content-text
+        flex-basis: 100%
+        padding-top: 0
+        padding-bottom: 70px
+        padding-left: 15px
+        padding-right: 15px
+    .certified-auto-service__content-info
+        flex-basis: 100%
+    .calculator-links__content
+        grid-template-columns: 1fr
+        grid-gap: 25px
+    .map-item
+        padding-left: 0
+        ul
+            padding-left: 45px
+    .map-builder_content .map-builder_content-item .section-titles
+        padding-left: 20px
+
+    .map-item::before
+        width: 100%
+
+    .tow_truck-wrapper
+        padding-left: 20px
+        padding-right: 20px
+
+    .main-menu ul li
+        margin-right: 15px
+
+    .main-menu ul li a
+        font-size: 12px
+        
+    .header-contact-logo
+        display: none
+
+    body.about .about_main-content h1
+        font-size: 25px
+    body.about .about_main-content h1 span
+        font-size: 25px
+    body.about
+        .service-book__mobile
+            svg
+                path
+                    fill: #ffffff
+    .warnty__saver .warnty__saver-item
+        font-size: 14px
+
+    .warnty__saver
+        padding-bottom: 25px
+
+    .warnty__saver-wrapper
+        background: unset
+        padding-bottom: 42px
+
+    .warnty__saver-wrapper_guts 
+        flex-direction: column
+@media (max-width: 850px)
+    .review-tabs
+        display: grid
+        grid-gap: 17px
+        grid-template-columns: repeat(3, 1fr)
+    .review-tabs
+        flex-wrap: wrap
+    .review-tabs 
+        .review-tab-item
+            &:nth-child(3)
+                 &::after
+                    width: 0
+            &:nth-child(4)
+                &::after
+                    width: 1px
+
 @media (max-width: 768px)
+    .popular-services__item_content
+        margin-top: 0
+    .certified-auto-service__content-info_imgs
+        width: 100%
+    .review-tabs
+        grid-gap: 30px
+        grid-template-columns: repeat(3,1fr)
+    .review-owl-slider .owl-nav button
+        background-color: #bb261a!important
+        color: #ffffff!important
+    .review-owl-slider .owl-nav .owl-prev
+        left: 0
+    .review-owl-slider .owl-nav .owl-next
+        right: 0 
+    .review-owl-slider .owl-nav
+        top: 94%
+    .team-slider-item
+        padding-left: 0
+    .certified-auto-service
+        padding-top: 55px
+    .certified-auto-service__content
+        flex-direction: column
+    .certified-auto-service__content-info_list
+        padding-left: 15px
+    .popular-services__item
+        height: 290px
+        padding-top: 25px
+        justify-content: center
+        padding-left: 0
+        align-items: end
+        background-image: none!important
+        padding-bottom: 33px
+        .popular-services__item_content
+            display: flex
+            flex-direction: column
+            align-items: center
+            img
+                display: block
+                margin-bottom: 20px
+
+    .popular-services__item
+        &:nth-child(1)
+            .popular-services__item_content
+                img
+                    width: auto
+                    height: 120px
+        &:nth-child(2)
+            .popular-services__item_content
+                img
+                    width: auto
+                    height: 120px
+        &:nth-child(3)
+            .popular-services__item_content
+                img
+                    width: auto
+                    height: 120px
+        &:nth-child(4)
+            .popular-services__item_content
+                img
+                    width: auto
+                    height: 120px
+
+          
+
+    .popular-services__section
+        margin-top: 55px
+
+    .popular-services__item_content h3
+        text-align: center
+
+    body.about .about_main-content h1
+        font-size: 18px
+    body.about .about_main-content h1 span
+        font-size: 18px
+    body.about .about_main-content .about_main-content_slogan p
+        font-size: 12px
+    .warnty__saver .warnty__saver-item
+        font-size: 13px
+    body.about .header-info
+        top: 65px!important
     .mobile-menu
         display: block
         position: fixed
@@ -584,8 +797,6 @@
 
     .select__fixt-type-title
         text-align: center
-
-    
 
     .mileage-value-title
         text-align: center
@@ -781,8 +992,152 @@
         line-height: 24px
     .main-description__wrapper
         padding-right: 15px
+    .header-send__application-form
+        flex-wrap: wrap
+    .header-send__application-content .header-send__application-content_item:first-child
+        flex-basis: 90%
 
+    .waiting-comfort
+        flex-wrap: wrap
+        flex-direction: column-reverse
+    .waiting-comfort__info
+        width: 100%
+    .map-builder_content
+        flex-wrap: wrap
+    .map-builder_content .map-builder_content-item:first-child
+        flex-basis: 100%
+        padding-top: 24px
+    #customize-controls li
+        background-color: #bb261a
+    #customize-controls li .fas
+        color: #ffffff
+    .map-builder_content .map-builder_content-item
+        flex-basis: 100%
+        height: 340px
+    .responsible-politeness__content-info
+        flex-basis: 100%
+    .responsible-politeness__content-form
+        padding-right: 15px
+        padding-left: 15px
+        flex-basis: 100%
+    .responsible-politeness__content-form::before
+        width: 0  
+    .service-moscow
+        padding-top: 52px
+        border-top: none 
+    .section-titles
+        font-size: 18px
+    .responsible-form-row input
+        width: 100%         
+    .responsible-politeness__content-info
+        margin-right: 0
+    .responsible-politeness-form button
+        width: 290px
+    .responsible-politeness-form .responsible-politeness-form-label
+        width: 264px
+    .footer-menu__section .footer-menu-item
+        margin-right: 12px
+        margin-top: 40px
+    .footer-inner .footer-menu h3
+        font-size: 14px
+    .footer-menu__section
+        display: grid
+        grid-template-columns: repeat(2, 1fr )
+    .wooter-inner-guts
+        display: flex
+        flex-direction: column-reverse
+    .footer-copiright
+        padding-bottom: 55px
+    .footer-contact
+        margin-top: 0
+    .footer-contact__phone-list
+        display: grid
+        grid-template-columns: repeat(2,1fr)
+        grid-gap: 20px
+    .footer-links-toy
+        margin-top: 17px
+    .footer-links-lexus  
+        margin-top: 17px
+    .footer-copiright__content  
+        flex-direction: column-reverse
+    .footer-privacy    
+        flex-direction: column-reverse
+        align-items: center
+        text-align: center
+    .footer-privacy__list
+        margin-right: 0
+        margin-top: 21px
+        margin-bottom: 17px
+    .footer-copiright__text
+        position: absolute
+        bottom: -35px
+    .footer-copiright__logo img:nth-child(1)
+        margin-right: 25px
+    .footer-copiright__logo img:nth-child(2)
+        margin-right: 10px
+    .responsible-politeness__content-info p
+        font-size: 14px
+    .map-builder_content
+        flex-direction: column-reverse
+    .map-builder_content .map-builder_content-item:first-child
+        padding-bottom: 0
+    .map-content .map-content-item
+        height: 340px
+    .map-tabs
+        margin: 0
+    .map-builder
+        padding-top: 100px
+    .map-builder-title
+        position: absolute
+        top: -420px
+    .map-builder_content .map-builder_content-item:first-child
+        padding-top: 0
+    .waiting-comfort__info p
+        font-size: 14px
+    .social-footer
+        justify-content: flex-start
+    .footer-links
+        margin-top: 20px
 @media (max-width: 720px)
+
+    .review-tabs
+        display: grid
+        grid-gap: 17px
+        grid-template-columns: repeat(2, 1fr)
+        width: 100%
+    .review-tabs 
+        .review-tab-item
+            &:nth-child(2)
+                 &::after
+                    width: 0
+            &:nth-child(3)
+                 &::after
+                    width: 1px
+            &:nth-child(4)
+                &::after
+                    width: 0
+
+    .team-slider-owl .owl-nav
+        top: 25%
+
+    .team-slider-item
+        flex-direction: column
+
+    .team-member-info
+        width: 100%
+
+    body.about .humburger
+        svg
+            path
+                fill: #ffffff
+
+    body.about .service-book__mobile
+        svg
+            path
+                fill: #ffffff
+    .mobile-slider
+        overflow: auto
+
     .server-book__table-wrapper
         width: 600px
         overflow: auto  
@@ -842,10 +1197,15 @@
         font-size: 12px
 
 @media (max-width: 630px)
+    .teams-content
+        margin-top: 30px
+    .teams-tabs
+        width: 620px
     .server-book__table-wrapper
         max-width: 500px
         overflow: auto  
-
+    .licenses-tabs
+        width: 650px
     .server-book__table
         margin-top: 16px
         width: 620px
@@ -871,7 +1231,134 @@
         position: relative
 
 @media (max-width: 570px)
-    
+    .footer-copiright
+        border: none
+    .licenses-tabs__overflow
+        height: 92px
+    .teams-tabs__overflow
+        height: 85px
+    .responsible-politeness
+        height: auto
+        padding-top: 300px
+        margin-bottom: 0
+        background-size: 255px
+        background-image: url(../img/resposibility.png)
+    .tow_truck
+        width: 100%
+    .responsible-politeness-form button
+        width: 100%
+    .waiting-comfort__info
+        padding-left: 15px
+        padding-right: 15px
+    .waiting-comfort__info .more-buns li
+        font-size: 14px
+    .waiting-comfort .tns-ovh
+        height: 360px
+        #tns1
+            height: 360px
+    .review-tabs
+        grid-template-columns: repeat(2,1fr)
+    .review-slider__item
+        width: 100% 
+    .licenses-content
+        margin-top: 40px
+    .licenses-content-item_grid
+        grid-gap: 20px
+        justify-content: center
+        img
+            margin-right: 0
+    .calculator-links__content
+        margin-bottom: 25px
+    .diagnostic-gift
+        height: 440px
+    .about-order__form
+        width: 100%
+    .about-order__form-wrapper
+        padding-left: 15px
+        padding-right: 15px
+    .team-slider-owl .owl-nav button
+        background-color: #bb261a!important
+        color: #ffffff!important
+    .team-location-form button
+        width: 100%
+    .team-slider-owl .owl-nav .owl-next
+        right: 20px
+    .team-slider-owl .owl-nav .owl-prev
+        left: 20px
+    .team-location-form input
+        width: 100%
+    .team-member-photo
+        width: 100%
+
+    .team-slider-item .team-member-photo img
+        width: 100%
+        height: auto
+        object-fit: cover
+
+    .certified-auto-service__content-info_list
+        padding-bottom: 15px
+        padding-top: 80px
+
+    .certified-auto-service__content-info_imgs img
+        width: 100%
+        height: 114px
+        object-fit: cover
+
+    .certified-auto-service__content-info_list li
+        margin-bottom: 23px
+
+    .certified-auto-service__content-info_list li h3
+        font-size: 30px
+
+    .special__offers-section-content_grid h3 a
+        font-size: 16px
+        line-height: 26px
+
+    .header-send__application-text
+        padding-bottom: 20px
+
+    .header-send__application-form input
+        width: 100%
+
+    .header-send__application-form .header-send-politeness-form-label
+        width: 100%
+
+    body.about .about_main-content h1
+        width: 100%
+        line-height: 30px
+
+    body.about .about_main-content
+        width: 100%
+
+    .calculator-links__content-btns
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    .warnty__saver .warnty__saver-item
+        margin-right: 0
+
+    .calculator-links__content-btns a:first-child
+        margin-bottom: 19px
+
+    .warnty__saver
+        flex-direction: column
+        justify-content: center
+        align-items: left
+
+    .calculator-links__content-btns a:first-child
+        margin-right: 0
+    .tow_truck
+        width: 270px
+    .map-item .build-direction
+        position: relative
+        top: 0
+        right: -15px
+        display: block
+    .service-moscow
+        padding-top: 0
+
     .server-book__table-wrapper
         max-width: 400px
         overflow: auto  
@@ -1099,10 +1586,28 @@
 
     .order-section-imgs_car img
         display: none
+
     .order-section
         margin-top: 10px 
+
     .body-repair__order-form
         padding-bottom: 0
+
+    .footer-contact__phone-list
+        display: grid
+        grid-template-columns: 1fr
+        grid-gap: 20px
+
+    .footer-inner
+        padding-top: 41px
+
+    .special__offers-section .special__offers-section-content
+        padding-top: 32px
+
+    .all-special__offers a
+        margin: 0
+        width: 100%
+        margin-top: 30px
 
 @media (max-width: 520px)
 
@@ -1113,6 +1618,9 @@
     .server-book__table-wrapper
         max-width: 350px
         overflow: auto  
+
+    .special__offers-section-content_grid
+        grid-template-columns: 1fr
 
     .choose-service-date__wrapper .ordering-btn
         margin-left: 0
@@ -1155,6 +1663,31 @@
         margin-left: 0
 
 @media (max-width: 420px)
+    .review-tabs .review-tab-item:nth-child(1) img
+        width: 75px
+        height: auto
+
+    .review-tabs .review-tab-item:nth-child(2) img
+        width: 63px
+        height: auto
+    .review-tabs .review-tab-item:nth-child(2)
+        margin-right: 0
+
+    .review-tabs .review-tab-item:nth-child(3) img
+        width: 55px
+        height: auto
+
+    .review-tabs .review-tab-item:nth-child(4) img
+        width: 105px
+        height: auto
+    .review-tabs .review-tab-item:nth-child(4)
+        margin-right: 0
+
+    .review-tabs .review-tab-item:nth-child(5) img
+        width: 105px
+        height: auto
+    body.about .about_main-content .about_main-content_slogan .calculator-links__content-btns
+        padding-bottom: 215px
     .model-catalog__content-grid li
         margin-bottom: 0!important
 
@@ -1221,8 +1754,16 @@
     .register-phone input
         width: 285px
     
-
 @media (max-width: 375px)
+    .review-tabs .review-tab-item::after
+        right: -16px
+    
+    .review-tabs .review-tab-item
+        margin-right: 35px
+    .calculator-links__content-btns a
+        width: 100%
+    body.about .about_main-content .about_main-content_slogan .calculator-links__content-btns
+        padding-bottom: 230px
     .record__table-wrapper
         max-width: 348px
         overflow: auto 
@@ -1242,6 +1783,10 @@
         max-width: 285px
 
 @media (max-width: 320px)
+    .review-tabs .review-tab-item::after
+        right: -21px
+    .review-tabs .review-tab-item
+        padding-left: 30px
     .record__table-wrapper
         max-width: 290px
         overflow: auto 

@@ -1,17 +1,21 @@
 /*** comphort waiting section***/
 
-///let slider = tns({
-//    container: '.waiting-slider',
-//    items: 1,
-//    loop: true,
-//    speed: 400,
-//    mouseDrag: true,
-//    nav:false,
- //   slideBy: 'page',
-//    autoplay: false,
-///    controlsContainer: "#customize-controls",
-    
-///});
+let waitingSlider = document.querySelector('.waiting-slider');
+if(waitingSlider !== null){
+    let slider = tns({
+        container: '.waiting-slider',
+        items: 1,
+        loop: true,
+        speed: 400,
+        mouseDrag: true,
+        nav:false,
+        slideBy: 'page',
+        autoplay: false,
+        controlsContainer: "#customize-controls",
+        
+    });
+}
+
 
 /*** comphort waiting section END***/
 
@@ -356,16 +360,6 @@ function closeDetailPopup() {
   
     
 /*** Body Repair Part Chooser END ***/
-
-/*** fullpage page function ***/
-
-//new fullpage('#fullPage', {
-//    autoScrolling: true,
-//    navigation: false
-//});
-
-/*** fullpage page function END***/
-
 
 /**** Maphilight ****/
 
