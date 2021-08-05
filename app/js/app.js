@@ -67,6 +67,7 @@ $('.taganka-team-slider').owlCarousel({
     dots:true
 })
 
+
 const licensesItems = document.querySelectorAll('.licenses-tab-item');
 const licensesContentItems = document.querySelectorAll('.licenses-content-item');
 
@@ -317,6 +318,7 @@ if(getOrder!==null){
 }
 
 /*** Cart PopUp END***/
+
 
 /*** Body Repair Part Chooser ***/
 

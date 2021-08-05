@@ -483,16 +483,20 @@ body
 
 .general-director
     border-bottom: 1px solid #CBCBCB
+
 .general-director__grid
     min-height: 540px
     display: grid
     grid-template-columns: 1.2fr 1.5fr
     grid-gap: 70px
+
 .general-director__grid-item
     background-size: cover
     background-repeat: no-repeat
+    background-position: center
     position: relative
     height: 100%
+
 .general-director__grid-item_content
     padding-top: 80px
     h2
@@ -817,17 +821,18 @@ body
                 bottom: -19px
 .licenses-content
     margin-top: 80px
+    overflow: auto
+    
 .licenses-content-item
     display: none
     opacity: 0
     &.show
         display: block
         opacity: 1
-    
+        width: 1050px
 
 .licenses-content-item_grid
     display: flex
-    flex-wrap: wrap
     img
         width: 244px
         height: 352px
