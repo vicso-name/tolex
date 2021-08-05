@@ -52,6 +52,10 @@
         padding-left: 30px
     
 @media (max-width: 1440px)
+    .innner-aside
+       padding-left: 33px
+    .main-blog
+        padding-right: 33px
     .responsible-politeness
         background-size: 285px
     .responsive-tab__wrapper
@@ -495,7 +499,13 @@
     .main-description__wrapper h1
         font-size: 38px  
 
-@media (max-width: 992px) 
+@media (max-width: 992px)
+    .innner-aside .section-titles
+        font-size: 18px
+    .special__offers-section-inner .special__offers-section-inner_content
+        grid-template-columns: 1fr 300px 
+    .blog-grid-second
+        grid-template-columns: 1fr
     .review-tabs
         display: grid
         grid-gap: 17px
@@ -648,6 +658,29 @@
                     width: 1px
 
 @media (max-width: 768px)
+    .special__offers-section-inner .special__offers-section-inner_content .header-send__application
+        padding-left: 15px
+        padding-right: 15px
+    .special__offers-section-inner .header-send__application-content .header-send__application-content_item:first-child
+        flex-basis: 100%
+
+    .special__offers-section-content_grid.block-three
+        margin-bottom: 0
+    .main-blog-post
+        padding-right: 0!important
+    .special__offers-section-inner .special__offers-section-inner_content
+        margin-bottom: 0
+    .main-blog
+        padding-right: 0
+    .innner-aside
+        padding-left: 0
+        margin-bottom: 0
+    .innner-aside::before
+        width: 0
+    .special__offers-section-inner_content
+        grid-template-columns: 1fr!important
+    .tow_truck-wrapper
+        margin-bottom: 60px
     .popular-services__item_content
         margin-top: 0
     .certified-auto-service__content-info_imgs
@@ -1231,6 +1264,14 @@
         position: relative
 
 @media (max-width: 570px)
+    .footer-links .footer-links-toy
+        width: 100%
+    .footer-links .footer-links-lexus
+        width: 100%
+    .special__offers-section-inner .header-send__application-form button
+        width: 100%
+    .special__offers-section-content_grid.block-two
+        grid-template-columns:  1fr
     .footer-copiright
         border: none
     .licenses-tabs__overflow
@@ -1662,6 +1703,11 @@
     .popular-body__repaire-content
         margin-left: 0
 
+@media (max-width: 469px)
+    .footer-inner__guts
+        display: flex
+        flex-direction: column-reverse
+        
 @media (max-width: 420px)
     .review-tabs .review-tab-item:nth-child(1) img
         width: 75px

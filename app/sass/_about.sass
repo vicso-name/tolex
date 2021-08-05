@@ -16,11 +16,6 @@
 body
     &.about
         background-image: none
-        .mini-cart__model
-            filter: invert(1)
-        .notifications
-            img
-                filter: invert(1)
         .header-info
             position: absolute
             width: 100%
@@ -110,6 +105,10 @@ body
                     line-height: 52px
                     letter-spacing: 0em
                     text-align: left
+            &.about_main-content_inner
+                margin-top: 60px
+                h1
+                    width: 100%
             .about_main-content_slogan
                 p
                     color: #ffffff
@@ -614,9 +613,12 @@ body
 
 .team-content-item
     display: none
+    visibility: hidden
     opacity: 0
+    transition: all .2s ease
     &.show
         display: block
+        visibility: visible
         opacity: 1
 
 .team-slider-item
@@ -1464,7 +1466,9 @@ body
             text-align: left
             color: #ffffff
 .certified-auto-service__content-info_imgs
-    display: flex
+    display: grid
+    grid-template-columns: 1fr 1fr
+    width: 100%
     img
         width: 354px
 
@@ -1948,10 +1952,17 @@ body
 .about_main-content_wrapper
     height: 100%
     width: 100%
-    margin-top: 122px
+    margin-top: 63px
+body.about .about_main-content_wrapper .about_main-content.about_main-content_inner
+    margin-top: 0
+.breadcrumbs-inner__wrapper
+    position: absolute
+    bottom: 44px
+    left: 0
+    right: 0
 .breadcrumbs-inner
     .kama_breadcrumbs
-        padding-top: 94px
+        padding-top: 0
         span
             a
                 text-decoration: none
@@ -1986,7 +1997,7 @@ body
             margin-top: 46px
             margin-bottom: 91px
     .main-content
-        .figure
+        figure
             margin-bottom: 50px
             img
                 width: 100%
