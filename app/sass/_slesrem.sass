@@ -23,8 +23,11 @@
     padding-bottom: 16px
     cursor: pointer
     border-radius: 4px
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
-
+    transition: all .5s ease
+    border: 1px solid #D2D2D2
+    &:hover
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
+        border: 1px solid lighten(#D2D2D2, 100%)
     .popular-repairs__details
         display: flex
         align-items: center

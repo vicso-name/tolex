@@ -1,3 +1,6 @@
+
+
+
 /*** comphort waiting section***/
 
 let waitingSlider = document.querySelector('.waiting-slider');
