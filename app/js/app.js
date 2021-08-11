@@ -757,7 +757,7 @@ if(forward !== null ){
         }
       
         const servicesContent = document.querySelectorAll(".service-wrapp");
-        console.log(servicesContent)
+
         if (services.length === 0) {
           
           servicesContent.forEach((item) => {
@@ -892,53 +892,17 @@ if(addTypeItem !== null){
     })
 }
 
-/*** Calculator ***/
+/*** Calculator - Grid Table Row Active***/
 
-let tableOurInputCell = document.querySelectorAll('.table__our-input-cell');
-if(tableOurInputCell !== null){
-    tableOurInputCell.forEach(item=>{
-        item.addEventListener('click', function(){
-            removeActiveFromCell();
-            let parrentElement = item.closest('.grid-table-row');
-            parrentElement.classList.add('active');
-        })
-    })
-}
-
-let labelItem = document.querySelectorAll('.label-item');
-if(labelItem !== null){
-    labelItem.forEach(item=>{
-        item.addEventListener('click', function(){
-            removeActiveFromCell();
-            let parrentElement = item.closest('.grid-table-row');
-            parrentElement.classList.add('active');
-        })
-    })
-}
-
-let serviceInputItem = document.querySelectorAll('.service-input-item'); 
-if(labelItem !== null){
-    labelItem.forEach(item=>{
-        console.log(item.checked);
-      
-        if(item.checked){
-            
-            item.classList.add('sjsjsjs')
-        }
-    })
-}
-
-function removeActiveFromCell() {
-    let gridTableRow = document.querySelectorAll('.grid-table-row');
-    if(gridTableRow !== null){
-        gridTableRow.forEach(item=>{
-            if(item.classList.contains('active')){
-                item.classList.remove('active') 
-            }
-        })
+$("body").on("change", ".service-wrapp", function (e) {
+    if ($(this).hasClass("active-check")) {
+        $(this).removeClass("active-check");
+    } else {
+        $(this).addClass("active-check");
     }
-}
+});
 
-
-
-
+$(".category-content-item").on( "click" , function (e) {
+    $(this).siblings().removeClass("active-check");
+    $(this).addClass("active-check")
+});
