@@ -17,7 +17,6 @@
 .grid-table
     display: grid
     .serv-cat
-        border-bottom: 1px solid #CDCDCD
         padding-bottom: 10px
         margin-bottom: 10px
 .grid-table-row
@@ -28,9 +27,22 @@
         .cell-price
             font-size: 13px
             font-style: normal
-            font-weight: 500
+            font-weight: 400
             line-height: 16px
             letter-spacing: 0em
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                width: 9px
+                height: 9px
+                top: 4px
+                right: -11px
+                background-image: url(../img/ruble-currensy.svg)
+                background-repeat: no-repeat
+                background-size: contain
+            svg
+                margin-bottom: 3px
             &.service-price
                 margin-left: 11px
     &.table-header
@@ -200,6 +212,8 @@
     line-height: 22px
     letter-spacing: 0em
     border-bottom: 1px solid #CDCDCD
+    border-top: 1px solid #CDCDCD
+    padding-top: 16px
     padding-bottom: 16px
     padding-right: 70px
     
@@ -237,6 +251,8 @@
                 letter-spacing: 0em
                 text-align: left
                 margin: 0
+
+.label-item__wrapper                
     &:hover
         .info-section__content
             display: block
@@ -305,9 +321,8 @@
         .cell-price
             color: #BB261A
             font-weight: 700
-            svg
-                path
-                    fill:#BB261A
+            &::before
+                background-image: url(../img/ruble-currensy-red.svg)
         .cell-quantity
             color: #BB261A
             font-weight: 700
